@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  Thready AI
+//
+//  Created by Naqeeb Ahmed on 31/12/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = "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"

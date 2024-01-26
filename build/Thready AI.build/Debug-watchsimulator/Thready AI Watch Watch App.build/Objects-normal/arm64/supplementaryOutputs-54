@@ -1,0 +1,18 @@
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Ask Me AnyThing Widgets/FullScreenLoading.swift":
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.dia"
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.d"
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.o"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.swiftdeps"
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.swiftconstvalues"
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/IAP/AutoRenewablePurchaseManager.swift":
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.d"
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.swiftconstvalues"
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.o"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.swiftdeps"
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.dia"
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Models/Enum.swift":
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.d"
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.dia"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.swiftdeps"
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.o"
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.swiftconstvalues"

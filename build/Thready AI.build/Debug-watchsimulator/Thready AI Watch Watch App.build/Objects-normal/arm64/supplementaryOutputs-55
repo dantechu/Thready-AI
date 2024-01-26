@@ -1,0 +1,18 @@
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Utilities/Constants.swift":
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.o"
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.swiftconstvalues"
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.d"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.swiftdeps"
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.dia"
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Pro version/ProVersion.swift":
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.swiftconstvalues"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.swiftdeps"
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.d"
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.o"
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.dia"
+"/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/WatchColors/WatchColors.swift":
+  dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.d"
+  diagnostics: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.dia"
+  const-values: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.swiftconstvalues"
+  object: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.o"
+  swift-dependencies: "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.swiftdeps"

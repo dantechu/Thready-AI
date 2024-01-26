@@ -1,0 +1,63 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "18c78f9353c4a5e6c510242b3108b071a27acb4687d396cfcc776e4691c6119d"
+    }
+  ],
+  "containerPath" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI.xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "watchsimulator",
+      "sdk" : "watchsimulator10.0",
+      "sdkVariant" : "watchsimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/pankajbhuva/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/pankajbhuva/Library/Developer/Xcode/DerivedData/Thready_AI-eoscppdndwuwdreiofheyffhxfhb/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/pankajbhuva/Library/Developer/Xcode/DerivedData/Thready_AI-eoscppdndwuwdreiofheyffhxfhb/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "Watch6,12",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "9.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "Watch6,12",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "6D34A3A8-D674-4085-BFB0-6202E534B9CC",
+          "TARGET_DEVICE_MODEL" : "Watch6,12",
+          "TARGET_DEVICE_OS_VERSION" : "9.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "watchsimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

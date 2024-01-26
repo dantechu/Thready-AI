@@ -1,0 +1,36 @@
+{
+  "source": "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Screens/About/About.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "This is an app that lets you talk to a smart computer named Thready using your Apple Watch or iPhone. It's helpful when you want to learn something quickly or write a long message without typing. Just remember to have fun and be nice!"
+      },
+      {
+        "comment": "",
+        "key": "Thready 2.4"
+      },
+      {
+        "comment": "",
+        "key": "Welcome to Thready!"
+      },
+      {
+        "comment": "",
+        "key": "Other apps by Thready"
+      },
+      {
+        "comment": "",
+        "key": "Powered by Amazing eLearning"
+      },
+      {
+        "comment": "",
+        "key": "Made by Amazingelearning.com"
+      },
+      {
+        "comment": "",
+        "key": "Welcome\n to Thready!"
+      }
+    ]
+  },
+  "version": 1
+}

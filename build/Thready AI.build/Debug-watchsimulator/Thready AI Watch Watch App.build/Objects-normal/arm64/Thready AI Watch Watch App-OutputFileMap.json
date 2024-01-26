@@ -1,0 +1,298 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Thready AI Watch Watch App-master.dia",
+    "emit-module-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Thready AI Watch Watch App-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Thready AI Watch Watch App-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Thready AI Watch Watch App-master.swiftdeps"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Screens/About/About.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/About~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Api Implement/ChatGPTAPI.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPI~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Ask Me AnyThing Widgets/AskInputField.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskInputField~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Ask Me AnyThing Widgets/ChatHeader.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatHeader~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Ask Me AnyThing Widgets/FullScreenLoading.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/FullScreenLoading~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/AskMeAnyThingViewModel.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AskMeAnyThingViewModel~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/IAP/AutoRenewablePurchaseManager.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/AutoRenewablePurchaseManager~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/IAP/NonConsumablePurchaseManager.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/NonConsumablePurchaseManager~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Models/ChatGPTAPIModels.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGPTAPIModels~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Models/EnginesResponse.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/EnginesResponse~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Models/Enum.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Enum~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Models/MessageRow.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/MessageRow~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Utilities/Colors+Extension.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Colors+Extension~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Utilities/Constants.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Constants~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Utilities/View+Extension.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/View+Extension~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/ActivityIndicatorLoading/ActivityIndicatorLoadingView.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ActivityIndicatorLoadingView~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/AskMeAnyThing/ContentView.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/AskMeAnyThing/GifImageWatch.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/GifImageWatch~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/AskMeAnyThing/WatchChatWidget.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchChatWidget~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/ChatGptAppApp.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ChatGptAppApp~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Icons/Icons.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/Icons~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Peronsa List/PersonaDetailsList.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaDetailsList~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Peronsa List/PersonaList.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/PersonaList~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Pro version/ProVersion.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/ProVersion~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Settings/SettingsItemWatch.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsItemWatch~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Settings/SettingsWatch.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/SettingsWatch~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/VolumeSelection/VolumeSelection.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/VolumeSelection~partial.swiftmodule"
+  },
+  "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/WatchColors/WatchColors.swift" : {
+    "const-values" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.swiftconstvalues",
+    "dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.d",
+    "diagnostics" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.dia",
+    "index-unit-output-path" : "/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.o",
+    "llvm-bc" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.bc",
+    "object" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.o",
+    "swift-dependencies" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors.swiftdeps",
+    "swiftmodule" : "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/build/Thready AI.build/Debug-watchsimulator/Thready AI Watch Watch App.build/Objects-normal/arm64/WatchColors~partial.swiftmodule"
+  }
+}

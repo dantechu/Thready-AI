@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'Thready AI Watch Watch App' in project 'Thready AI' (no dependencies)

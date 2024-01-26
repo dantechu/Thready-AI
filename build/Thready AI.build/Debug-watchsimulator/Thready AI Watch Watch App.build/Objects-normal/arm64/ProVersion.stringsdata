@@ -1,0 +1,40 @@
+{
+  "source": "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Pro version/ProVersion.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Success"
+      },
+      {
+        "comment": "",
+        "key": "Pro version purchased successfully"
+      },
+      {
+        "comment": "",
+        "key": "OK"
+      },
+      {
+        "comment": "",
+        "key": "Error"
+      },
+      {
+        "comment": "",
+        "key": "Pro version restored successfully"
+      },
+      {
+        "comment": "",
+        "key": "Al Chat PRO"
+      },
+      {
+        "comment": "",
+        "key": "Unlimited Question"
+      },
+      {
+        "comment": "",
+        "key": "Higher Word Limit"
+      }
+    ]
+  },
+  "version": 1
+}

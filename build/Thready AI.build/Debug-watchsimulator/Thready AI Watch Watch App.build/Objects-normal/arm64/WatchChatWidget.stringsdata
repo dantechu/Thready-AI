@@ -1,0 +1,16 @@
+{
+  "source": "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/AskMeAnyThing/WatchChatWidget.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Error: %@"
+      },
+      {
+        "comment": "",
+        "key": "Regenerate response"
+      }
+    ]
+  },
+  "version": 1
+}

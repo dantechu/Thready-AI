@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBotIcon</string>
+			<key>relativePath</key>
+			<string>./botIcon.imageset</string>
+			<key>swiftSymbol</key>
+			<string>botIcon</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling0</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-0.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling0</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling1</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling10</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-10.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling10</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling11</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-11.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling11</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling12</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-12.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling12</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling13</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-13.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling13</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling14</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-14.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling14</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling15</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-15.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling15</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling16</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling17</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-17.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling17</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling18</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-18.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling18</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling19</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-19.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling19</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling2</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling20</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling21</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-21.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling21</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling22</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-22.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling22</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling23</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-23.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling23</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling24</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling25</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-25.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling25</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling26</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-26.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling26</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling27</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-27.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling27</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling28</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-28.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling28</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling29</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling3</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling30</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-30.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling30</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling31</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-31.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling31</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling32</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling33</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-33.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling33</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling34</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-34.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling34</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling35</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-35.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling35</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling36</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-36.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling36</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling37</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-37.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling37</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling38</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling39</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-39.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling39</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling4</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-4.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling4</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling40</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling41</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-41.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling41</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling42</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-42.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling42</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling43</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-43.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling43</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling44</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-44.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling44</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling45</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-45.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling45</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling46</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-46.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling46</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling47</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-47.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling47</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling48</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-48.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling48</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling49</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-49.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling49</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling5</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling5</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling50</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-50.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling50</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling6</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-6.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling6</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling7</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-7.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling7</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling8</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-8.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling8</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameSmiling9</string>
+			<key>relativePath</key>
+			<string>./gifImags/smiling-9.imageset</string>
+			<key>swiftSymbol</key>
+			<string>smiling9</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

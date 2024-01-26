@@ -1,0 +1,20 @@
+{
+  "source": "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/ChatGptApp/Shared/Ask Me AnyThing Widgets/AskInputField.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Ask Me Anything"
+      },
+      {
+        "comment": "",
+        "key": "Reply"
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

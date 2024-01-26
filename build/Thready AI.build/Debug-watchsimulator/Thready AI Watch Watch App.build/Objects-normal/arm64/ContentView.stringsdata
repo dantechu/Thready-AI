@@ -1,0 +1,28 @@
+{
+  "source": "/Users/pankajbhuva/Downloads/Fiverr/Main/ChatGptApp/Thready AI Watch Watch App/AskMeAnyThing/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "%lld queries left"
+      },
+      {
+        "comment": "",
+        "key": "Ask Me Anything"
+      },
+      {
+        "comment": "",
+        "key": "Reply"
+      },
+      {
+        "comment": "",
+        "key": "Done"
+      }
+    ]
+  },
+  "version": 1
+}
