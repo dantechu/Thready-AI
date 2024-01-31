@@ -22,7 +22,8 @@ struct AskMeAnyThing: View {
     @AppStorage(TOTALSEARCHDONE) private var TOTALSEARCHVALUE:Int = 0
     @AppStorage(PURCHASEDSTATUSLIFETIME) private var purchaseStatusLifeTime:Int = 0
     @AppStorage(PURCHASEDSTATUSMONTHLY) private var purchasedStatusMonthly:Int = 0
-    
+    @EnvironmentObject var manager: DataManager
+    @Environment(\.managedObjectContext) var viewContext
     
     
     var body: some View {
@@ -42,6 +43,7 @@ struct AskMeAnyThing: View {
                 ChatHeader(messagesCount: vm.messages.count) {
                     shareLastMessage()
                 } finishTapped: {
+                    saveChatToTable()
                     vm.messages.removeAll()
                 }
                 
@@ -54,6 +56,8 @@ struct AskMeAnyThing: View {
         }
         .onAppear {
             loadInterstitial()
+        }
+        .onDisappear {
         }
     }
     
@@ -122,7 +126,8 @@ struct AskMeAnyThing: View {
             
         }
         .fullScreenCover(isPresented: $isPresentingSettings) {
-            Settings()
+            Settings().environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
         .sheet(isPresented: $showButtonSheet) {
             PersonasList(personaTapped: {selectedCat,selectedItem in
@@ -183,6 +188,25 @@ extension AskMeAnyThing{
     
     private func moveToPremiumScreen(){
         isPresentingAdRemoveScreen = true
+    }
+    
+    private func saveChatToTable() {
+        vm.messages.forEach { message in
+      var  history = ChatHistory(context: self.viewContext)
+            history.sendText = message.sendText
+            history.sendImage = message.sendImage
+            history.chatDate = Date()
+            history.isInteractingWithChatGPT =  message.isInteractingWithChatGPT
+            history.responseImage =  message.responseImage
+            history.responseText =  message.responseText
+            history.responseError = message.responseError
+            do {
+                try self.viewContext.save()
+                print("Todo saved!")
+            } catch {
+                print("whoops \(error.localizedDescription)")
+            }
+        }
     }
     
     private func hideKeyboard(){

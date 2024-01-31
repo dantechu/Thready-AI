@@ -11,6 +11,14 @@
 		1095C9F82B60EB4E00303575 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095C9F72B60EB4E00303575 /* PhoneConnector.swift */; };
 		1096B8602B5DF594007B1EEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */; };
 		1096B8632B5E26FA007B1EEE /* Thready AI Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DD1B2B772B41682F0075B8C9 /* Thready AI Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10A0751A2B68D06700599606 /* Thread AI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10A075182B68D06700599606 /* Thread AI.xcdatamodeld */; };
+		10A075222B68D3D600599606 /* ChatHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075202B68D3D600599606 /* ChatHistory+CoreDataProperties.swift */; };
+		10A075232B68D3D600599606 /* ChatHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075212B68D3D600599606 /* ChatHistory+CoreDataClass.swift */; };
+		10A075252B68D41900599606 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075242B68D41900599606 /* DataManager.swift */; };
+		10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075272B69250900599606 /* ChatHistoryDateView.swift */; };
+		10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0752B2B69269B00599606 /* ChatHistoryDetailView.swift */; };
+		10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */; };
+		10DE301B2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */; };
 		3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455A29E3030500DB80A7 /* GetApiKey.swift */; };
 		3713455E29E303C500DB80A7 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455D29E303C500DB80A7 /* Colors+Extension.swift */; };
 		3713456129E3285700DB80A7 /* GetApiKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713456029E3285700DB80A7 /* GetApiKeyViewModel.swift */; };
@@ -114,6 +122,14 @@
 		1095C9F52B60EAE100303575 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		1095C9F72B60EB4E00303575 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10A075192B68D06700599606 /* Thread AI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Thread AI.xcdatamodel"; sourceTree = "<group>"; };
+		10A075202B68D3D600599606 /* ChatHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		10A075212B68D3D600599606 /* ChatHistory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		10A075242B68D41900599606 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		10A075272B69250900599606 /* ChatHistoryDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateView.swift; sourceTree = "<group>"; };
+		10A0752B2B69269B00599606 /* ChatHistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDetailView.swift; sourceTree = "<group>"; };
+		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
+		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
 		3713455D29E303C500DB80A7 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		3713456029E3285700DB80A7 /* GetApiKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKeyViewModel.swift; sourceTree = "<group>"; };
@@ -202,9 +218,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A0751B2B68D2E800599606 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				10A075212B68D3D600599606 /* ChatHistory+CoreDataClass.swift */,
+				10A075202B68D3D600599606 /* ChatHistory+CoreDataProperties.swift */,
+				10A075242B68D41900599606 /* DataManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		10A075262B6924DD00599606 /* ChatHistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				10A075272B69250900599606 /* ChatHistoryDateView.swift */,
+				10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */,
+				10A0752B2B69269B00599606 /* ChatHistoryDetailView.swift */,
+				10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */,
+			);
+			path = ChatHistoryView;
+			sourceTree = "<group>";
+		};
 		3713455929E302EF00DB80A7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				10A075262B6924DD00599606 /* ChatHistoryView */,
 				55624D882B45F3B30070A937 /* MailComposeViewController */,
 				3797A36529F64CD300EE6415 /* EmojiSelection */,
 				3797A30229F5B11C00EE6415 /* About */,
@@ -272,6 +310,7 @@
 		3713459B29E4A7DB00DB80A7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				10A0751B2B68D2E800599606 /* DataBase */,
 				55F022EA2B40AEF300618A27 /* Config */,
 				37F4F2B32A00ED3A0074A89F /* IAP */,
 				3713455C29E303B700DB80A7 /* Utilities */,
@@ -362,6 +401,7 @@
 				377D66B129E29A98004AC41B /* Assets.xcassets */,
 				A31125BB2B1598EB0096A69E /* GoogleService-Info.xml */,
 				377D66B329E29A98004AC41B /* Preview Content */,
+				10A075182B68D06700599606 /* Thread AI.xcdatamodeld */,
 			);
 			path = ChatGptApp;
 			sourceTree = "<group>";
@@ -715,30 +755,38 @@
 				1095C9F62B60EAE100303575 /* WatchConnector.swift in Sources */,
 				3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */,
 				3713456429E32FD200DB80A7 /* ActivityIndicatorLoading.swift in Sources */,
+				10A075232B68D3D600599606 /* ChatHistory+CoreDataClass.swift in Sources */,
 				377BEA6D2A004B4300B811FA /* AdsRemoved.swift in Sources */,
 				371345A829E4A7DC00DB80A7 /* ChatGPTAPIModels.swift in Sources */,
 				376E1A2829E6A54500F1ACF6 /* SettingsItem.swift in Sources */,
+				10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */,
 				37B1991229FA4D66007FA005 /* PersonasList.swift in Sources */,
 				3713456E29E34DF900DB80A7 /* AskMeAnyThing.swift in Sources */,
 				3713456129E3285700DB80A7 /* GetApiKeyViewModel.swift in Sources */,
 				37F4F2BB2A0167F70074A89F /* AutoRenewablePurchaseManager.swift in Sources */,
 				371345A629E4A7DC00DB80A7 /* AskMeAnyThingViewModel.swift in Sources */,
+				10A075222B68D3D600599606 /* ChatHistory+CoreDataProperties.swift in Sources */,
+				10DE301B2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift in Sources */,
 				37F4F2B52A00ED410074A89F /* NonConsumablePurchaseManager.swift in Sources */,
+				10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */,
 				3713457D29E46A8B00DB80A7 /* ChatHeader.swift in Sources */,
 				371345A529E4A7DC00DB80A7 /* ChatGPTAPI.swift in Sources */,
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
+				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
 				376E1A2629E69F8A00F1ACF6 /* Settings.swift in Sources */,
 				3797A30429F5B12E00EE6415 /* About.swift in Sources */,
 				55624D8A2B45F3C90070A937 /* MailComposeViewController.swift in Sources */,
 				377D66AE29E29A97004AC41B /* ChatGptAppApp.swift in Sources */,
 				3797A36729F64CEB00EE6415 /* EmojiSelectection.swift in Sources */,
 				376E1A2C29E6C15D00F1ACF6 /* View+Extension.swift in Sources */,
+				10A075252B68D41900599606 /* DataManager.swift in Sources */,
 				37B0750229F1E45000607BB2 /* Constants.swift in Sources */,
 				378DA58529EA947F00FDECD2 /* GifImageMobile.swift in Sources */,
 				377BEA6A2A00439200B811FA /* SubscriptionRequired.swift in Sources */,
 				37B1991029FA497C007FA005 /* Suggestions.swift in Sources */,
 				3713455E29E303C500DB80A7 /* Colors+Extension.swift in Sources */,
+				10A0751A2B68D06700599606 /* Thread AI.xcdatamodeld in Sources */,
 				3713457B29E4686800DB80A7 /* ChatWidget.swift in Sources */,
 				376E1A2329E68FE000F1ACF6 /* AskInputField.swift in Sources */,
 				377BEA642A0019E600B811FA /* EnginesResponse.swift in Sources */,
@@ -1122,6 +1170,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10A075182B68D06700599606 /* Thread AI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10A075192B68D06700599606 /* Thread AI.xcdatamodel */,
+			);
+			currentVersion = 10A075192B68D06700599606 /* Thread AI.xcdatamodel */;
+			path = "Thread AI.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 377D66A229E29A96004AC41B /* Project object */;
 }

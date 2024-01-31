@@ -20,7 +20,8 @@ struct ChatGptAppApp: App {
     @AppStorage(PURCHASEDSTATUSMONTHLY) private var purchasedStatusMonthly:Int = 0
     @AppStorage(ENABLESPEECHSERDEFAULT) private var isSpeechEnabled = true
     @StateObject var apiCallModel = ApiKeyViewModel()
-    
+    @StateObject private var manager: DataManager = DataManager()
+
     
     init() {
         FirebaseApp.configure()
@@ -36,12 +37,18 @@ struct ChatGptAppApp: App {
             if apiCallModel.isApiCall {
                 if purchasedStatusMonthly == 1 {
                     AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+                        .environmentObject(manager)
+                        .environment(\.managedObjectContext, manager.container.viewContext)
                         .preferredColorScheme(.light) // set the preferred color scheme to light
                 } else if !ApiKeyValue.isEmpty {
                     AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+                        .environmentObject(manager)
+                        .environment(\.managedObjectContext, manager.container.viewContext)
                         .preferredColorScheme(.light) // set the preferred color scheme to light
                 } else {
                     AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+                        .environmentObject(manager)
+                        .environment(\.managedObjectContext, manager.container.viewContext)
                         .preferredColorScheme(.light) // set the preferred color scheme to light
                 }
             }

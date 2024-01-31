@@ -28,8 +28,7 @@ enum SettingsItemTypeIphone{
     case bugReport
     case roadmap
     case about
-
-    
+    case chatHistory    
 }
 
 enum SettingsItemTypeWatch{

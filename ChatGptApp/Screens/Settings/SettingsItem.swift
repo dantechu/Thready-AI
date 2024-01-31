@@ -76,6 +76,23 @@ struct SettingsItem: View {
             
             
             
+        }else if settingsItemType == .chatHistory{
+            HStack {
+                getLeadingIcon()
+                Spacer()
+                getTrailingIcon()
+            }
+            
+            .foregroundColor(.white)
+            .frame(height: 70)
+            .padding(.horizontal, 16)
+            .background(Color.TEXTFIELDBGCOLOR)
+            .cornerRadius(roundTopCorners(), corners: [.topLeft, .topRight])
+            .cornerRadius(roundBottomCorners(), corners: [.bottomLeft, .bottomRight])
+            .padding(.horizontal, 16)
+            
+            
+            
         }else if settingsItemType == .apiKey{
             HStack {
                 getLeadingIcon()
@@ -164,6 +181,8 @@ struct SettingsItem: View {
             return 0
         case .about:
             return 0
+        case .chatHistory:
+            return 0
         }
     }
     
@@ -189,6 +208,8 @@ struct SettingsItem: View {
             return 0
         case .about:
             return 10
+        case .chatHistory:
+            return 0
         }
     }
     
@@ -213,6 +234,8 @@ struct SettingsItem: View {
         case .roadmap:
             return 0
         case .about:
+            return 0
+        case .chatHistory:
             return 10
         }
     }
@@ -333,7 +356,17 @@ struct SettingsItem: View {
                 }
                 
             )
-            
+        case .chatHistory:
+            return AnyView(
+                HStack {
+                    getSystemICon(name: "message")
+                        .foregroundColor(.gray)
+                    
+                    getTitle(title: "Chat History")
+                    
+                }
+                
+            )
             
         }
         
@@ -423,6 +456,8 @@ struct SettingsItem: View {
             
             
         case .about:
+            return AnyView(Text(""))
+        case .chatHistory:
             return AnyView(Text(""))
             
             

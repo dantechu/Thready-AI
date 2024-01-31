@@ -10,6 +10,8 @@ import SwiftUI
 struct Settings: View {
     @Environment(\.presentationMode) var presentationMode
     @AppStorage(SELECTEDCOLORVALUE) private var PRIMARYCOLORVALUE:Int = 0
+    @EnvironmentObject var manager: DataManager
+    @Environment(\.managedObjectContext) var viewContext
     
     init() {
         
@@ -104,6 +106,12 @@ struct Settings: View {
                     })
                     .accentColor(.red)
                     
+                    NavigationLink(destination: ChatHistoryDateView() .environmentObject(manager)
+                        .environment(\.managedObjectContext, manager.container.viewContext), label: {
+                        SettingsItem(settingsItemType: .chatHistory)
+                    })
+                    .accentColor(.red)
+
 
                     
                 }
