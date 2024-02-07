@@ -11,36 +11,83 @@ import SwiftUI
 @main
 struct ChatGptApp_Watch_AppApp: App {
     @AppStorage(WATCHURCHASEDSTATUSMONTHLY) private var watchPurchasedStatusMonthly:Int = 0
-    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 0
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
     @AppStorage(LASTANSWEREDDATE) var lastAnsweredDateString: String = ""
     @AppStorage("apiKey") var apiKey: String = ""
+    @StateObject var apiCallModel = ApiKeyViewModel()
 
     init(){
         print(apiKey)
-        let userDefaults = UserDefaults(suiteName: "group.Com.jeanpaul.mikeyaiassistant")
-        internalApiKey = userDefaults?.string(forKey: "apiKey") ?? ""
-        if internalApiKey.isEmpty {
-            internalApiKey = "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"
-        }
-        checkMonthlyPurchasing()
+        PhoneConnector.shared.setup()
+        internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+        //checkMonthlyPurchasing()
         checkRemainingQuery()
+        checkLifeTimePurchasing()
     }
     
     
     var body: some Scene {
         WindowGroup {
-            ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey),enableSpeech: true) )
+            if apiCallModel.isApiCall {
+                ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey),enableSpeech: true) )
+            }else {
+                FullScreenLoading()
+            }
+        }
+    }
+    
+    func checkLifeTimePurchasing(){
+        let status = NonConsumablePurchaseManager.shared.hasPurchasedProduct(lifeTimeAIPId)
+        print("life time status ",status)
+        NonConsumablePurchaseManager.shared.restorePurchases { success, error in
+            if success {
+                //purchaseStatusLifeTime = 1
+                watchPurchasedStatusMonthly = 1
+
+            } else {
+                //purchaseStatusLifeTime = 0
+                watchPurchasedStatusMonthly = 0
+
+
+            }
+        }
+        if status {
+            //purchaseStatusLifeTime = 1
+            watchPurchasedStatusMonthly = 1
+
+        }else{
+            //purchaseStatusLifeTime = 0
+            watchPurchasedStatusMonthly = 0
+
         }
     }
     
     func checkMonthlyPurchasing(){
-        let subscriptionManager = SubscriptionManager(productIDs: [monthlySubscriptionAIPIdWatch])
+       // let subscriptionManager = SubscriptionManager(productIDs: [monthlySubscriptionAIPIdWatch])
+        watchPurchasedStatusMonthly = 0
+
+        let subscriptionManager = SubscriptionManager(productIDs: [monthlyAIPId, weeklyAIPId, yearlylyAIPId])
         let status = subscriptionManager.checkSubscriptionStatus()
+        subscriptionManager.restoreProduct { result in
+           print(result)
+        }
         if status {
             watchPurchasedStatusMonthly = 1
-        }else{
-            watchPurchasedStatusMonthly = 0
         }
+
+        let status3 = subscriptionManager.hasPurchased(productID: monthlyAIPId)
+//        if status3 {
+//            watchPurchasedStatusMonthly = 1
+//        }
+//        let status1 = subscriptionManager.hasPurchased(productID: weeklyAIPId)
+//        if status1 {
+//            watchPurchasedStatusMonthly = 1
+//        }
+//        let status2 = subscriptionManager.hasPurchased(productID: yearlylyAIPId)
+//        if status2 {
+//            watchPurchasedStatusMonthly = 1
+//        }
+
     }
     
     
@@ -55,11 +102,11 @@ struct ChatGptApp_Watch_AppApp: App {
         if lastAnsweredDateString.isEmpty || dateFormatter.date(from: lastAnsweredDateString) == nil {
             // If lastAnsweredDateString is empty or not a valid date string, assume it's a new day
             lastAnsweredDateString = dateFormatter.string(from: currentDate)
-            queryCounter = 3
+            queryCounter = 10
         } else if let lastAnsweredDate = dateFormatter.date(from: lastAnsweredDateString),
                   !calendar.isDate(currentDate, inSameDayAs: lastAnsweredDate) {
             // Reset the query counter for the new day
-            queryCounter = 3
+            queryCounter = 10
             lastAnsweredDateString = dateFormatter.string(from: currentDate)
         }
         
@@ -77,3 +124,51 @@ extension Date {
         return Date()
     }
 }
+
+
+
+class ApiKeyViewModel: ObservableObject
+{
+    @Published var isApiCall = false
+    init() {
+        getApi_Key()
+    }
+    
+    func getApi_Key() {
+       
+        isApiCall = false
+        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/bxGZIPaKzvgjNrKc/firestore/allDocuments?collectionName=Result") else {
+          return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          if let error = error {
+            print(error)
+              self.isApiCall = true
+            return
+          }
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!) as! NSArray
+                var dic = json[0] as! [String:Any]
+                print(dic)
+                var valueDic = dic["_fieldsProto"] as! [String:Any]
+                var apiDic = valueDic["Apikey"] as! [String:Any]
+                var key = apiDic["stringValue"] as? String ?? ""
+                internalApiKey = key
+                KeychainWrapper.standard.set(key, forKey: "apiKey")
+                print(apiDic["stringValue"])
+                self.isApiCall = true
+
+               } catch {
+                   print("error")
+               }
+            print(response)
+        }
+        task.resume()
+            
+      
+    }
+}
+

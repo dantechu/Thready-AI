@@ -131,16 +131,16 @@ struct WatchChatWidget: View {
             
             
             
-            Button(action: {
-                speakingActionTapped?()
-                
-            }) {
-                Image(systemName: isSpeaking ? "speaker.wave.3.fill" : "speaker.slash.fill")
-                    .foregroundColor(.white)
-            }
-            .background(Color.getCurrentColor(PRIMARYCOLORVALUE))
-            .frame(height: 30)
-            .cornerRadius(3)
+//            Button(action: {
+//                speakingActionTapped?()
+//                
+//            }) {
+//                Image(systemName: isSpeaking ? "speaker.wave.3.fill" : "speaker.slash.fill")
+//                    .foregroundColor(.white)
+//            }
+//            .background(Color.getCurrentColor(PRIMARYCOLORVALUE))
+//            .frame(height: 30)
+//            .cornerRadius(3)
             
         }
             

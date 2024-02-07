@@ -47,7 +47,7 @@ struct ChatHeader: View {
             Button(action: {
                 finishTapped?()
             }) {
-                Text("Finish")
+                Text("Save")
                     .foregroundColor(Color.getCurrentColor(PRIMARYCOLORVALUE))
                     .font(.system(size: 22))
                     .fontWeight(.bold)

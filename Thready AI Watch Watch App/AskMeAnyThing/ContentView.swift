@@ -12,11 +12,9 @@ struct ContentView: View {
     @ObservedObject var vm: AskMeAnyThingViewModel
     @AppStorage(SELECTEDCOLORVALUE) private var PRIMARYCOLORVALUE:Int = 0
     @AppStorage(WATCHURCHASEDSTATUSMONTHLY) private var watchPurchasedStatusMonthly:Int = 0
-    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 0
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
 
     @State private var isPresentingSettings = false
-    
-    
     @State private var showButtonSheet = false
     @State private var showDetailsList = false
     @State private var shouldDismissScreens = false

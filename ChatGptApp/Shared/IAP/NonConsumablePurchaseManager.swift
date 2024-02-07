@@ -67,11 +67,11 @@ class NonConsumablePurchaseManager: NSObject, ObservableObject, SKProductsReques
 
             self.products = response.products
             for prod in self.products {
-                if prod.productIdentifier == "Com.jeanpaul.mikeyaiassistant.weekly" {
+                if prod.productIdentifier == "com.amazingelearning.thready.weekly" {
                     weekly = prod
-                }else if prod.productIdentifier == "Com.jeanpaul.mikeyaiassistant.monthly2" {
+                }else if prod.productIdentifier == "com.amazingelearning.thready.monthly" {
                     monthly = prod
-                }else if prod.productIdentifier == "Com.jeanpaul.mikeyaiassistant.yearly" {
+                }else if prod.productIdentifier == "com.amazingelearning.thready.yearly" {
                     yearly = prod
                 }else {
 

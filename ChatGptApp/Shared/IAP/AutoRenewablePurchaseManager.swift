@@ -7,7 +7,10 @@
 
 import Foundation
 import StoreKit
-
+import UIKit
+protocol subcriptionDelegate {
+    func productPurchased(val:Date)
+}
 class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
     
     
@@ -16,7 +19,7 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
     private var fetchPriceCompletion: ((Result<(price: String, currencyCode: String), Error>) -> Void)?
     private var purchaseCompletion: ((Result<Void, Error>) -> Void)?
     private var restoreCompletion: ((Result<Void, Error>) -> Void)?
-    
+    var delegate:subcriptionDelegate?
     private var products = [SKProduct]()
     
     init(productIDs: Set<String>) {
@@ -30,6 +33,7 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
     }
     
     // MARK: - Fetch Product Price
+    
     
     func fetchProductPrice(for productID: String, completion: @escaping (Result<(price: String, currencyCode: String), Error>) -> Void) {
         guard SKPaymentQueue.canMakePayments() else {
@@ -132,13 +136,30 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
     }
     
     // MARK: - SKPaymentTransactionObserver
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        for transaction in queue.transactions {
+            let t: SKPaymentTransaction = transaction as SKPaymentTransaction
+            let prodID = t.payment.productIdentifier as String
+            switch prodID{
+            case "IAP id":
+                print("Remove Ads")
+            default:
+                print("IAP not setup")
+            }
+        }
+    }
     
+    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+        print(error)
+    }
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
             switch transaction.transactionState {
             case .purchased:
                 complete(transaction: transaction)
-                UserDefaults.standard.set(Date().addingTimeInterval(30 * 24 * 60 * 60), forKey: "subscriptionPurchase")
+                var val = Date().addingTimeInterval(30 * 24 * 60 * 60)
+                UserDefaults.standard.set(val, forKey: "subscriptionPurchase")
+                delegate?.productPurchased(val: val)
             case .failed:
                 fail(transaction: transaction)
             case .restored:

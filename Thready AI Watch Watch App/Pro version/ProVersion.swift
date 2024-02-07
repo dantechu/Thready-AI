@@ -16,7 +16,7 @@ enum AlertType {
 
 struct ProVersion: View {
     @AppStorage(SELECTEDCOLORVALUE) private var PRIMARYCOLORVALUE:Int = 0
-    let subscriptionManager = SubscriptionManager(productIDs: [monthlySubscriptionAIPIdWatch])
+    let subscriptionManager = SubscriptionManager(productIDs: [monthlyAIPId])
     
     
     @State var failureError = ""
@@ -105,9 +105,9 @@ struct ProVersion: View {
             HStack{
                 Spacer()
                 
-                Text("Al Chat PRO")
+                Text("Your free credit limit has been exceeded.Please use phone app to buy subscription")
                     .foregroundColor(.getCurrentColor(PRIMARYCOLORVALUE))
-                    .font(.system(size: 20))
+                    .font(.system(size: 15))
                 
                 Spacer()
             }
@@ -115,47 +115,47 @@ struct ProVersion: View {
             
             
             
-            VStack(spacing: 5){
-                
-                HStack {
-                    Image(systemName: "checkmark")
-                    Text("Unlimited Question")
-                        .font(.system(size: 14))
-                }
-                
-                HStack {
-                    Image(systemName: "checkmark")
-                    Text("Higher Word Limit")
-                        .font(.system(size: 14))
-                }
-                
-            }
+//            VStack(spacing: 5){
+//
+//                HStack {
+//                    Image(systemName: "checkmark")
+//                    Text("Unlimited Question")
+//                        .font(.system(size: 14))
+//                }
+//
+//                HStack {
+//                    Image(systemName: "checkmark")
+//                    Text("Higher Word Limit")
+//                        .font(.system(size: 14))
+//                }
+//
+//            }
             
             
             
-         
-            Button {
-                purchaseProTapped()
-            } label: {
-                Text(price)
-            }
-            .background(Color.getCurrentColor(PRIMARYCOLORVALUE))
-            .cornerRadius(10, corners: .allCorners)
-
-
-            
-            
+//
+//            Button {
+//                purchaseProTapped()
+//            } label: {
+//                Text(price)
+//            }
+//            .background(Color.getCurrentColor(PRIMARYCOLORVALUE))
+//            .cornerRadius(10, corners: .allCorners)
+//
+//
+//
+//
             
         }
         .onAppear {
-            subscriptionManager.fetchProductPrice(for: monthlySubscriptionAIPIdWatch) { result in
-                switch result {
-                case .success(let price):
-                    self.price = "\(price.currencyCode)\(price.price)/Month"
-                case .failure(let error):
-                    print("Failed to fetch product price: \(error.localizedDescription)")
-                }
-            }
+//            subscriptionManager.fetchProductPrice(for: monthlyAIPId) { result in
+//                switch result {
+//                case .success(let price):
+//                    self.price = "\(price.currencyCode)\(price.price)/Month"
+//                case .failure(let error):
+//                    print("Failed to fetch product price: \(error.localizedDescription)")
+//                }
+//            }
 
             
         }

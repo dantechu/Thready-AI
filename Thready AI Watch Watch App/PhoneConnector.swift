@@ -32,6 +32,7 @@ extension PhoneConnector:WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        print(userInfo)
         dataReceivedFromPhone(userInfo)
     }
     
@@ -56,10 +57,16 @@ extension PhoneConnector {
 
 // MARK: - receive data
 extension PhoneConnector {
+    func setup() {
+        
+    }
     
     public func dataReceivedFromPhone(_ info:[String:Any]) {
-        let key = info["data"] as! String
-        internalApiKey = key
-        UserDefaults.standard.set(internalApiKey, forKey: "apiKey")
+        if let key = info["data"] as? String {
+            internalApiKey = key
+            KeychainWrapper.standard.set(internalApiKey, forKey: "apiKey")
+        }else if let date = info["data"] as? Date {
+            UserDefaults.standard.set(date, forKey: "subscriptionPurchase")
+        }
     }
 }

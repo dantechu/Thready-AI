@@ -18,7 +18,9 @@ struct AskMeAnyThing: View {
     @State private var showButtonSheet = false
     @State private var isListening = false
     @State var interstitial: GADInterstitialAd?
-    
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
+    @State private var showPremiumScreen = false
+
     @AppStorage(TOTALSEARCHDONE) private var TOTALSEARCHVALUE:Int = 0
     @AppStorage(PURCHASEDSTATUSLIFETIME) private var purchaseStatusLifeTime:Int = 0
     @AppStorage(PURCHASEDSTATUSMONTHLY) private var purchasedStatusMonthly:Int = 0
@@ -37,8 +39,18 @@ struct AskMeAnyThing: View {
             
             
             VStack {
-
-                purchaseProVersionBtn
+                HStack {
+                    if purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 {
+                        Text(String(queryCounter) + " Credit")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                            .padding(10)
+                        Spacer()
+                    }
+                    
+                    purchaseProVersionBtn
+                    
+                }
                 
                 ChatHeader(messagesCount: vm.messages.count) {
                     shareLastMessage()
@@ -105,13 +117,16 @@ struct AskMeAnyThing: View {
     
     var inputField: some View{
         VStack {
-            
             AskInputField(
                 askMeInput: $vm.inputMessage,
                 isInteractingWithChatGPT: $vm.isInteractingWithChatGPT,
                 isTextFieldFocused: _isTextFieldFocused, isListening: $isListening,
                 isMessageEmpty: $vm.messages.isEmpty) {
                     self.showAd()
+                    if queryCounter == 0 && purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 {isPresentingAdRemoveScreen = true;  return }
+                    if queryCounter !=  0 {
+                        queryCounter -= 1
+                    }
                     Task { @MainActor in
                         await vm.sendTapped()
                     }
@@ -188,6 +203,30 @@ extension AskMeAnyThing{
     
     private func moveToPremiumScreen(){
         isPresentingAdRemoveScreen = true
+    }
+    
+    func checkPurchaseStatus() -> Int {
+       // let subscriptionManager = SubscriptionManager(productIDs: [monthlySubscriptionAIPIdWatch])
+       var watchPurchasedStatus = 0
+        
+        let subscriptionManager = SubscriptionManager(productIDs: [monthlyAIPId, weeklyAIPId, yearlylyAIPId])
+        subscriptionManager.restoreProduct { result in
+            
+        }
+
+        let status3 = subscriptionManager.hasPurchased(productID: monthlyAIPId)
+        if status3 {
+            watchPurchasedStatus = 1
+        }
+        let status1 = subscriptionManager.hasPurchased(productID: weeklyAIPId)
+        if status1 {
+            watchPurchasedStatus = 1
+        }
+        let status2 = subscriptionManager.hasPurchased(productID: yearlylyAIPId)
+        if status2 {
+            watchPurchasedStatus = 1
+        }
+       return watchPurchasedStatus
     }
     
     private func saveChatToTable() {

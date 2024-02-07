@@ -42,7 +42,8 @@ struct ChatHistorywidget: View {
                     .fontWeight(.semibold)
 
                 Spacer()
-                            
+                
+                getMenu(messageTypeEnum: messageTypeEnum,responseError: responseError)
             }
             
             if !text.isEmpty {
@@ -76,6 +77,63 @@ struct ChatHistorywidget: View {
             .cornerRadius(10)
             .padding(.horizontal,15)
     }
+    
+}
+
+
+extension ChatHistorywidget{    
+    func getMenu(messageTypeEnum:MessageTypeEnum, responseError: String? = nil) -> AnyView{
+        
+        if responseError != nil {
+            return AnyView(Text(""))
+        }
+        
+        return AnyView(
+         Menu {
+             ShareLink(item: URL(string: "www.ThreadAI.com")!, subject: Text("Chat AI"), message: Text( (messageTypeEnum == .bot ? message.responseText : message.sendText) ?? "")) {
+                 Label("Share...", systemImage: "square.and.arrow.up")
+             }
+
+         } label: {
+             Image(systemName: "ellipsis")
+                 .foregroundColor(messageTypeEnum == .person ? Color.black : Color.white)
+                 .font(.title2)
+                 .padding(10)
+         }
+        
+        )
+        
+        
+        
+    }
+    
+    func shareText(_ text: String) {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootViewController = windowScene.windows.first?.rootViewController else {
+            return
+        }
+        
+        let avc = UIActivityViewController(activityItems: [text], applicationActivities: nil)
+        rootViewController.present(avc, animated: true, completion: nil)
+    }
+
+    
+    func getLoadingGif()-> some View{
+        
+        HStack{
+            Spacer()
+            
+            GifImageMobile("smiling")
+                .frame(width: 200, height: 200)
+                .transition(AnyTransition.opacity.animation(.linear(duration: 0.5)))
+            
+            Spacer()
+            
+        }
+        
+    }
+    
+    
     
 }
 

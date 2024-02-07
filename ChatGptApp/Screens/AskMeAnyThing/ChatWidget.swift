@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ChatWidget: View {
-    
     let message: MessageRow
     let retryCallback: (MessageRow) -> Void
     let editTapped:(()->Void)?
@@ -24,10 +23,7 @@ struct ChatWidget: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            
             messageRowContent(text: message.sendText, messageTypeEnum: .person)
-            
-            
             if !message.isInteractingWithChatGPT  {
                 messageRowContent(
                     text: message.responseText ?? "" ,
@@ -59,7 +55,7 @@ struct ChatWidget: View {
 
 
                 Spacer()
-                
+            
                 getMenu(messageTypeEnum: messageTypeEnum,responseError: responseError)
                 
 
