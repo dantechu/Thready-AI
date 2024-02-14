@@ -59,6 +59,8 @@ extension WatchConnector:WCSessionDelegate {
     // MARK: use this for testing in simulator
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         //dataReceivedFromWatch(message)
+        print(message)
+        //UserDefaults.standard.set("Dhawan", forKey: "pass")
     }
     
 }

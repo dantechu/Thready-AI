@@ -88,6 +88,10 @@ class AskMeAnyThingViewModel: ObservableObject {
         
     }
 
+    func refreshKey(key:String) {
+        api.refreshKey(key: key)
+    }
+    
     func speakLastResponse(responseText:String, synthesizer: AVSpeechSynthesizer? = nil) {
         self.synthesizer = synthesizer
         guard let synthesizer, !responseText.isEmpty else {

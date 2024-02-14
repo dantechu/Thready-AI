@@ -10,14 +10,15 @@ target 'Thready AI' do
     pod 'Firebase/Storage', '10.16.0'
     pod 'Firebase/Auth', '10.16.0'
     pod 'Firebase/Database', '10.16.0'
+    pod 'Firebase/Firestore'
     pod 'Firebase/Functions', '10.16.0'
     pod 'Firebase/Crashlytics'
     pod 'GoogleAnalytics-iOS-SDK'
     pod 'FirebaseAnalytics'
 
-#    pod 'FacebookCore', '0.9.0'
-#    pod 'FacebookLogin','0.9.0'
-#    pod 'FacebookShare','0.9.0'
-#    pod 'GoogleSignIn', '7.0.0'
+end
 
+
+target 'Thready AI Watch Watch App' do
+  pod 'Firebase/Firestore'
 end

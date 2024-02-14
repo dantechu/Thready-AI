@@ -68,6 +68,10 @@ struct AskMeAnyThing: View {
         }
         .onAppear {
             loadInterstitial()
+            let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+            if !key.isEmpty {
+                WatchConnector.shared.sendDataToWatch(key)
+            }
         }
         .onDisappear {
         }

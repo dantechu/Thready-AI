@@ -135,9 +135,14 @@ class ApiKeyViewModel: ObservableObject
     }
     
     func getApi_Key() {
-       
+//        internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+//        if !internalApiKey.isEmpty {
+//            isApiCall = true
+//            return
+//        }
         isApiCall = false
-        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/bxGZIPaKzvgjNrKc/firestore/allDocuments?collectionName=Result") else {
+        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/mMdpAUCaOywCYNcF/firestore/allDocuments?collectionName=Result") else {
+            isApiCall = true
           return
         }
         var request = URLRequest(url: url)
@@ -146,29 +151,27 @@ class ApiKeyViewModel: ObservableObject
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
           if let error = error {
             print(error)
-              self.isApiCall = true
+              DispatchQueue.main.async {
+                  self.isApiCall = true
+              }
             return
           }
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! NSArray
                 var dic = json[0] as! [String:Any]
-                print(dic)
                 var valueDic = dic["_fieldsProto"] as! [String:Any]
                 var apiDic = valueDic["Apikey"] as! [String:Any]
                 var key = apiDic["stringValue"] as? String ?? ""
-                internalApiKey = key
-                KeychainWrapper.standard.set(key, forKey: "apiKey")
-                print(apiDic["stringValue"])
-                self.isApiCall = true
-
+                DispatchQueue.main.async {
+                    internalApiKey = key
+                    KeychainWrapper.standard.set(key, forKey: "apiKey")
+                    self.isApiCall = true
+                }
                } catch {
                    print("error")
                }
-            print(response)
         }
         task.resume()
-            
-      
     }
 }
 

@@ -11,6 +11,7 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseAnalytics
+import FirebaseFirestore
 
 @main
 struct ChatGptAppApp: App {
@@ -106,7 +107,6 @@ struct ChatGptAppApp: App {
         let firebaseDatabaseRef = Database.database().reference()
         print(Thread.isMainThread)
             firebaseDatabaseRef.child("result").observeSingleEvent(of: .value, with: { (snapshot) in
-                print("ankush",snapshot)
                 ///apiCall = true
                 print(Thread.isMainThread)
                 let value = snapshot.value as? [String:Any]
@@ -132,39 +132,48 @@ class ApiKeyViewModel: ObservableObject
     func getApi_Key() {
         WatchConnector.shared.setup()
         isApiCall = false
-        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/bxGZIPaKzvgjNrKc/firestore/allDocuments?collectionName=Result") else {
-          return
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-          if let error = error {
-            print(error)
-              self.isApiCall = true
-            return
-          }
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!) as! NSArray
-                var dic = json[0] as! [String:Any]
-                print(dic)
-                var valueDic = dic["_fieldsProto"] as! [String:Any]
-                var apiDic = valueDic["Apikey"] as! [String:Any]
-                var key = apiDic["stringValue"] as? String ?? ""
-                KeychainWrapper.standard.set(key, forKey: "apiKey")
-                print(apiDic["stringValue"])
+        let db = Firestore.firestore()
+        db.collection("Result").document("Apikey").getDocument { (document, error) in
+            if let document = document {
+                let title = document.data()?["Apikey"] as? String ?? ""
+                KeychainWrapper.standard.set(title, forKey: "apiKey")
+                WatchConnector.shared.sendDataToWatch(title)
                 DispatchQueue.main.async {
                     self.isApiCall = true
-                    internalApiKey = key
-
+                    internalApiKey = title
                 }
-
-               } catch {
-                   print("error")
-               }
-            print(response)
+            }
         }
-        task.resume()
+        
+//        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/bxGZIPaKzvgjNrKc/firestore/allDocuments?collectionName=Result") else {
+//          return
+//        }
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "GET"
+//
+//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//          if let error = error {
+//            print(error)
+//              self.isApiCall = true
+//            return
+//          }
+//            do {
+//                let json = try JSONSerialization.jsonObject(with: data!) as! NSArray
+//                var dic = json[0] as! [String:Any]
+//                var valueDic = dic["_fieldsProto"] as! [String:Any]
+//                var apiDic = valueDic["Apikey"] as! [String:Any]
+//                var key = apiDic["stringValue"] as? String ?? ""
+//                KeychainWrapper.standard.set(key, forKey: "apiKey")
+//                DispatchQueue.main.async {
+//                    self.isApiCall = true
+//                    internalApiKey = key
+//                }
+//
+//               } catch {
+//                   print("error")
+//               }
+//        }
+//        task.resume()
         
         
 //        isApiCall = false

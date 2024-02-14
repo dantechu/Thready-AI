@@ -71,6 +71,10 @@ class ChatGPTAPI: @unchecked Sendable {
         self.historyList.append(.init(role: "assistant", content: responseText))
     }
     
+    func refreshKey(key:String) {
+        self.apiKey = key
+    }
+    
     func sendMessageStream(text: String) async throws -> AsyncThrowingStream<String, Error> {
         var urlRequest = self.urlRequest
         urlRequest.httpBody = try jsonBody(text: text)
