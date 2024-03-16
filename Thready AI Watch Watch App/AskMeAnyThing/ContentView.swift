@@ -90,7 +90,7 @@ struct ContentView: View {
                     
                     if queryCounter == 0 && watchPurchasedStatusMonthly == 0 {showPremiumScreen = true;  return }
                     queryCounter -= 1
-                    
+                    PhoneConnector.shared.sendDataToPhone(queryCounter)
                     Task { @MainActor in
                         await vm.sendTapped()
                     }
@@ -156,7 +156,7 @@ extension ContentView{
         VStack(spacing: watchPurchasedStatusMonthly == 0 ? 20 : 0){
             
             if watchPurchasedStatusMonthly == 0{
-                Text("\(queryCounter) queries left")
+                Text("\(queryCounter) credits left")
             }
             
             

@@ -10,8 +10,8 @@ import SwiftUI
 struct AdsRemoved: View {
     @AppStorage(SELECTEDCOLORVALUE) private var PRIMARYCOLORVALUE:Int = 0
     @AppStorage(PURCHASEDSTATUSLIFETIME) private var purchaseStatusLifeTime:Int = 0
-    
-    @StateObject var purchaseManager = NonConsumablePurchaseManager.shared
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
+    @StateObject var purchaseManager = ConsumablePurchaseManager.shared
     @State var isLoading = false
     @State var showAlert: Bool = false
     @State private var currentAlert: AlertType = .success
@@ -36,7 +36,7 @@ struct AdsRemoved: View {
                                 Text("OK"),
                                 action: {
                                     showAlert = false
-                                    purchaseStatusLifeTime = 1
+                                    //purchaseStatusLifeTime = 1
                                     crossTapped?()
                                 }
                             )
@@ -62,7 +62,7 @@ struct AdsRemoved: View {
                                 Text("OK"),
                                 action: {
                                     showAlert = false
-                                    purchaseStatusLifeTime = 1
+                                    //purchaseStatusLifeTime = 1
                                     crossTapped?()
                                 }
                             )
@@ -104,7 +104,7 @@ struct AdsRemoved: View {
             }
         }
         .onAppear {
-            purchaseManager.fetchProducts([weeklyAIPId, monthlyAIPId, yearlylyAIPId])
+            purchaseManager.fetchProducts([HundredAIPId, FiveHundredAIPId, thousandAIPId])
         }
     }
     
@@ -140,7 +140,7 @@ struct AdsRemoved: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            Text("Go Premium and you will get unlimited usages, pro features and removal of ads. Pay a weekly, monthly, or yearly fee and Cancel anytime.")
+            Text("Go Premium and you will get unlimited usages, purchase points to get credit to access the premium features. Credit never expires so no need to worry about weekly/monthly subscription.Get 100, 500 or 1000 points now!")
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 15))
@@ -187,17 +187,17 @@ struct AdsRemoved: View {
         VStack(spacing: 16) {
 
             Button(action: {
-                purchaseWeeklyTapped()
+                purchaseHundredPointsTapped()
             }) {
                 HStack {
-                    Text(" Purchase Weekly ")
+                    Text(" Purchase 100 Points ")
                         .font(.system(size: 16))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 
                     Spacer()
                     if purchaseManager.products.count > 0 {
-                        Text("\(purchaseManager.products.first?.priceLocale.currencySymbol ?? "$") \(purchaseManager.products.first?.price ?? 0)/Week  ")
+                        Text("\(purchaseManager.products.first?.priceLocale.currencySymbol ?? "$") \(purchaseManager.products.first?.price ?? 0)" + " ")
                             .font(.system(size: 13))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -215,17 +215,17 @@ struct AdsRemoved: View {
             .cornerRadius(10)
 
             Button(action: {
-               purchaseMonthlyTapped()
+                purchaseFiveHundredPointsTapped()
             }) {
                 HStack {
-                    Text(" Purchase Monthly")
+                    Text(" Purchase 500 Points")
                         .font(.system(size: 16))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 
                     Spacer()
                     if purchaseManager.products.count > 1 {
-                        Text("\(purchaseManager.products[1].priceLocale.currencySymbol ?? "$") \(purchaseManager.products[1].price )/Month  ")
+                        Text("\(purchaseManager.products[1].priceLocale.currencySymbol ?? "$") \(purchaseManager.products[1].price )" + " ")
                             .font(.system(size: 13))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -244,10 +244,10 @@ struct AdsRemoved: View {
             }
 
             Button(action: {
-                purchaseYearlyTapped()
+                purchaseThousandPointsTapped()
             }) {
                 HStack {
-                    Text(" Purchase Yearly")
+                    Text(" Purchase 1000 Points")
                         .font(.system(size: 16))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -255,7 +255,7 @@ struct AdsRemoved: View {
                     Spacer()
 
                     if purchaseManager.products.count > 2 {
-                        Text("\(purchaseManager.products[2].priceLocale.currencySymbol ?? "$") \(purchaseManager.products[2].price )/Year  ")
+                        Text("\(purchaseManager.products[2].priceLocale.currencySymbol ?? "$") \(purchaseManager.products[2].price )" + " ")
                             .font(.system(size: 13))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -321,16 +321,19 @@ extension AdsRemoved{
         
     }
     
-    func purchaseWeeklyTapped(){
-        
+    func purchaseHundredPointsTapped(){
         isLoading = true
         guard let productToPurchase = purchaseManager.products.first else { return }
         purchaseManager.purchaseProduct(productToPurchase) { success, error in
             isLoading = false
             if success {
+                queryCounter = queryCounter + 100
                 showAlert = true
                 currentAlert = .success
-
+                let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+                if !key.isEmpty {
+                    WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
+                }
             } else {
                 failureError = error ?? ""
                 showAlert = true
@@ -340,15 +343,19 @@ extension AdsRemoved{
         }
     }
 
-    func purchaseMonthlyTapped(){
+    func purchaseFiveHundredPointsTapped(){
         isLoading = true
         let productToPurchase = purchaseManager.products[1]
         purchaseManager.purchaseProduct(productToPurchase) { success, error in
             isLoading = false
             if success {
+                queryCounter = queryCounter + 500
                 showAlert = true
                 currentAlert = .success
-
+                let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+                if !key.isEmpty {
+                    WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
+                }
             } else {
                 failureError = error ?? ""
                 showAlert = true
@@ -359,15 +366,19 @@ extension AdsRemoved{
 
     }
 
-    func purchaseYearlyTapped(){
+    func purchaseThousandPointsTapped(){
         isLoading = true
         let productToPurchase = purchaseManager.products[2]
         purchaseManager.purchaseProduct(productToPurchase) { success, error in
             isLoading = false
             if success {
+                queryCounter = queryCounter + 1000
                 showAlert = true
                 currentAlert = .success
-
+                let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+                if !key.isEmpty {
+                    WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
+                }
             } else {
                 failureError = error ?? ""
                 showAlert = true

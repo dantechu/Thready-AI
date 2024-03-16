@@ -6,6 +6,8 @@
 	<string>$(API_KEY)</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9740790965972178~7235616905</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>

@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import Foundation
 import WatchConnectivity
+import SwiftUI
+
 class PhoneConnector:NSObject {
-        
     static let shared = PhoneConnector()
-    
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
     public let session = WCSession.default
-                
     private override init() {
         super.init()
         if WCSession.isSupported() {
@@ -24,21 +25,32 @@ class PhoneConnector:NSObject {
 
 extension PhoneConnector:WCSessionDelegate {
     
+   
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if let error = error {
             print("session activation failed with error: \(error.localizedDescription)")
             return
         }
     }
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        DispatchQueue.main.async {
+            print(applicationContext)
+            self.dataReceivedFromPhone(applicationContext)
+        }
+    }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
         print(userInfo)
-        dataReceivedFromPhone(userInfo)
+        DispatchQueue.main.async {
+            self.dataReceivedFromPhone(userInfo)
+        }
     }
     
     // MARK: use this for testing in simulator
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        dataReceivedFromPhone(message)
+        DispatchQueue.main.async {
+            self.dataReceivedFromPhone(message)
+        }
     }
     
 }
@@ -47,12 +59,22 @@ extension PhoneConnector:WCSessionDelegate {
 // MARK: - send data to phone
 extension PhoneConnector {
     
-    public func sendDataToPhone(_ key:String) {
-        let dict:[String:Any] = ["data":key]
-        //session.transferUserInfo(dict)
-        // for testing in simulator we use
-        session.sendMessage(dict, replyHandler: nil)
+    public func sendDataToPhone(_ counter:Int) {
+        let dict:[String:Any] = ["counter":counter]
+        if session.isReachable  {
+            session.transferUserInfo(dict)
+            session.sendMessage(dict, replyHandler: nil)
+        }
+        if WCSession.isSupported() { //makes sure it's not an iPad or iPod
+                do {
+                    try WCSession.default.updateApplicationContext(dict)
+                } catch let error as NSError {
+                    print(error.description)
+                }
+        }
+       
     }
+    
 }
 
 // MARK: - receive data
@@ -66,7 +88,10 @@ extension PhoneConnector {
             internalApiKey = key
             KeychainWrapper.standard.set(internalApiKey, forKey: "apiKey")
         }else if let date = info["data"] as? Date {
-            UserDefaults.standard.set(date, forKey: "subscriptionPurchase")
+           // UserDefaults.standard.set(date, forKey: "subscriptionPurchase")
+        }
+        if let counter = info["counter"] as? Int {
+            queryCounter = counter
         }
     }
 }

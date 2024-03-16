@@ -8,12 +8,14 @@
 import Foundation
 import WatchConnectivity
 import UIKit
+import SwiftUI
 class WatchConnector:NSObject {
         
     static let shared = WatchConnector()
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
 
     public let session = WCSession.default
-         
+    @AppStorage("passdata") private var data = ""
     private override init(){
         super.init()
         if WCSession.isSupported() {
@@ -21,15 +23,11 @@ class WatchConnector:NSObject {
             session.activate()
         }
     }
-    
-    func setup() {
-        
-    }
 }
 
 
 extension WatchConnector:WCSessionDelegate {
-    
+   
     func sessionDidBecomeInactive(_ session: WCSession) {
         session.activate()
     }
@@ -37,11 +35,13 @@ extension WatchConnector:WCSessionDelegate {
     func sessionDidDeactivate(_ session: WCSession) {
         session.activate()
     }
+    
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        if activationState == .activated {
+        if activationState == .activated && session.isReachable {
             print("sdsd")
-            sendDataToWatch(internalApiKey)
+            var counter = UserDefaults.standard.integer(forKey: QUERYCOUNTER)
+            sendDataToWatch(internalApiKey, queryCounter: counter)
             guard let purchase = UserDefaults.standard.value(forKey: "subscriptionPurchase") as? Date else { return  }
             sendSubscriptionDataToWatch(purchase)
         }
@@ -50,18 +50,37 @@ extension WatchConnector:WCSessionDelegate {
             return
         }
     }
-    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        DispatchQueue.main.async {
+            self.dataReceivedFromWatch(applicationContext)
+        }
+    }
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
         print(userInfo)
-        //dataReceivedFromWatch(userInfo)
+        DispatchQueue.main.async {
+            self.dataReceivedFromWatch(userInfo)
+        }
     }
     
     // MARK: use this for testing in simulator
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        //dataReceivedFromWatch(message)
+        DispatchQueue.main.async {
+            self.dataReceivedFromWatch(message)
+        }
         print(message)
         //UserDefaults.standard.set("Dhawan", forKey: "pass")
     }
+    
+//    func updateApplicationContext(applicationContext: [String : Any]) throws {
+//           if WCSession.default.isPaired {
+//               do {
+//                   try WCSession.default.updateApplicationContext(applicationContext)
+//               } catch let error {
+//                   throw error
+//               }
+//           }
+//       }
+
     
 }
 
@@ -69,14 +88,30 @@ extension WatchConnector:WCSessionDelegate {
 // MARK: - send data to watch
 extension WatchConnector {
     
-    public func sendDataToWatch(_ key:String) {
-        let dict:[String:Any] = ["data":key]
+    public func sendDataToWatch(_ key:String, queryCounter:Int) {
+        var  dict = [String:Any]()
+        if queryCounter == 0 {
+            dict = ["data":key]
+        }else {
+            dict = ["data":key, "counter": queryCounter]
+        }
+        guard session.activationState == .activated else {
+                 print("Error attempting to transfer user info: WCSession is not activated")
+                  return
+        }
+        if session.isReachable  {
+            session.transferUserInfo(dict)
+        }
+        if WCSession.isSupported() { //makes sure it's not an iPad or iPod
+            if session.isPaired  {
+                do {
+                    try session.updateApplicationContext(dict)
+                } catch let error as NSError {
+                    print(error.description)
+                }
+            }
+        }
         
-        session.transferUserInfo(dict)
-        // for testing in simulator we use
-        session.sendMessage(dict, replyHandler: nil, errorHandler: { error in
-          print("Error when sending message: \(error.localizedDescription)")
-        })
        // session.sendMessage(dict, replyHandler: nil)
     }
     
@@ -96,6 +131,7 @@ extension WatchConnector {
 extension WatchConnector {
     
     public func dataReceivedFromWatch(_ info:[String:Any]) {
-        let key = info["data"] as! String
+        let counter = info["counter"] as! Int
+        queryCounter = counter
     }
 }

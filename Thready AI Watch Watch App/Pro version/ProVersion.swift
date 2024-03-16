@@ -105,7 +105,7 @@ struct ProVersion: View {
             HStack{
                 Spacer()
                 
-                Text("Your free credit limit has been exceeded.Please use phone app to buy subscription")
+                Text("Your free Points limit has been exceeded.Please use phone app to buy subscription")
                     .foregroundColor(.getCurrentColor(PRIMARYCOLORVALUE))
                     .font(.system(size: 15))
                 

@@ -26,8 +26,8 @@ struct ChatGptAppApp: App {
     init() {
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        checkLifeTimePurchasing()
-        checkMonthlyPurchasing()
+        //checkLifeTimePurchasing()
+        //checkMonthlyPurchasing()
         Analytics.logEvent("LaunchApp", parameters: ["App Name": "ChatA1"])
     }
     
@@ -130,14 +130,15 @@ class ApiKeyViewModel: ObservableObject
     }
     
     func getApi_Key() {
-        WatchConnector.shared.setup()
+        //WatchConnector.shared.setup()
         isApiCall = false
         let db = Firestore.firestore()
         db.collection("Result").document("Apikey").getDocument { (document, error) in
             if let document = document {
                 let title = document.data()?["Apikey"] as? String ?? ""
                 KeychainWrapper.standard.set(title, forKey: "apiKey")
-                WatchConnector.shared.sendDataToWatch(title)
+                var counter = UserDefaults.standard.integer(forKey: QUERYCOUNTER)
+                WatchConnector.shared.sendDataToWatch(title, queryCounter: counter)
                 DispatchQueue.main.async {
                     self.isApiCall = true
                     internalApiKey = title

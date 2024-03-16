@@ -41,7 +41,7 @@ struct MonthlySubscription: View {
                                 Text("OK"),
                                 action: {
                                     showAlert = false
-                                    purchasedStatusMonthly = 1
+                                    //purchasedStatusMonthly = 1
                                 }
                             )
                         )
@@ -66,7 +66,7 @@ struct MonthlySubscription: View {
                                 Text("OK"),
                                 action: {
                                     showAlert = false
-                                    purchasedStatusMonthly = 1
+                                    //purchasedStatusMonthly = 1
                                 }
                             )
                         )
@@ -144,7 +144,7 @@ struct MonthlySubscription: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
 
-            Text("Go Premium and you will get unlimited usages, pro features and removal of ads. Pay a weekly, monthly, or yearly fee and Cancel anytime.")
+            Text("Go Premium and you will get unlimited usages, purchase points to get credit to access the premium features. Credit never expires so no need to worry about weekly/monthly subscription.Get 100, 500 or 1000 points now!")
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 15))

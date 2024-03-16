@@ -21,8 +21,8 @@ struct ChatGptApp_Watch_AppApp: App {
         PhoneConnector.shared.setup()
         internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
         //checkMonthlyPurchasing()
-        checkRemainingQuery()
-        checkLifeTimePurchasing()
+        //checkRemainingQuery()
+        //checkLifeTimePurchasing()
     }
     
     
@@ -76,18 +76,6 @@ struct ChatGptApp_Watch_AppApp: App {
         }
 
         let status3 = subscriptionManager.hasPurchased(productID: monthlyAIPId)
-//        if status3 {
-//            watchPurchasedStatusMonthly = 1
-//        }
-//        let status1 = subscriptionManager.hasPurchased(productID: weeklyAIPId)
-//        if status1 {
-//            watchPurchasedStatusMonthly = 1
-//        }
-//        let status2 = subscriptionManager.hasPurchased(productID: yearlylyAIPId)
-//        if status2 {
-//            watchPurchasedStatusMonthly = 1
-//        }
-
     }
     
     

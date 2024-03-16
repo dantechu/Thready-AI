@@ -31,6 +31,10 @@ let yearlylyAIPId = "com.amazingelearning.thready.yearly"
 let monthlyAIPId = "com.amazingelearning.thready.monthly"
 let weeklyAIPId = "com.amazingelearning.thready.weekly"
 
+let thousandAIPId = "com.amazingelearning.thready.ThousandPoints"
+let FiveHundredAIPId = "com.amazingelearning.thready.FiveHundredPoints"
+let HundredAIPId = "com.amazingelearning.thready.HundredPoints"
+
 //let lifeTimeAIPId = "com.jeanpaul.mikeyaiassistant.mobile.lifetime"
 //let monthlySubscriptionAIPId = "Com.jeanpaul.mikeyaiassistant.monthly"
 

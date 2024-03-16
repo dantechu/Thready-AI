@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
+		101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
 		103A02D42B75F21C0030EF94 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103A02D32B75F21C0030EF94 /* StoreKit.framework */; };
 		1095C9F62B60EAE100303575 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095C9F52B60EAE100303575 /* WatchConnector.swift */; };
 		1095C9F82B60EB4E00303575 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095C9F72B60EB4E00303575 /* PhoneConnector.swift */; };
@@ -125,6 +127,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumablePurchaseManager.swift; sourceTree = "<group>"; };
 		103A02D32B75F21C0030EF94 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		1095C9F42B60DB1800303575 /* Thready AI Watch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Thready AI Watch Watch App.entitlements"; sourceTree = "<group>"; };
 		1095C9F52B60EAE100303575 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
@@ -460,6 +463,7 @@
 			children = (
 				37F4F2B42A00ED400074A89F /* NonConsumablePurchaseManager.swift */,
 				37F4F2BA2A0167F70074A89F /* AutoRenewablePurchaseManager.swift */,
+				101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */,
 			);
 			path = IAP;
 			sourceTree = "<group>";
@@ -795,6 +799,7 @@
 				10A075222B68D3D600599606 /* ChatHistory+CoreDataProperties.swift in Sources */,
 				10DE301B2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift in Sources */,
 				37F4F2B52A00ED410074A89F /* NonConsumablePurchaseManager.swift in Sources */,
+				101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */,
 				10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */,
 				3713457D29E46A8B00DB80A7 /* ChatHeader.swift in Sources */,
 				371345A529E4A7DC00DB80A7 /* ChatGPTAPI.swift in Sources */,
@@ -840,6 +845,7 @@
 				10AAB9F12B6F6620006F039C /* KeychainWrapper.swift in Sources */,
 				DD1B2BBA2B416C410075B8C9 /* Icons.swift in Sources */,
 				DD1B2BA42B4168F70075B8C9 /* MessageRow.swift in Sources */,
+				101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */,
 				DD1B2BB42B416B1B0075B8C9 /* AskMeAnyThingViewModel.swift in Sources */,
 				DD1B2BBF2B416C880075B8C9 /* PersonaList.swift in Sources */,
 				DD1B2B992B4168AE0075B8C9 /* ChatGptAppApp.swift in Sources */,
@@ -1002,7 +1008,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1020,7 +1026,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
@@ -1046,7 +1052,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1064,7 +1070,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
@@ -1091,7 +1097,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1109,7 +1115,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;
@@ -1136,7 +1142,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1154,7 +1160,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;

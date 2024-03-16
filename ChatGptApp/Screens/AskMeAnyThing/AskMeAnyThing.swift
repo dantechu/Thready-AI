@@ -68,10 +68,10 @@ struct AskMeAnyThing: View {
         }
         .onAppear {
             loadInterstitial()
-            let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
-            if !key.isEmpty {
-                WatchConnector.shared.sendDataToWatch(key)
-            }
+//            let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+//            if !key.isEmpty {
+//                WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
+//            }
         }
         .onDisappear {
         }
@@ -131,6 +131,8 @@ struct AskMeAnyThing: View {
                     if queryCounter !=  0 {
                         queryCounter -= 1
                     }
+                    let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+                    WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
                     Task { @MainActor in
                         await vm.sendTapped()
                     }
