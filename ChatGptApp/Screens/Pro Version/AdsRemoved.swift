@@ -140,7 +140,7 @@ struct AdsRemoved: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            Text("Go Premium and you will get unlimited usages, purchase points to get credit to access the premium features. Credit never expires so no need to worry about weekly/monthly subscription.Get 100, 500 or 1000 points now!")
+            Text("Go Premium and you will get all premium openai modes and features at your fingertips, purchase points to get credit to access the premium features. Credit never expires so no need to worry about weekly/monthly subscription.Get 100, 500 or 1000 points now!")
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 15))
