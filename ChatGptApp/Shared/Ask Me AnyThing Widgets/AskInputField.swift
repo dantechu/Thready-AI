@@ -18,7 +18,7 @@ struct AskInputField: View {
     @Binding var isInteractingWithChatGPT:Bool
     @FocusState var isTextFieldFocused: Bool
     @Binding var isListening:Bool
-    
+    @Binding var isChatAi:Bool
     var isMessageEmpty: Bool
     var sendTapped:(()->Void)?
     var settingsTapped:(()->Void)?
@@ -41,9 +41,8 @@ struct AskInputField: View {
                         getGifIcon()
                         
                         HStack(alignment: .top,spacing: 5){
-                            
                             personaIcon()
-                            
+
                             Circle()
                                 .frame(width: 50, height: 50)
                                 .foregroundColor(Color.clear)
@@ -78,7 +77,9 @@ struct AskInputField: View {
                 if isMessageEmpty {
                     
                     HStack(alignment:.top,spacing: 15){
-                        personaIcon()
+                        if isChatAi {
+                            personaIcon()
+                        }
                         getGifIcon()
                         getSettingButton()
                     }.padding(.bottom,20)
@@ -128,7 +129,7 @@ struct AskInputField: View {
             
             return AnyView(
                 
-                TextField(isMessageEmpty ?  "Ask Me Anything" : "Reply", text: $askMeInput, axis: .vertical)
+                TextField(isMessageEmpty ?  getPlaceholderText() : "Reply", text: $askMeInput, axis: .vertical)
                     .focused($isTextFieldFocused)
                     .lineLimit(1...5)
                     .padding(10)
@@ -156,6 +157,9 @@ struct AskInputField: View {
         
     }
     
+    func getPlaceholderText()->String {
+        return isChatAi ? "Ask Me Anything" : "Type to generate an image"
+    }
     
     func sendBtn() -> AnyView {
         if isWatchOS {

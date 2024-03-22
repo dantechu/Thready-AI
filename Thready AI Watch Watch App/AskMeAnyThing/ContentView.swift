@@ -86,7 +86,7 @@ struct ContentView: View {
             AskInputField(
                 askMeInput: $vm.inputMessage,
                 isInteractingWithChatGPT: $vm.isInteractingWithChatGPT,
-                isListening: $isListening, isMessageEmpty: $vm.messages.isEmpty) {
+                isListening: $isListening, isChatAi: .constant(true), isMessageEmpty: $vm.messages.isEmpty) {
                     
                     if queryCounter == 0 && watchPurchasedStatusMonthly == 0 {showPremiumScreen = true;  return }
                     queryCounter -= 1

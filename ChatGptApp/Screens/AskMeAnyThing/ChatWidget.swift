@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ChatWidget: View {
     let message: MessageRow
+    var isChatAi = true
     let retryCallback: (MessageRow) -> Void
     let editTapped:(()->Void)?
     let speakingActionTapped:(()->Void)?
-    
     @AppStorage(SELECTEDCOLORVALUE) private var PRIMARYCOLORVALUE:Int = 0
     
     private let personTitle = "You"
@@ -61,13 +61,17 @@ struct ChatWidget: View {
 
 
             }
-            
-            if !text.isEmpty {
-                Text(text)
-                    .foregroundColor(messageTypeEnum == .person ? Color.black : Color.white)
-                    .font(.system(size: 22))
-                    .fontWeight(.semibold)
-                    .shadow(color: messageTypeEnum == .person ? .white : .clear, radius: 2, x: 1, y: 1)
+            if messageTypeEnum == .bot && !isChatAi {
+                message.responseImage.resizable()
+                    .frame(width: 200, height: 200)
+            }else {
+                if !text.isEmpty {
+                    Text(text)
+                        .foregroundColor(messageTypeEnum == .person ? Color.black : Color.white)
+                        .font(.system(size: 22))
+                        .fontWeight(.semibold)
+                        .shadow(color: messageTypeEnum == .person ? .white : .clear, radius: 2, x: 1, y: 1)
+                }
             }
             
             if let error = responseError {
@@ -207,13 +211,13 @@ struct ChatWidget_Previews: PreviewProvider {
     static let message = MessageRow(
         isInteractingWithChatGPT: true, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage: "openai",
+        responseImage: Image(""),
         responseText: "SwiftUI is a user interface framework that allows developers to design and develop user interfaces for iOS, macOS, watchOS, and tvOS applications using Swift, a programming language developed by Apple Inc.")
     
     static let message2 = MessageRow(
         isInteractingWithChatGPT: false, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage: "openai",
+        responseImage: Image(""),
         responseText: "swift is here")
     
     static var previews: some View {

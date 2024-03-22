@@ -9,7 +9,6 @@ import SwiftUI
 import GoogleMobileAds
 
 struct AskMeAnyThing: View {
-    
     @ObservedObject var vm: AskMeAnyThingViewModel
     @FocusState var isTextFieldFocused:Bool
     @State private var isPresented = false
@@ -20,13 +19,14 @@ struct AskMeAnyThing: View {
     @State var interstitial: GADInterstitialAd?
     @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
     @State private var showPremiumScreen = false
-
+    @Binding var isChatAi:Bool
     @AppStorage(TOTALSEARCHDONE) private var TOTALSEARCHVALUE:Int = 0
     @AppStorage(PURCHASEDSTATUSLIFETIME) private var purchaseStatusLifeTime:Int = 0
     @AppStorage(PURCHASEDSTATUSMONTHLY) private var purchasedStatusMonthly:Int = 0
     @EnvironmentObject var manager: DataManager
     @Environment(\.managedObjectContext) var viewContext
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     
     var body: some View {
         
@@ -40,9 +40,19 @@ struct AskMeAnyThing: View {
             
             VStack {
                 HStack {
+                    Image(systemName:"house")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.white)
+                    .aspectRatio(contentMode: .fit)
+                    .padding([.trailing,.leading],5)
+                    .onTapGesture {
+                        self.presentationMode.wrappedValue.dismiss() 
+                    }
+                    
                     if purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 {
                         Text(String(queryCounter) + " Credit")
-                            .font(.title3)
+                            .font(.title2)
                             .foregroundColor(.white)
                             .padding(10)
                         Spacer()
@@ -67,6 +77,7 @@ struct AskMeAnyThing: View {
             getFullScreenLoading()
         }
         .onAppear {
+            print(isChatAi)
             loadInterstitial()
 //            let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
 //            if !key.isEmpty {
@@ -85,8 +96,7 @@ struct AskMeAnyThing: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(vm.messages) { message in
-                            
-                            ChatWidget(message: message, retryCallback: { message in
+                            ChatWidget(message: message, isChatAi: isChatAi ,retryCallback: { message in
                                 Task { @MainActor in
                                     await vm.retry(message: message)
                                 }
@@ -124,7 +134,7 @@ struct AskMeAnyThing: View {
             AskInputField(
                 askMeInput: $vm.inputMessage,
                 isInteractingWithChatGPT: $vm.isInteractingWithChatGPT,
-                isTextFieldFocused: _isTextFieldFocused, isListening: $isListening,
+                isTextFieldFocused: _isTextFieldFocused, isListening: $isListening,isChatAi: $isChatAi,
                 isMessageEmpty: $vm.messages.isEmpty) {
                     self.showAd()
                     if queryCounter == 0 && purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 {isPresentingAdRemoveScreen = true;  return }
@@ -134,7 +144,11 @@ struct AskMeAnyThing: View {
                     let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
                     WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
                     Task { @MainActor in
-                        await vm.sendTapped()
+                        if isChatAi {
+                            await vm.sendTapped()
+                        } else {
+                            await vm.sendImageTapped()
+                        }
                     }
                     
                 } settingsTapped: {
@@ -242,7 +256,7 @@ extension AskMeAnyThing{
             history.sendImage = message.sendImage
             history.chatDate = Date()
             history.isInteractingWithChatGPT =  message.isInteractingWithChatGPT
-            history.responseImage =  message.responseImage
+            history.responseImage = ""
             history.responseText =  message.responseText
             history.responseError = message.responseError
             do {
@@ -336,7 +350,7 @@ extension AskMeAnyThing{
 struct AskMeAnyThing_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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")))
+            AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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")), isChatAi:.constant(true))
 
         }
     }

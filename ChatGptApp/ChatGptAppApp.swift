@@ -35,25 +35,33 @@ struct ChatGptAppApp: App {
     var body: some Scene {
         WindowGroup {
             if apiCallModel.isApiCall {
-                if purchasedStatusMonthly == 1 {
-                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
-                        .environmentObject(manager)
-                        .environment(\.managedObjectContext, manager.container.viewContext)
-                        //.preferredColorScheme(.light) // set the preferred color scheme to light
-                } else if !ApiKeyValue.isEmpty {
-                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
-                        .environmentObject(manager)
-                        .environment(\.managedObjectContext, manager.container.viewContext)
-                        //.preferredColorScheme(.light) // set the preferred color scheme to light
-                } else {
-                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
-                        .environmentObject(manager)
-                        .environment(\.managedObjectContext, manager.container.viewContext)
-                        //.preferredColorScheme(.light) // set the preferred color scheme to light
-                }
-            } else {
+                IntroScreenView(apikey: internalApiKey, isSpeechEnabled: isSpeechEnabled)
+                    .environmentObject(manager)
+                    .environment(\.managedObjectContext, manager.container.viewContext)
+                
+            }else {
                 LoaderView()
             }
+//            if apiCallModel.isApiCall {
+//                if purchasedStatusMonthly == 1 {
+//                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+//                        .environmentObject(manager)
+//                        .environment(\.managedObjectContext, manager.container.viewContext)
+//                        //.preferredColorScheme(.light) // set the preferred color scheme to light
+//                } else if !ApiKeyValue.isEmpty {
+//                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+//                        .environmentObject(manager)
+//                        .environment(\.managedObjectContext, manager.container.viewContext)
+//                        //.preferredColorScheme(.light) // set the preferred color scheme to light
+//                } else {
+//                    AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled))
+//                        .environmentObject(manager)
+//                        .environment(\.managedObjectContext, manager.container.viewContext)
+//                        //.preferredColorScheme(.light) // set the preferred color scheme to light
+//                }
+//            } else {
+//                LoaderView()
+//            }
         }
     }
     

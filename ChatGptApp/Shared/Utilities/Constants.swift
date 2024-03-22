@@ -18,6 +18,7 @@ let LASTANSWEREDDATE = "lastAnsweredDate"
 let MAXQUERYPERDAY = 3
 let WATCHURCHASEDSTATUSMONTHLY =  "watchPurchasedStatusMonthly"
 let APIKEYVALUE = "apiKeyValue"
+let IntroPass = "IntroPass"
 let interstialAdId = "ca-app-pub-9740790965972178/7933674809"
 var internalApiKey = ""
 let emptyInternalApiKey = ""

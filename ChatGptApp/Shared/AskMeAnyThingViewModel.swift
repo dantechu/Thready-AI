@@ -17,7 +17,6 @@ class AskMeAnyThingViewModel: ObservableObject {
     @Published var messages: [MessageRow] = []
     @Published var inputMessage: String = ""
     @Published var isSpeaking: Bool = false
-    
     private var synthesizer: AVSpeechSynthesizer?
     
     private let api: ChatGPTAPI
@@ -36,6 +35,14 @@ class AskMeAnyThingViewModel: ObservableObject {
         stopSpeaking()
         inputMessage = ""
         await send(text: text)
+    }
+    
+    @MainActor
+    func sendImageTapped() async {
+        let text = inputMessage
+        stopSpeaking()
+        inputMessage = ""
+        await sendImage(text: text)
     }
     
     @MainActor
@@ -64,7 +71,7 @@ class AskMeAnyThingViewModel: ObservableObject {
             isInteractingWithChatGPT: true,
             sendImage: "profile",
             sendText: text,
-            responseImage: "openai",
+            responseImage: Image(""),
             responseText: streamText,
             responseError: nil)
         
@@ -81,6 +88,34 @@ class AskMeAnyThingViewModel: ObservableObject {
             messageRow.responseError = error.localizedDescription
         }
         
+        messageRow.isInteractingWithChatGPT = false
+        self.messages[self.messages.count - 1] = messageRow
+        isInteractingWithChatGPT = false
+        speakLastResponse(responseText: self.messages.last?.responseText ?? "")
+        
+    }
+    
+    @MainActor
+    private func sendImage(text: String) async {
+        isInteractingWithChatGPT = true
+        var streamText = ""
+        var messageRow = MessageRow(
+            isInteractingWithChatGPT: true,
+            sendImage: "profile",
+            sendText: text,
+            responseImage: Image(""),
+            responseText: streamText,
+            responseError: nil)
+        
+        self.messages.append(messageRow)
+        
+        do {
+            let stream = try await api.fetchImageForPrompt(text)
+            messageRow.responseImage = Image(uiImage: stream)
+            self.messages[self.messages.count - 1] = messageRow
+        } catch {
+            messageRow.responseError = error.localizedDescription
+        }
         messageRow.isInteractingWithChatGPT = false
         self.messages[self.messages.count - 1] = messageRow
         isInteractingWithChatGPT = false
