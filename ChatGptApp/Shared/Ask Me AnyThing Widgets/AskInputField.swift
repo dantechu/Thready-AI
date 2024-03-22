@@ -129,7 +129,7 @@ struct AskInputField: View {
             
             return AnyView(
                 
-                TextField(isMessageEmpty ?  getPlaceholderText() : "Reply", text: $askMeInput, axis: .vertical)
+                TextField(isMessageEmpty ?  getPlaceholderText() : getReplyPlaceholderText(), text: $askMeInput, axis: .vertical)
                     .focused($isTextFieldFocused)
                     .lineLimit(1...5)
                     .padding(10)
@@ -160,7 +160,9 @@ struct AskInputField: View {
     func getPlaceholderText()->String {
         return isChatAi ? "Ask Me Anything" : "Type to generate an image"
     }
-    
+    func getReplyPlaceholderText()->String {
+        return isChatAi ? "Reply" : "Type to generate an image"
+    }
     func sendBtn() -> AnyView {
         if isWatchOS {
             return AnyView(Text(""))
