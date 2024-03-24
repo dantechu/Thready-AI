@@ -15,10 +15,11 @@ target 'Thready AI' do
     pod 'Firebase/Crashlytics'
     pod 'GoogleAnalytics-iOS-SDK'
     pod 'FirebaseAnalytics'
+    pod 'CryptoSwift', '~> 1.8.1'
 
 end
 
 
 target 'Thready AI Watch Watch App' do
-  pod 'Firebase/Firestore'
+  pod 'CryptoSwift', '~> 1.8.1'
 end

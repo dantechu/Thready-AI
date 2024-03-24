@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CryptoSwift
 
 
 @main
@@ -19,7 +20,7 @@ struct ChatGptApp_Watch_AppApp: App {
     init(){
         print(apiKey)
         PhoneConnector.shared.setup()
-        internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
+        //internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
         //checkMonthlyPurchasing()
         //checkRemainingQuery()
         //checkLifeTimePurchasing()
@@ -151,7 +152,7 @@ class ApiKeyViewModel: ObservableObject
                 var apiDic = valueDic["Apikey"] as! [String:Any]
                 var key = apiDic["stringValue"] as? String ?? ""
                 DispatchQueue.main.async {
-                    internalApiKey = key
+                    internalApiKey = self.checkEncription(encriptedValue: key)
                     KeychainWrapper.standard.set(key, forKey: "apiKey")
                     self.isApiCall = true
                 }
@@ -161,5 +162,12 @@ class ApiKeyViewModel: ObservableObject
         }
         task.resume()
     }
+    
+    func checkEncription(encriptedValue:String) ->String {
+        let key = "%Elearning2024!!"
+        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        return dValue
+    }
+    
 }
 

@@ -12,6 +12,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseAnalytics
 import FirebaseFirestore
+import CryptoSwift
 
 @main
 struct ChatGptAppApp: App {
@@ -65,9 +66,7 @@ struct ChatGptAppApp: App {
         }
     }
     
-    
-    
-    
+   
     func checkLifeTimePurchasing(){
         let status = NonConsumablePurchaseManager.shared.hasPurchasedProduct(lifeTimeAIPId)
         print("life time status ",status)
@@ -149,58 +148,16 @@ class ApiKeyViewModel: ObservableObject
                 WatchConnector.shared.sendDataToWatch(title, queryCounter: counter)
                 DispatchQueue.main.async {
                     self.isApiCall = true
-                    internalApiKey = title
+                    internalApiKey = self.checkEncription(encriptedValue: title)
                 }
             }
         }
-        
-//        guard let url = URL(string: "https://v1.nocodeapi.com/ankush/fbsdk/bxGZIPaKzvgjNrKc/firestore/allDocuments?collectionName=Result") else {
-//          return
-//        }
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "GET"
-//
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//          if let error = error {
-//            print(error)
-//              self.isApiCall = true
-//            return
-//          }
-//            do {
-//                let json = try JSONSerialization.jsonObject(with: data!) as! NSArray
-//                var dic = json[0] as! [String:Any]
-//                var valueDic = dic["_fieldsProto"] as! [String:Any]
-//                var apiDic = valueDic["Apikey"] as! [String:Any]
-//                var key = apiDic["stringValue"] as? String ?? ""
-//                KeychainWrapper.standard.set(key, forKey: "apiKey")
-//                DispatchQueue.main.async {
-//                    self.isApiCall = true
-//                    internalApiKey = key
-//                }
-//
-//               } catch {
-//                   print("error")
-//               }
-//        }
-//        task.resume()
-        
-        
-//        isApiCall = false
-//        if let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String {
-//            internalApiKey = apiKey.trimmingCharacters(in: CharacterSet(charactersIn: "\"\\"))
-//        }
-//        let firebaseDatabaseRef = Database.database().reference()
-//        print(Thread.isMainThread)
-//        firebaseDatabaseRef.child("result").observeSingleEvent(of: .value, with: { (snapshot) in
-//            print("ankush",snapshot)
-//            self.isApiCall = true
-//            print(Thread.isMainThread)
-//            let value = snapshot.value as? [String:Any]
-//            if let key = value?["api_key"] as? String {
-//                internalApiKey = key
-//            }
-//
-//        })
+    }
+    
+    func checkEncription(encriptedValue:String) ->String {
+        let key = "%Elearning2024!!"
+        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        return dValue
     }
 }
 

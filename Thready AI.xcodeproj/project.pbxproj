@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062B124E4FCDC090414B655C /* libPods-Thready AI Watch Watch App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */; };
 		101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
 		101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
+		1034009F2BAECAAD002CFE4E /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034009E2BAECAAD002CFE4E /* AEC.swift */; };
+		103400A02BAECAAD002CFE4E /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034009E2BAECAAD002CFE4E /* AEC.swift */; };
+		103400A22BAECAD7002CFE4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103400A12BAECAD7002CFE4E /* Security.framework */; };
 		103A02D42B75F21C0030EF94 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103A02D32B75F21C0030EF94 /* StoreKit.framework */; };
 		10949A9E2B8C605B00162684 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10949A9B2B8C605B00162684 /* PageModel.swift */; };
 		10949A9F2B8C605B00162684 /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10949A9C2B8C605B00162684 /* IntroScreenView.swift */; };
@@ -131,6 +135,8 @@
 
 /* Begin PBXFileReference section */
 		101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumablePurchaseManager.swift; sourceTree = "<group>"; };
+		1034009E2BAECAAD002CFE4E /* AEC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEC.swift; sourceTree = "<group>"; };
+		103400A12BAECAD7002CFE4E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		103A02D32B75F21C0030EF94 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		10949A9B2B8C605B00162684 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		10949A9C2B8C605B00162684 /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
 		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
+		22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
 		3713455D29E303C500DB80A7 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		3713456029E3285700DB80A7 /* GetApiKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKeyViewModel.swift; sourceTree = "<group>"; };
@@ -194,6 +201,7 @@
 		55624D892B45F3C90070A937 /* MailComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeViewController.swift; sourceTree = "<group>"; };
 		55F022EB2B40AF3900618A27 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5EE86CA4C8F906E3D923D29A /* Pods-ChatGptApp Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGptApp Watch App.release.xcconfig"; path = "Target Support Files/Pods-ChatGptApp Watch App/Pods-ChatGptApp Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thready AI Watch Watch App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849F5D305751AB04A91699CA /* Pods-Thready AI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI/Pods-Thready AI.debug.xcconfig"; sourceTree = "<group>"; };
 		98F48E8190615946C7CB5705 /* Pods-ChatGptApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGptApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatGptApp/Pods-ChatGptApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A31125BA2B15155A0096A69E /* ChatGptApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGptApp.entitlements; sourceTree = "<group>"; };
@@ -201,6 +209,7 @@
 		A34A65092B183D0000263731 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A34A650B2B183D0000263731 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A58CAF4CFDAE4AD78B05AAB6 /* Pods_Thready_AI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thready_AI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F939722B1D25FD35053D97 /* Pods-Thready AI Watch Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.release.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		D48B6A73391C8AB32BA9EB34 /* Pods-ChatGptApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGptApp.release.xcconfig"; path = "Target Support Files/Pods-ChatGptApp/Pods-ChatGptApp.release.xcconfig"; sourceTree = "<group>"; };
 		DD1B2B772B41682F0075B8C9 /* Thready AI Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thready AI Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1B2B8E2B4168AE0075B8C9 /* ChatGptAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGptAppApp.swift; sourceTree = "<group>"; };
@@ -234,6 +243,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103400A22BAECAD7002CFE4E /* Security.framework in Frameworks */,
+				062B124E4FCDC090414B655C /* libPods-Thready AI Watch Watch App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +289,7 @@
 				10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */,
 				10AAB9EA2B6F6600006F039C /* SwiftKeychainWrapper.h */,
 				10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */,
+				1034009E2BAECAAD002CFE4E /* AEC.swift */,
 			);
 			path = SwiftKeychainWrapper;
 			sourceTree = "<group>";
@@ -504,11 +516,13 @@
 		6AD7F3D37FED41B6964E8826 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				103400A12BAECAD7002CFE4E /* Security.framework */,
 				103A02D32B75F21C0030EF94 /* StoreKit.framework */,
 				4280A2F083BBCD5859D16C7A /* Pods_ChatGptApp_Watch_App.framework */,
 				A34A65092B183D0000263731 /* WidgetKit.framework */,
 				A34A650B2B183D0000263731 /* SwiftUI.framework */,
 				A58CAF4CFDAE4AD78B05AAB6 /* Pods_Thready_AI.framework */,
+				70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -522,6 +536,8 @@
 				5EE86CA4C8F906E3D923D29A /* Pods-ChatGptApp Watch App.release.xcconfig */,
 				849F5D305751AB04A91699CA /* Pods-Thready AI.debug.xcconfig */,
 				3FF501F0B260BEC48B0C1051 /* Pods-Thready AI.release.xcconfig */,
+				22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */,
+				B6F939722B1D25FD35053D97 /* Pods-Thready AI Watch Watch App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -651,6 +667,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD1B2B822B4168300075B8C9 /* Build configuration list for PBXNativeTarget "Thready AI Watch Watch App" */;
 			buildPhases = (
+				AB1837636C9A815F697E1A6C /* [CP] Check Pods Manifest.lock */,
 				DD1B2B732B41682F0075B8C9 /* Sources */,
 				DD1B2B742B41682F0075B8C9 /* Frameworks */,
 				DD1B2B752B41682F0075B8C9 /* Resources */,
@@ -769,6 +786,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB1837636C9A815F697E1A6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thready AI Watch Watch App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EBE6269B6ADB6C3508B89BEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -807,6 +846,7 @@
 				377BEA6D2A004B4300B811FA /* AdsRemoved.swift in Sources */,
 				371345A829E4A7DC00DB80A7 /* ChatGPTAPIModels.swift in Sources */,
 				376E1A2829E6A54500F1ACF6 /* SettingsItem.swift in Sources */,
+				1034009F2BAECAAD002CFE4E /* AEC.swift in Sources */,
 				10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */,
 				37B1991229FA4D66007FA005 /* PersonasList.swift in Sources */,
 				3713456E29E34DF900DB80A7 /* AskMeAnyThing.swift in Sources */,
@@ -860,6 +900,7 @@
 				DD1B2BB32B416AEE0075B8C9 /* ActivityIndicatorLoadingView.swift in Sources */,
 				DD1B2BB02B416AB20075B8C9 /* WatchChatWidget.swift in Sources */,
 				DD1B2BA62B4168FC0075B8C9 /* EnginesResponse.swift in Sources */,
+				103400A02BAECAAD002CFE4E /* AEC.swift in Sources */,
 				DD1B2BAC2B416A6B0075B8C9 /* ContentView.swift in Sources */,
 				DD1B2BBD2B416C7B0075B8C9 /* PersonaDetailsList.swift in Sources */,
 				10AAB9F12B6F6620006F039C /* KeychainWrapper.swift in Sources */,
@@ -1028,7 +1069,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1072,7 +1113,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1108,6 +1149,7 @@
 		};
 		DD1B2B832B4168300075B8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1117,7 +1159,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1153,6 +1195,7 @@
 		};
 		DD1B2B842B4168300075B8C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F939722B1D25FD35053D97 /* Pods-Thready AI Watch Watch App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -1162,7 +1205,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;

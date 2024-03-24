@@ -85,13 +85,19 @@ extension PhoneConnector {
     
     public func dataReceivedFromPhone(_ info:[String:Any]) {
         if let key = info["data"] as? String {
-            internalApiKey = key
-            KeychainWrapper.standard.set(internalApiKey, forKey: "apiKey")
+            internalApiKey = checkEncription(encriptedValue: key)//key
+            KeychainWrapper.standard.set(key, forKey: "apiKey")
         }else if let date = info["data"] as? Date {
            // UserDefaults.standard.set(date, forKey: "subscriptionPurchase")
         }
         if let counter = info["counter"] as? Int {
             queryCounter = counter
         }
+    }
+    
+    func checkEncription(encriptedValue:String) ->String {
+        let key = "%Elearning2024!!"
+        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        return dValue
     }
 }
