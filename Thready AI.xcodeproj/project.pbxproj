@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		062B124E4FCDC090414B655C /* libPods-Thready AI Watch Watch App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */; };
 		101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
 		101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
 		1034009F2BAECAAD002CFE4E /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034009E2BAECAAD002CFE4E /* AEC.swift */; };
@@ -72,6 +71,7 @@
 		37F4F2BB2A0167F70074A89F /* AutoRenewablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4F2BA2A0167F70074A89F /* AutoRenewablePurchaseManager.swift */; };
 		55624D8A2B45F3C90070A937 /* MailComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55624D892B45F3C90070A937 /* MailComposeViewController.swift */; };
 		55F022EC2B40AF3900618A27 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 55F022EB2B40AF3900618A27 /* Config.xcconfig */; };
+		671896EF1B975377126FB32F /* libPods-Thready AI Watch Watch App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A4359B2A284569B86D98B6 /* libPods-Thready AI Watch Watch App.a */; };
 		A31125BC2B1598EB0096A69E /* GoogleService-Info.xml in Resources */ = {isa = PBXBuildFile; fileRef = A31125BB2B1598EB0096A69E /* GoogleService-Info.xml */; };
 		ABC657B6FA7DDF57FD3C0A6E /* Pods_Thready_AI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58CAF4CFDAE4AD78B05AAB6 /* Pods_Thready_AI.framework */; };
 		DD1B2B992B4168AE0075B8C9 /* ChatGptAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1B2B8E2B4168AE0075B8C9 /* ChatGptAppApp.swift */; };
@@ -157,6 +157,7 @@
 		10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
 		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
+		16A4359B2A284569B86D98B6 /* libPods-Thready AI Watch Watch App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thready AI Watch Watch App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
 		3713455D29E303C500DB80A7 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
@@ -201,7 +202,6 @@
 		55624D892B45F3C90070A937 /* MailComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeViewController.swift; sourceTree = "<group>"; };
 		55F022EB2B40AF3900618A27 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5EE86CA4C8F906E3D923D29A /* Pods-ChatGptApp Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGptApp Watch App.release.xcconfig"; path = "Target Support Files/Pods-ChatGptApp Watch App/Pods-ChatGptApp Watch App.release.xcconfig"; sourceTree = "<group>"; };
-		70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thready AI Watch Watch App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849F5D305751AB04A91699CA /* Pods-Thready AI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI/Pods-Thready AI.debug.xcconfig"; sourceTree = "<group>"; };
 		98F48E8190615946C7CB5705 /* Pods-ChatGptApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGptApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatGptApp/Pods-ChatGptApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A31125BA2B15155A0096A69E /* ChatGptApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGptApp.entitlements; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103400A22BAECAD7002CFE4E /* Security.framework in Frameworks */,
-				062B124E4FCDC090414B655C /* libPods-Thready AI Watch Watch App.a in Frameworks */,
+				671896EF1B975377126FB32F /* libPods-Thready AI Watch Watch App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +522,7 @@
 				A34A65092B183D0000263731 /* WidgetKit.framework */,
 				A34A650B2B183D0000263731 /* SwiftUI.framework */,
 				A58CAF4CFDAE4AD78B05AAB6 /* Pods_Thready_AI.framework */,
-				70B36BB2BAE9591260C5F8EA /* libPods-Thready AI Watch Watch App.a */,
+				16A4359B2A284569B86D98B6 /* libPods-Thready AI Watch Watch App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -650,8 +650,9 @@
 				377D66A729E29A97004AC41B /* Frameworks */,
 				377D66A829E29A97004AC41B /* Resources */,
 				377D66CD29E29A98004AC41B /* Embed Watch Content */,
-				A43C19A01F04F13BC051805C /* [CP] Embed Pods Frameworks */,
 				10CC7EA32B61861000BEAEAC /* ShellScript */,
+				B6E08403E27D10C9771693B3 /* [CP] Embed Pods Frameworks */,
+				2F146ADFB5C36C1242800B53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -769,21 +770,21 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\n";
 		};
-		A43C19A01F04F13BC051805C /* [CP] Embed Pods Frameworks */ = {
+		2F146ADFB5C36C1242800B53 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB1837636C9A815F697E1A6C /* [CP] Check Pods Manifest.lock */ = {
@@ -806,6 +807,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E08403E27D10C9771693B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thready AI/Pods-Thready AI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBE6269B6ADB6C3508B89BEA /* [CP] Check Pods Manifest.lock */ = {

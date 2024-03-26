@@ -7,16 +7,15 @@ target 'Thready AI' do
 
   # Pods for ChatGptApp
     pod 'Google-Mobile-Ads-SDK', '10.14.0'
-    pod 'Firebase/Storage', '10.16.0'
-    pod 'Firebase/Auth', '10.16.0'
-    pod 'Firebase/Database', '10.16.0'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
     pod 'Firebase/Firestore'
-    pod 'Firebase/Functions', '10.16.0'
+    pod 'Firebase/Functions'
     pod 'Firebase/Crashlytics'
     pod 'GoogleAnalytics-iOS-SDK'
     pod 'FirebaseAnalytics'
     pod 'CryptoSwift', '~> 1.8.1'
-
 end
 
 
