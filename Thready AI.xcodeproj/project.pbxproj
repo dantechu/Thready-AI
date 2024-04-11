@@ -32,6 +32,8 @@
 		10AAB9F12B6F6620006F039C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E82B6F6600006F039C /* KeychainWrapper.swift */; };
 		10AAB9F22B6F6623006F039C /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */; };
 		10AAB9F32B6F662A006F039C /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */; };
+		10BC35CA2BC7BCC700C1213D /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BC35C92BC7BCC700C1213D /* OpenAIKit */; };
+		10BC35CC2BC7BCD100C1213D /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BC35CB2BC7BCD100C1213D /* OpenAIKit */; };
 		10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */; };
 		10DE301B2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */; };
 		3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455A29E3030500DB80A7 /* GetApiKey.swift */; };
@@ -145,6 +147,7 @@
 		1095C9F52B60EAE100303575 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		1095C9F72B60EB4E00303575 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10A0139F2BC6B8C900D554D7 /* MyCert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyCert.cer; sourceTree = "<group>"; };
 		10A075192B68D06700599606 /* Thread AI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Thread AI.xcdatamodel"; sourceTree = "<group>"; };
 		10A075202B68D3D600599606 /* ChatHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		10A075212B68D3D600599606 /* ChatHistory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 			files = (
 				ABC657B6FA7DDF57FD3C0A6E /* Pods_Thready_AI.framework in Frameworks */,
 				103A02D42B75F21C0030EF94 /* StoreKit.framework in Frameworks */,
+				10BC35CA2BC7BCC700C1213D /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +249,7 @@
 			files = (
 				103400A22BAECAD7002CFE4E /* Security.framework in Frameworks */,
 				671896EF1B975377126FB32F /* libPods-Thready AI Watch Watch App.a in Frameworks */,
+				10BC35CC2BC7BCD100C1213D /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +451,7 @@
 		377D66AC29E29A97004AC41B /* ChatGptApp */ = {
 			isa = PBXGroup;
 			children = (
+				10A0139F2BC6B8C900D554D7 /* MyCert.cer */,
 				10949A9A2B8C602900162684 /* IntroScreen */,
 				A31125BA2B15155A0096A69E /* ChatGptApp.entitlements */,
 				1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */,
@@ -660,6 +666,9 @@
 				1096B8652B5E26FA007B1EEE /* PBXTargetDependency */,
 			);
 			name = "Thready AI";
+			packageProductDependencies = (
+				10BC35C92BC7BCC700C1213D /* OpenAIKit */,
+			);
 			productName = ChatGptApp;
 			productReference = 377D66AA29E29A97004AC41B /* Thready AI.app */;
 			productType = "com.apple.product-type.application";
@@ -678,6 +687,9 @@
 			dependencies = (
 			);
 			name = "Thready AI Watch Watch App";
+			packageProductDependencies = (
+				10BC35CB2BC7BCD100C1213D /* OpenAIKit */,
+			);
 			productName = "Thready AI Watch Watch App";
 			productReference = DD1B2B772B41682F0075B8C9 /* Thready AI Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -710,6 +722,9 @@
 				Base,
 			);
 			mainGroup = 377D66A129E29A96004AC41B;
+			packageReferences = (
+				10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 377D66AB29E29A97004AC41B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1017,7 +1032,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				WATCHOS_DEPLOYMENT_TARGET = 7.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -1072,7 +1087,7 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				WATCHOS_DEPLOYMENT_TARGET = 7.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -1087,7 +1102,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1105,7 +1120,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Development_AI;
@@ -1131,7 +1146,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1149,7 +1164,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Development_AI;
@@ -1177,7 +1192,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1195,7 +1210,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Development_Prov;
@@ -1223,7 +1238,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development: dante chu (Z8SRN5PQNU)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1241,7 +1256,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Development_Prov;
@@ -1287,6 +1302,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FuturraGroup/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10BC35C92BC7BCC700C1213D /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAIKit;
+		};
+		10BC35CB2BC7BCD100C1213D /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		10A075182B68D06700599606 /* Thread AI.xcdatamodeld */ = {

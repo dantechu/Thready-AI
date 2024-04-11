@@ -1089,6 +1089,11 @@ PODS:
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
   - RecaptchaInterop (100.0.0)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
+  - SDWebImageSwiftUI (3.0.0):
+    - SDWebImage (~> 5.10)
 
 DEPENDENCIES:
   - CryptoSwift (~> 1.8.1)
@@ -1101,6 +1106,7 @@ DEPENDENCIES:
   - FirebaseAnalytics
   - Google-Mobile-Ads-SDK (= 10.14.0)
   - GoogleAnalytics-iOS-SDK
+  - SDWebImageSwiftUI
 
 SPEC REPOS:
   trunk:
@@ -1140,6 +1146,8 @@ SPEC REPOS:
     - PromisesObjC
     - PromisesSwift
     - RecaptchaInterop
+    - SDWebImage
+    - SDWebImageSwiftUI
 
 SPEC CHECKSUMS:
   abseil: ebec4f56469dd7ce9ab08683c0319a68aa0ad86e
@@ -1178,7 +1186,9 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SDWebImageSwiftUI: d0d08ec194f578d184daad619af34260bfbf100c
 
-PODFILE CHECKSUM: 6e183f2d8a6fa2df874accc1e37014ad67ae5f3d
+PODFILE CHECKSUM: e5094d4e2642ad3b17a35dca4a672f9a248ec7f0
 
 COCOAPODS: 1.15.2

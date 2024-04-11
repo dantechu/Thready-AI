@@ -164,7 +164,6 @@ struct SettingsItemWatch: View {
 
         Image(systemName: name)
             .font(.system(size: 18))
-            .fontWeight(.medium)
 
     }
     

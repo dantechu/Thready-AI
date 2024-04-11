@@ -144,13 +144,13 @@ struct ChatHistorywidget_Previews: PreviewProvider {
     static let message = MessageRow(
         isInteractingWithChatGPT: true, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage: Image(""),
+        responseImage: Image(""), responseImageUrl: "",
         responseText: "SwiftUI is a user interface framework that allows developers to design and develop user interfaces for iOS, macOS, watchOS, and tvOS applications using Swift, a programming language developed by Apple Inc.")
     
     static let message2 = MessageRow(
         isInteractingWithChatGPT: false, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage:  Image(""),
+        responseImage:  Image(""), responseImageUrl: "",
         responseText: "swift is here")
     
     static var previews: some View {

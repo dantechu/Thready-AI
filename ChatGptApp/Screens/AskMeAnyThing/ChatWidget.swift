@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct ChatWidget: View {
     let message: MessageRow
     var isChatAi = true
@@ -62,9 +62,23 @@ struct ChatWidget: View {
 
             }
             if messageTypeEnum == .bot && !isChatAi {
-                message.responseImage.resizable()
-                    .frame(width: 200, height: 200)
-            }else {
+                WebImage(url: URL(string: message.responseImageUrl)) { image in
+                        image.resizable() // Control layout like SwiftUI.AsyncImage, you must use this modifier or the view will use the image bitmap size
+                    } placeholder: {
+                            Rectangle().foregroundColor(.gray)
+                    }
+                    // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
+                    .onSuccess { image, data, cacheType in
+                        // Success
+                        // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
+                    }
+                    .indicator(.activity) // Activity Indicator
+                    .transition(.fade(duration: 0.5)) // Fade Transition with duration
+                    .scaledToFit()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .cornerRadius(7)
+                }
+            else {
                 if !text.isEmpty {
                     Text(text)
                         .foregroundColor(messageTypeEnum == .person ? Color.black : Color.white)
@@ -211,13 +225,13 @@ struct ChatWidget_Previews: PreviewProvider {
     static let message = MessageRow(
         isInteractingWithChatGPT: true, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage: Image(""),
+        responseImage: Image(""), responseImageUrl: "",
         responseText: "SwiftUI is a user interface framework that allows developers to design and develop user interfaces for iOS, macOS, watchOS, and tvOS applications using Swift, a programming language developed by Apple Inc.")
     
     static let message2 = MessageRow(
         isInteractingWithChatGPT: false, sendImage: "profile",
         sendText: "What is SwiftUI?",
-        responseImage: Image(""),
+        responseImage: Image(""), responseImageUrl: "",
         responseText: "swift is here")
     
     static var previews: some View {

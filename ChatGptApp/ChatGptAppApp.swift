@@ -13,6 +13,10 @@ import FirebaseDatabase
 import FirebaseAnalytics
 import FirebaseFirestore
 import CryptoSwift
+import OpenAIKit
+
+// Url for encription:https://encode-decode.com/aes-128-ecb-encrypt-online/
+
 
 @main
 struct ChatGptAppApp: App {
@@ -155,7 +159,7 @@ class ApiKeyViewModel: ObservableObject
     }
     
     func checkEncription(encriptedValue:String) ->String {
-        let key = "%Elearning2024!!"
+        let key = "%Elearning2025!!" // password count should be same always
         let dValue = try! encriptedValue.aesDecrypt(key: key)
         return dValue
     }

@@ -6,6 +6,7 @@
 //
 import Foundation
 import UIKit
+import OpenAIKit
 
 struct Response: Decodable {
     let data: [ImageURL]
@@ -25,7 +26,8 @@ class ChatGPTAPI: @unchecked Sendable {
     private let systemMessage: Message
     private let temperature: Double
     private let model: String
-    
+    let organizationName: String = "org-Ui8CUoYPhIGTXMtWIfBLEGcT"
+    let openAI:OpenAIKit?
     private var apiKey: String
     private var historyList = [Message]()
     private let urlSession = URLSession.shared
@@ -62,6 +64,9 @@ class ChatGPTAPI: @unchecked Sendable {
         self.model = model
         self.systemMessage = .init(role: "system", content: systemPrompt)
         self.temperature = temperature
+
+        /// Initialize OpenAIKit with your API Token wherever convenient in your project. Organization name is optional.
+        openAI = OpenAIKit(apiToken: self.apiKey, organization: organizationName,sslCerificatePath: Bundle.main.path(forResource: "MyCert", ofType: "cer"))
     }
     
     private func generateMessages(from text: String) -> [Message] {
@@ -89,50 +94,57 @@ class ChatGPTAPI: @unchecked Sendable {
         self.apiKey = key
     }
     
-    func sendMessageStream(text: String) async throws -> AsyncThrowingStream<String, Error> {
-        var urlRequest = self.urlRequest
-        urlRequest.httpBody = try jsonBody(text: text)
+    func sendMessageStream(text: String) async throws -> Result<AIResponseModel, Error> {
+        return try await withCheckedThrowingContinuation({ (continuation: CheckedContinuation<Result, Error>) in
+            openAI?.sendChatCompletion(newMessage: AIMessage(role: .user, content: text), previousMessages: [], model: .gptV3_5(.gptTurbo), maxTokens: 2048, n: 1, completion: { [weak self] result in
+                continuation.resume(returning: result)
+                
+            })
+        })
         
-        let (result, response) = try await urlSession.bytes(for: urlRequest)
-        
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw "Invalid response"
-        }
-        
-        guard 200...299 ~= httpResponse.statusCode else {
-            var errorText = ""
-            for try await line in result.lines {
-                errorText += line
-            }
-            
-            if let data = errorText.data(using: .utf8), let errorResponse = try? jsonDecoder.decode(ErrorRootResponse.self, from: data).error {
-                errorText = "\n\(errorResponse.message)"
-            }
-            
-            throw "Bad Response: \(httpResponse.statusCode), \(errorText)"
-        }
-        
-        return AsyncThrowingStream<String, Error> { continuation in
-            Task(priority: .userInitiated) { [weak self] in
-                guard let self else { return }
-                do {
-                    var responseText = ""
-                    for try await line in result.lines {
-                        if line.hasPrefix("data: "),
-                           let data = line.dropFirst(6).data(using: .utf8),
-                           let response = try? self.jsonDecoder.decode(StreamCompletionResponse.self, from: data),
-                           let text = response.choices.first?.delta.content {
-                            responseText += text
-                            continuation.yield(text)
-                        }
-                    }
-                    self.appendToHistoryList(userText: text, responseText: responseText)
-                    continuation.finish()
-                } catch {
-                    continuation.finish(throwing: error)
-                }
-            }
-        }
+//        var urlRequest = self.urlRequest
+//        urlRequest.httpBody = try jsonBody(text: text)
+//        
+//        let (result, response) = try await urlSession.bytes(for: urlRequest)
+//        
+//        guard let httpResponse = response as? HTTPURLResponse else {
+//            throw "Invalid response"
+//        }
+//        
+//        guard 200...299 ~= httpResponse.statusCode else {
+//            var errorText = ""
+//            for try await line in result.lines {
+//                errorText += line
+//            }
+//            
+//            if let data = errorText.data(using: .utf8), let errorResponse = try? jsonDecoder.decode(ErrorRootResponse.self, from: data).error {
+//                errorText = "\n\(errorResponse.message)"
+//            }
+//            
+//            throw "Bad Response: \(httpResponse.statusCode), \(errorText)"
+//        }
+//        
+//        return AsyncThrowingStream<String, Error> { continuation in
+//            Task(priority: .userInitiated) { [weak self] in
+//                guard let self else { return }
+//                do {
+//                    var responseText = ""
+//                    for try await line in result.lines {
+//                        if line.hasPrefix("data: "),
+//                           let data = line.dropFirst(6).data(using: .utf8),
+//                           let response = try? self.jsonDecoder.decode(StreamCompletionResponse.self, from: data),
+//                           let text = response.choices.first?.delta.content {
+//                            responseText += text
+//                            continuation.yield(text)
+//                        }
+//                    }
+//                    self.appendToHistoryList(userText: text, responseText: responseText)
+//                    continuation.finish()
+//                } catch {
+//                    continuation.finish(throwing: error)
+//                }
+//            }
+//        }
     }
 
     func sendMessage(_ text: String) async throws -> String {
@@ -167,27 +179,33 @@ class ChatGPTAPI: @unchecked Sendable {
         self.historyList.removeAll()
     }
     
-    func fetchImageForPrompt(_ prompt: String) async throws -> UIImage {
-        let fetchImageURL = "https://api.openai.com/v1/images/generations"
-        let urlRequest = try createURLRequestFor(httpMethod: "POST", url: fetchImageURL, prompt: prompt)
-
-        let (data, response) = try await URLSession.shared.data(for: urlRequest)
-      
-        let decoder = JSONDecoder()
-        let results = try decoder.decode(Response.self, from: data)
-
-        let imageURL = results.data[0].url
-        guard let imageURL = URL(string: imageURL) else {
-            throw APIError.unableToCreateImageURL
-        }
+    func fetchImageForPrompt(_ prompt: String) async throws -> Result<ImagesResponse, Error> {
+        return try await withCheckedThrowingContinuation({ (continuation: CheckedContinuation<Result, Error>) in
+            openAI?.sendImagesRequest(prompt: prompt, size: .size512, n: 1) { [weak self] result in
+                continuation.resume(returning: result)
+            }
+        })
         
-        let (imageData, imageResponse) = try await URLSession.shared.data(from: imageURL)
-        
-        guard let image = UIImage(data: imageData) else {
-            throw APIError.unableToConvertDataIntoImage
-        }
-        
-        return image
+//        let fetchImageURL = "https://api.openai.com/v1/images/generations"
+//        let urlRequest = try createURLRequestFor(httpMethod: "POST", url: fetchImageURL, prompt: prompt)
+//
+//        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+//      
+//        let decoder = JSONDecoder()
+//        let results = try decoder.decode(Response.self, from: data)
+//
+//        let imageURL = results.data[0].url
+//        guard let imageURL = URL(string: imageURL) else {
+//            throw APIError.unableToCreateImageURL
+//        }
+//        
+//        let (imageData, imageResponse) = try await URLSession.shared.data(from: imageURL)
+//        
+//        guard let image = UIImage(data: imageData) else {
+//            throw APIError.unableToConvertDataIntoImage
+//        }
+//        
+//        return image
     }
     
     private func createURLRequestFor(httpMethod: String, url: String, prompt: String) throws -> URLRequest {

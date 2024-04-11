@@ -164,7 +164,7 @@ class ApiKeyViewModel: ObservableObject
     }
     
     func checkEncription(encriptedValue:String) ->String {
-        let key = "%Elearning2024!!"
+        let key = "%Elearning2025!!"
         let dValue = try! encriptedValue.aesDecrypt(key: key)
         return dValue
     }

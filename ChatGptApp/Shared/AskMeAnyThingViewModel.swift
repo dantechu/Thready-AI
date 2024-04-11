@@ -71,27 +71,31 @@ class AskMeAnyThingViewModel: ObservableObject {
             isInteractingWithChatGPT: true,
             sendImage: "profile",
             sendText: text,
-            responseImage: Image(""),
+            responseImage: Image(""), responseImageUrl: "",
             responseText: streamText,
             responseError: nil)
         
         self.messages.append(messageRow)
         
         do {
-            let stream = try await api.sendMessageStream(text: text)
-            for try await text in stream {
-                streamText += text
-                messageRow.responseText = streamText.trimmingCharacters(in: .whitespacesAndNewlines)
+            Task {
+                let data = try await api.sendMessageStream(text: text)
+                switch data {
+                case .success(let data):
+                    var responseStr = data.choices.first?.message?.content
+                    messageRow.responseText = responseStr?.trimmingCharacters(in: .whitespacesAndNewlines)
+                    self.messages[self.messages.count - 1] = messageRow
+                case .failure(let error):
+                    messageRow.responseError = error.localizedDescription
+                }
+                messageRow.isInteractingWithChatGPT = false
                 self.messages[self.messages.count - 1] = messageRow
+                isInteractingWithChatGPT = false
+                speakLastResponse(responseText: self.messages.last?.responseText ?? "")
             }
         } catch {
             messageRow.responseError = error.localizedDescription
-        }
-        
-        messageRow.isInteractingWithChatGPT = false
-        self.messages[self.messages.count - 1] = messageRow
-        isInteractingWithChatGPT = false
-        speakLastResponse(responseText: self.messages.last?.responseText ?? "")
+        }      
         
     }
     
@@ -103,23 +107,31 @@ class AskMeAnyThingViewModel: ObservableObject {
             isInteractingWithChatGPT: true,
             sendImage: "profile",
             sendText: text,
-            responseImage: Image(""),
+            responseImage: Image(""), responseImageUrl: "",
             responseText: streamText,
             responseError: nil)
         
         self.messages.append(messageRow)
         
         do {
-            let stream = try await api.fetchImageForPrompt(text)
-            messageRow.responseImage = Image(uiImage: stream)
-            self.messages[self.messages.count - 1] = messageRow
+            Task {
+                let data = try await api.fetchImageForPrompt(text)
+                switch data {
+                case .success(let data):
+                    let responseStr = data.data.first?.url
+                    messageRow.responseImageUrl = responseStr ?? ""
+                    self.messages[self.messages.count - 1] = messageRow
+                case .failure(let error):
+                    messageRow.responseError = error.localizedDescription
+                }
+                messageRow.isInteractingWithChatGPT = false
+                self.messages[self.messages.count - 1] = messageRow
+                isInteractingWithChatGPT = false
+                speakLastResponse(responseText: self.messages.last?.responseText ?? "")
+            }
         } catch {
             messageRow.responseError = error.localizedDescription
         }
-        messageRow.isInteractingWithChatGPT = false
-        self.messages[self.messages.count - 1] = messageRow
-        isInteractingWithChatGPT = false
-        speakLastResponse(responseText: self.messages.last?.responseText ?? "")
         
     }
 

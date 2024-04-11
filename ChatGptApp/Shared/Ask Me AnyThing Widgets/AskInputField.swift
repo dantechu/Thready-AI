@@ -12,6 +12,7 @@
 
 import SwiftUI
 
+@available(watchOS 8.0, *)
 struct AskInputField: View {
     
     @Binding var askMeInput: String
@@ -36,13 +37,10 @@ struct AskInputField: View {
             
             VStack(spacing: isMessageEmpty ? 20 : 10) {
                 if isMessageEmpty {
-                    
                     ZStack{
                         getGifIcon()
-                        
                         HStack(alignment: .top,spacing: 5){
                             personaIcon()
-
                             Circle()
                                 .frame(width: 50, height: 50)
                                 .foregroundColor(Color.clear)
