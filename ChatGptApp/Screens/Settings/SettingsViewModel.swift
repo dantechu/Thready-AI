@@ -14,7 +14,7 @@ class SettingsViewModel{
     
     func sendEmail() {
         guard MFMailComposeViewController.canSendMail() else {
-            print("Error: Email cannot be sent")
+          //  print("Error: Email cannot be sent")
             return
         }
         
@@ -25,7 +25,7 @@ class SettingsViewModel{
         
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let window = windowScene.windows.first(where: { $0.isKeyWindow }) else {
-            print("Error: No key window found")
+            //print("Error: No key window found")
             return
         }
         
@@ -34,13 +34,13 @@ class SettingsViewModel{
     
     func openURL(_ url: URL?) {
         guard let url = url else {
-            print("Error: Invalid URL")
+            //print("Error: Invalid URL")
             return
         }
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
-            print("Error: Cannot open URL")
+            //print("Error: Cannot open URL")
         }
     }
     

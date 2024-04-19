@@ -20,7 +20,7 @@ class ChatHistoryDateVIewModel: ObservableObject {
                 chatDates[dateStr] = [history]
             }
         }
-        print(chatDates)
+        //print(chatDates)
     }
     
     private func formatDate(_ date: Date) -> String {

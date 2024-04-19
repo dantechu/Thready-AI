@@ -79,7 +79,7 @@ struct ChatHistoryDateView: View {
             self.viewContext.delete(todo)
             do {
                 try viewContext.save()
-                print("perform delete")
+                //print("perform delete")
             } catch {
                 // handle the Core Data error
             }

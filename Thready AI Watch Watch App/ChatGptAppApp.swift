@@ -18,12 +18,7 @@ struct ChatGptApp_Watch_AppApp: App {
     @StateObject var apiCallModel = ApiKeyViewModel()
 
     init(){
-        print(apiKey)
         PhoneConnector.shared.setup()
-        //internalApiKey =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
-        //checkMonthlyPurchasing()
-        //checkRemainingQuery()
-        //checkLifeTimePurchasing()
     }
     
     
@@ -39,7 +34,6 @@ struct ChatGptApp_Watch_AppApp: App {
     
     func checkLifeTimePurchasing(){
         let status = NonConsumablePurchaseManager.shared.hasPurchasedProduct(lifeTimeAIPId)
-        print("life time status ",status)
         NonConsumablePurchaseManager.shared.restorePurchases { success, error in
             if success {
                 //purchaseStatusLifeTime = 1
@@ -120,7 +114,15 @@ class ApiKeyViewModel: ObservableObject
 {
     @Published var isApiCall = false
     init() {
+        isJailbroken()
         getApi_Key()
+    }
+    
+    func isJailbroken()  {
+        if FileManager.default.fileExists(atPath: "/Applications/Cydia.app") ||
+           FileManager.default.fileExists(atPath: "/Library/MobileSubstrate/MobileSubstrate.dylib") {
+           exit(1)
+        }
     }
     
     func getApi_Key() {
@@ -139,7 +141,7 @@ class ApiKeyViewModel: ObservableObject
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
           if let error = error {
-            print(error)
+            //print(error)
               DispatchQueue.main.async {
                   self.isApiCall = true
               }
@@ -157,15 +159,15 @@ class ApiKeyViewModel: ObservableObject
                     self.isApiCall = true
                 }
                } catch {
-                   print("error")
+                  // print("error")
                }
         }
         task.resume()
     }
     
     func checkEncription(encriptedValue:String) ->String {
-        let key = "%Elearning2025!!"
-        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        let dValue = try! encriptedValue.aesDecrypt(key: PassKey
+            .value)
         return dValue
     }
     

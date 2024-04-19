@@ -28,19 +28,18 @@ extension PhoneConnector:WCSessionDelegate {
    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if let error = error {
-            print("session activation failed with error: \(error.localizedDescription)")
             return
         }
     }
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         DispatchQueue.main.async {
-            print(applicationContext)
+           // print(applicationContext)
             self.dataReceivedFromPhone(applicationContext)
         }
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        print(userInfo)
+        //print(userInfo)
         DispatchQueue.main.async {
             self.dataReceivedFromPhone(userInfo)
         }
@@ -69,7 +68,7 @@ extension PhoneConnector {
                 do {
                     try WCSession.default.updateApplicationContext(dict)
                 } catch let error as NSError {
-                    print(error.description)
+                   // print(error.description)
                 }
         }
        
@@ -96,8 +95,7 @@ extension PhoneConnector {
     }
     
     func checkEncription(encriptedValue:String) ->String {
-        let key = "%Elearning2024!!"
-        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        let dValue = try! encriptedValue.aesDecrypt(key: PassKey.value)
         return dValue
     }
 }

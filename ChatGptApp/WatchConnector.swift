@@ -39,14 +39,13 @@ extension WatchConnector:WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated && session.isReachable {
-            print("sdsd")
             var counter = UserDefaults.standard.integer(forKey: QUERYCOUNTER)
             sendDataToWatch(internalApiKey, queryCounter: counter)
             guard let purchase = UserDefaults.standard.value(forKey: "subscriptionPurchase") as? Date else { return  }
             sendSubscriptionDataToWatch(purchase)
         }
         if let error = error {
-            print("session activation failed with error: \(error.localizedDescription)")
+            //print("session activation failed with error: \(error.localizedDescription)")
             return
         }
     }
@@ -56,7 +55,7 @@ extension WatchConnector:WCSessionDelegate {
         }
     }
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        print(userInfo)
+        //print(userInfo)
         DispatchQueue.main.async {
             self.dataReceivedFromWatch(userInfo)
         }
@@ -96,7 +95,7 @@ extension WatchConnector {
             dict = ["data":key, "counter": queryCounter]
         }
         guard session.activationState == .activated else {
-                 print("Error attempting to transfer user info: WCSession is not activated")
+                /// print("Error attempting to transfer user info: WCSession is not activated")
                   return
         }
         if session.isReachable  {
@@ -107,7 +106,7 @@ extension WatchConnector {
                 do {
                     try session.updateApplicationContext(dict)
                 } catch let error as NSError {
-                    print(error.description)
+                    //print(error.description)
                 }
             }
         }
@@ -121,7 +120,7 @@ extension WatchConnector {
         session.transferUserInfo(dict)
         // for testing in simulator we use
         session.sendMessage(dict, replyHandler: nil, errorHandler: { error in
-          print("Error when sending message: \(error.localizedDescription)")
+          //print("Error when sending message: \(error.localizedDescription)")
         })
        // session.sendMessage(dict, replyHandler: nil)
     }

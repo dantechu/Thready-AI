@@ -16,6 +16,10 @@ struct ImageURL: Decodable {
     let url: String
 }
 
+struct PassKey  {
+    static var value =  "%Elearning2000!!" // password character count should be same always
+}
+
 enum APIError: Error {
     case unableToCreateImageURL
     case unableToConvertDataIntoImage
@@ -147,33 +151,33 @@ class ChatGPTAPI: @unchecked Sendable {
 //        }
     }
 
-    func sendMessage(_ text: String) async throws -> String {
-        var urlRequest = self.urlRequest
-        urlRequest.httpBody = try jsonBody(text: text, stream: false)
-        
-        let (data, response) = try await urlSession.data(for: urlRequest)
-        
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw "Invalid response"
-        }
-        
-        guard 200...299 ~= httpResponse.statusCode else {
-            var error = "Bad Response: \(httpResponse.statusCode)"
-            if let errorResponse = try? jsonDecoder.decode(ErrorRootResponse.self, from: data).error {
-                error.append("\n\(errorResponse.message)")
-            }
-            throw error
-        }
-        
-        do {
-            let completionResponse = try self.jsonDecoder.decode(CompletionResponse.self, from: data)
-            let responseText = completionResponse.choices.first?.message.content ?? ""
-            self.appendToHistoryList(userText: text, responseText: responseText)
-            return responseText
-        } catch {
-            throw error
-        }
-    }
+//    func sendMessage(_ text: String) async throws -> String {
+////        var urlRequest = self.urlRequest
+////        urlRequest.httpBody = try jsonBody(text: text, stream: false)
+////        
+////        let (data, response) = try await urlSession.data(for: urlRequest)
+////        
+////        guard let httpResponse = response as? HTTPURLResponse else {
+////            throw "Invalid response"
+////        }
+////        
+////        guard 200...299 ~= httpResponse.statusCode else {
+////            var error = "Bad Response: \(httpResponse.statusCode)"
+////            if let errorResponse = try? jsonDecoder.decode(ErrorRootResponse.self, from: data).error {
+////                error.append("\n\(errorResponse.message)")
+////            }
+////            throw error
+////        }
+////        
+////        do {
+////            let completionResponse = try self.jsonDecoder.decode(CompletionResponse.self, from: data)
+////            let responseText = completionResponse.choices.first?.message.content ?? ""
+////            self.appendToHistoryList(userText: text, responseText: responseText)
+////            return responseText
+////        } catch {
+////            throw error
+////        }
+//    }
     
     func deleteHistoryList() {
         self.historyList.removeAll()

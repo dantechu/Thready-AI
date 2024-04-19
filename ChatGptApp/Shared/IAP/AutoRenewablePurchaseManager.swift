@@ -142,9 +142,11 @@ class SubscriptionManager: NSObject, SKProductsRequestDelegate, SKPaymentTransac
             let prodID = t.payment.productIdentifier as String
             switch prodID{
             case "IAP id":
-                print("Remove Ads")
+                break
+               // print("Remove Ads")
             default:
-                print("IAP not setup")
+                break
+               // print("IAP not setup")
             }
         }
     }

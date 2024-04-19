@@ -15,6 +15,9 @@ extension View {
     }
 }
 
+extension String {
+func reverse() -> String  { return self.reduce("") { "\($1)" + $0 } }
+}
 
 struct RoundedCorner: Shape {
 

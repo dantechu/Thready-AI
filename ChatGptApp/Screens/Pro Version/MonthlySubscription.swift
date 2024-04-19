@@ -100,8 +100,9 @@ struct MonthlySubscription: View {
                     // Update UI with the product price
                     self.price = "\(price.currencyCode)\(price.price)"
                 case .failure(let error):
+                    break
                     // Handle error
-                    print("Failed to fetch product price: \(error.localizedDescription)")
+                   // print("Failed to fetch product price: \(error.localizedDescription)")
                 }
             }
         }

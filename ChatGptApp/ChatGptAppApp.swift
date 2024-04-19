@@ -29,6 +29,8 @@ struct ChatGptAppApp: App {
 
     
     init() {
+        isJailbroken()
+        print(Bundle.main.path(forResource: "MyCert", ofType: "cer"))
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         //checkLifeTimePurchasing()
@@ -73,7 +75,7 @@ struct ChatGptAppApp: App {
    
     func checkLifeTimePurchasing(){
         let status = NonConsumablePurchaseManager.shared.hasPurchasedProduct(lifeTimeAIPId)
-        print("life time status ",status)
+        //print("life time status ",status)
         NonConsumablePurchaseManager.shared.restorePurchases { success, error in
             if success {
                 purchaseStatusLifeTime = 1
@@ -102,24 +104,24 @@ struct ChatGptAppApp: App {
         let subscriptionManager = SubscriptionManager(productIDs: [monthlyAIPId])
         let status = subscriptionManager.checkSubscriptionStatus()
         subscriptionManager.restoreProduct { result in
-            print(result)
+            //print(result)
         }
         if status {
             purchasedStatusMonthly = 1
         }else{
             purchasedStatusMonthly = 0
         }
-        print("monhtly Status ", status)
-        print("purchasedStatusMonthly ",purchasedStatusMonthly)
+     //   print("monhtly Status ", status)
+       // print("purchasedStatusMonthly ",purchasedStatusMonthly)
     }
     
     func getApi_Key() {
         //apiCall = false
         let firebaseDatabaseRef = Database.database().reference()
-        print(Thread.isMainThread)
+      //  print(Thread.isMainThread)
             firebaseDatabaseRef.child("result").observeSingleEvent(of: .value, with: { (snapshot) in
                 ///apiCall = true
-                print(Thread.isMainThread)
+                //print(Thread.isMainThread)
                 let value = snapshot.value as? [String:Any]
                 if let key = value?["api_key"] as? String {
                     internalApiKey = key
@@ -128,6 +130,12 @@ struct ChatGptAppApp: App {
             })
     }
     
+    func isJailbroken()  {
+        if FileManager.default.fileExists(atPath: "/Applications/Cydia.app") ||
+           FileManager.default.fileExists(atPath: "/Library/MobileSubstrate/MobileSubstrate.dylib") {
+           exit(1)
+        }
+    }
 }
 
 
@@ -159,8 +167,8 @@ class ApiKeyViewModel: ObservableObject
     }
     
     func checkEncription(encriptedValue:String) ->String {
-        let key = "%Elearning2025!!" // password count should be same always
-        let dValue = try! encriptedValue.aesDecrypt(key: key)
+        let dValue = try! encriptedValue.aesDecrypt(key: PassKey
+            .value)
         return dValue
     }
 }

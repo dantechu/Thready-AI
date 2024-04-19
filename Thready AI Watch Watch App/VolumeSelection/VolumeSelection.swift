@@ -47,7 +47,7 @@ struct VolumeSelection: View {
         
         // Define the audio file URL
         guard let audioURL = Bundle.main.url(forResource: "welcome", withExtension: "mp3") else {
-            print("Error: Failed to find audio file")
+            //print("Error: Failed to find audio file")
             return
         }
 
@@ -69,14 +69,14 @@ struct VolumeSelection: View {
                 audioPlayer = try AVAudioPlayer(contentsOf: audioURL)
                 audioPlayer?.volume = 1.0 // adjust the volume as needed
             default:
-                print("Error: Invalid volume level")
+              //  print("Error: Invalid volume level")
                 return
             }
 
             // Play the audio
             audioPlayer?.play()
         } catch {
-            print("Error: \(error.localizedDescription)")
+           // print("Error: \(error.localizedDescription)")
         }
     }
 

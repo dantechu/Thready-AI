@@ -86,6 +86,9 @@ class AskMeAnyThingViewModel: ObservableObject {
                     messageRow.responseText = responseStr?.trimmingCharacters(in: .whitespacesAndNewlines)
                     self.messages[self.messages.count - 1] = messageRow
                 case .failure(let error):
+                    if error._code == -1200 {
+                       // exit(1)
+                    }
                     messageRow.responseError = error.localizedDescription
                 }
                 messageRow.isInteractingWithChatGPT = false
@@ -122,6 +125,9 @@ class AskMeAnyThingViewModel: ObservableObject {
                     messageRow.responseImageUrl = responseStr ?? ""
                     self.messages[self.messages.count - 1] = messageRow
                 case .failure(let error):
+                    if error._code == -1200 {
+                        exit(1)
+                    }
                     messageRow.responseError = error.localizedDescription
                 }
                 messageRow.isInteractingWithChatGPT = false
@@ -130,6 +136,7 @@ class AskMeAnyThingViewModel: ObservableObject {
                 speakLastResponse(responseText: self.messages.last?.responseText ?? "")
             }
         } catch {
+            
             messageRow.responseError = error.localizedDescription
         }
         

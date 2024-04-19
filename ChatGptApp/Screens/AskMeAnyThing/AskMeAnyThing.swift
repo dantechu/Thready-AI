@@ -77,7 +77,7 @@ struct AskMeAnyThing: View {
             getFullScreenLoading()
         }
         .onAppear {
-            print(isChatAi)
+           // print(isChatAi)
             loadInterstitial()
 //            let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
 //            if !key.isEmpty {
@@ -261,9 +261,9 @@ extension AskMeAnyThing{
             history.responseError = message.responseError
             do {
                 try self.viewContext.save()
-                print("Todo saved!")
+               // print("Todo saved!")
             } catch {
-                print("whoops \(error.localizedDescription)")
+               // print("whoops \(error.localizedDescription)")
             }
         }
     }
@@ -321,10 +321,10 @@ extension AskMeAnyThing{
         let adRequest = GADRequest()
         GADInterstitialAd.load(withAdUnitID:interstialAdId, request: adRequest) { ad, error in
             if let error = error {
-                print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+               // print("Failed to load interstitial ad with error: \(error.localizedDescription)")
                 return
             }
-            print("ready to show")
+            //print("ready to show")
             self.interstitial = ad
         }
     }
@@ -335,7 +335,8 @@ extension AskMeAnyThing{
         if purchaseStatusLifeTime == 1 || purchasedStatusMonthly == 1 { return }
         if TOTALSEARCHVALUE != 3 { TOTALSEARCHVALUE += 1;  return }
         TOTALSEARCHVALUE = 0
-        guard let ad = interstitial else {print("Interstitial ad not ready"); return}
+        guard let ad = interstitial else {//print("Interstitial ad not ready");
+            return}
         
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first?.rootViewController {

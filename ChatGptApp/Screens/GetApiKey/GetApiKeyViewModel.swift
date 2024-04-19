@@ -55,7 +55,7 @@ class GetApiKeyViewModel:ObservableObject{
             // Add the new value to the Keychain
             let status = SecItemAdd(query as CFDictionary, nil)
             guard status == errSecSuccess else {
-                print("Error saving to Keychain: \(status)")
+               // print("Error saving to Keychain: \(status)")
                 return
             }
         }
@@ -75,7 +75,7 @@ class GetApiKeyViewModel:ObservableObject{
         let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
 
         guard status == errSecSuccess else {
-            print("Error retrieving from Keychain: \(status)")
+           // print("Error retrieving from Keychain: \(status)")
             return nil
         }
 
