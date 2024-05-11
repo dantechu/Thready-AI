@@ -90,7 +90,6 @@ struct ContentView: View {
                 isListening: $isListening, isChatAi: .constant(true), isMessageEmpty: $vm.messages.isEmpty) {
                     
                     if queryCounter == 0 && watchPurchasedStatusMonthly == 0 {showPremiumScreen = true;  return }
-                    queryCounter -= 1
                     PhoneConnector.shared.sendDataToPhone(queryCounter)
                     Task { @MainActor in
                         await vm.sendTapped()
@@ -172,7 +171,6 @@ extension ContentView{
                 .onSubmit {
                     
                     if queryCounter == 0 && watchPurchasedStatusMonthly == 0 {showPremiumScreen = true;  return }
-                    queryCounter -= 1
                     
                     
                     Task { @MainActor in

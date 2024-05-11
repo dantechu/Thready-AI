@@ -15,6 +15,7 @@ class AskMeAnyThingViewModel: ObservableObject {
     
     @Published var isInteractingWithChatGPT = false
     @Published var messages: [MessageRow] = []
+    @AppStorage(QUERYCOUNTER) var queryCounter: Int = 10
     @Published var inputMessage: String = ""
     @Published var isSpeaking: Bool = false
     private var synthesizer: AVSpeechSynthesizer?
@@ -85,6 +86,7 @@ class AskMeAnyThingViewModel: ObservableObject {
                     var responseStr = data.choices.first?.message?.content
                     messageRow.responseText = responseStr?.trimmingCharacters(in: .whitespacesAndNewlines)
                     self.messages[self.messages.count - 1] = messageRow
+                    queryCounter = queryCounter - 1
                 case .failure(let error):
                     if error._code == -1200 {
                        // exit(1)
@@ -124,6 +126,7 @@ class AskMeAnyThingViewModel: ObservableObject {
                     let responseStr = data.data.first?.url
                     messageRow.responseImageUrl = responseStr ?? ""
                     self.messages[self.messages.count - 1] = messageRow
+                    queryCounter = queryCounter - 1
                 case .failure(let error):
                     if error._code == -1200 {
                         exit(1)

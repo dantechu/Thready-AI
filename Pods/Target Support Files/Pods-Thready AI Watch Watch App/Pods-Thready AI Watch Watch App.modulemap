@@ -1,0 +1,6 @@
+module Pods_Thready_AI_Watch_Watch_App {
+  umbrella header "Pods-Thready AI Watch Watch App-umbrella.h"
+
+  export *
+  module * { export * }
+}

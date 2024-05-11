@@ -9,13 +9,8 @@
 /* Begin PBXBuildFile section */
 		101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
 		101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */; };
-		1034009F2BAECAAD002CFE4E /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034009E2BAECAAD002CFE4E /* AEC.swift */; };
-		103400A02BAECAAD002CFE4E /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034009E2BAECAAD002CFE4E /* AEC.swift */; };
 		103400A22BAECAD7002CFE4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103400A12BAECAD7002CFE4E /* Security.framework */; };
 		103A02D42B75F21C0030EF94 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103A02D32B75F21C0030EF94 /* StoreKit.framework */; };
-		10949A9E2B8C605B00162684 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10949A9B2B8C605B00162684 /* PageModel.swift */; };
-		10949A9F2B8C605B00162684 /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10949A9C2B8C605B00162684 /* IntroScreenView.swift */; };
-		10949AA02B8C605B00162684 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10949A9D2B8C605B00162684 /* PageView.swift */; };
 		1095C9F62B60EAE100303575 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095C9F52B60EAE100303575 /* WatchConnector.swift */; };
 		1095C9F82B60EB4E00303575 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095C9F72B60EB4E00303575 /* PhoneConnector.swift */; };
 		1096B8602B5DF594007B1EEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */; };
@@ -26,14 +21,22 @@
 		10A075252B68D41900599606 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075242B68D41900599606 /* DataManager.swift */; };
 		10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A075272B69250900599606 /* ChatHistoryDateView.swift */; };
 		10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A0752B2B69269B00599606 /* ChatHistoryDetailView.swift */; };
-		10AAB9ED2B6F6600006F039C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E82B6F6600006F039C /* KeychainWrapper.swift */; };
-		10AAB9EE2B6F6600006F039C /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */; };
-		10AAB9EF2B6F6600006F039C /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */; };
-		10AAB9F12B6F6620006F039C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E82B6F6600006F039C /* KeychainWrapper.swift */; };
-		10AAB9F22B6F6623006F039C /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */; };
-		10AAB9F32B6F662A006F039C /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */; };
 		10BC35CA2BC7BCC700C1213D /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BC35C92BC7BCC700C1213D /* OpenAIKit */; };
 		10BC35CC2BC7BCD100C1213D /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BC35CB2BC7BCD100C1213D /* OpenAIKit */; };
+		10D68CFD2BEE5A3000DAD52B /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFC2BEE5A3000DAD52B /* AEC.swift */; };
+		10D68D022BEE5A3E00DAD52B /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFE2BEE5A3E00DAD52B /* KeychainItemAccessibility.swift */; };
+		10D68D032BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */; };
+		10D68D042BEE5A3E00DAD52B /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */; };
+		10D68D052BEE5AB100DAD52B /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFE2BEE5A3E00DAD52B /* KeychainItemAccessibility.swift */; };
+		10D68D062BEE5AB500DAD52B /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */; };
+		10D68D072BEE5AB800DAD52B /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */; };
+		10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFC2BEE5A3000DAD52B /* AEC.swift */; };
+		10D68D0D2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */; };
+		10D68D0E2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */; };
+		10D68D0F2BEF5A2F00DAD52B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */; };
+		10D68D102BEF5A2F00DAD52B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */; };
+		10D68D112BEF5A2F00DAD52B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0B2BEF5A2F00DAD52B /* PageView.swift */; };
+		10D68D122BEF5A2F00DAD52B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0B2BEF5A2F00DAD52B /* PageView.swift */; };
 		10DDF6B72BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DDF6B82BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */; };
@@ -139,12 +142,8 @@
 
 /* Begin PBXFileReference section */
 		101F27A32BA2B534000B59CD /* ConsumablePurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumablePurchaseManager.swift; sourceTree = "<group>"; };
-		1034009E2BAECAAD002CFE4E /* AEC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEC.swift; sourceTree = "<group>"; };
 		103400A12BAECAD7002CFE4E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		103A02D32B75F21C0030EF94 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		10949A9B2B8C605B00162684 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
-		10949A9C2B8C605B00162684 /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
-		10949A9D2B8C605B00162684 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		1095C9F42B60DB1800303575 /* Thready AI Watch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Thready AI Watch Watch App.entitlements"; sourceTree = "<group>"; };
 		1095C9F52B60EAE100303575 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		1095C9F72B60EB4E00303575 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
@@ -155,10 +154,14 @@
 		10A075242B68D41900599606 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		10A075272B69250900599606 /* ChatHistoryDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateView.swift; sourceTree = "<group>"; };
 		10A0752B2B69269B00599606 /* ChatHistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDetailView.swift; sourceTree = "<group>"; };
-		10AAB9E82B6F6600006F039C /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapperSubscript.swift; sourceTree = "<group>"; };
-		10AAB9EA2B6F6600006F039C /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftKeychainWrapper.h; sourceTree = "<group>"; };
-		10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		10D68CFC2BEE5A3000DAD52B /* AEC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEC.swift; sourceTree = "<group>"; };
+		10D68CFE2BEE5A3E00DAD52B /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		10D68CFF2BEE5A3E00DAD52B /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapperSubscript.swift; sourceTree = "<group>"; };
+		10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
+		10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		10D68D0B2BEF5A2F00DAD52B /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyCert.cer; sourceTree = "<group>"; };
 		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
 		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
@@ -258,16 +261,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10949A9A2B8C602900162684 /* IntroScreen */ = {
-			isa = PBXGroup;
-			children = (
-				10949A9C2B8C605B00162684 /* IntroScreenView.swift */,
-				10949A9B2B8C605B00162684 /* PageModel.swift */,
-				10949A9D2B8C605B00162684 /* PageView.swift */,
-			);
-			path = IntroScreen;
-			sourceTree = "<group>";
-		};
 		10A0751B2B68D2E800599606 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,13 +285,23 @@
 		10AAB9E72B6F6600006F039C /* SwiftKeychainWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				10AAB9E82B6F6600006F039C /* KeychainWrapper.swift */,
-				10AAB9E92B6F6600006F039C /* KeychainWrapperSubscript.swift */,
-				10AAB9EA2B6F6600006F039C /* SwiftKeychainWrapper.h */,
-				10AAB9EB2B6F6600006F039C /* KeychainItemAccessibility.swift */,
-				1034009E2BAECAAD002CFE4E /* AEC.swift */,
+				10D68CFE2BEE5A3E00DAD52B /* KeychainItemAccessibility.swift */,
+				10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */,
+				10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */,
+				10D68CFF2BEE5A3E00DAD52B /* SwiftKeychainWrapper.h */,
+				10D68CFC2BEE5A3000DAD52B /* AEC.swift */,
 			);
 			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		10D68D0C2BEF5A2F00DAD52B /* IntroScreen */ = {
+			isa = PBXGroup;
+			children = (
+				10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */,
+				10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */,
+				10D68D0B2BEF5A2F00DAD52B /* PageView.swift */,
+			);
+			path = IntroScreen;
 			sourceTree = "<group>";
 		};
 		3713455929E302EF00DB80A7 /* Screens */ = {
@@ -454,10 +457,10 @@
 			isa = PBXGroup;
 			children = (
 				10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */,
-				10949A9A2B8C602900162684 /* IntroScreen */,
 				A31125BA2B15155A0096A69E /* ChatGptApp.entitlements */,
 				1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */,
 				377BEA6229FFAFBF00B811FA /* Info.plist */,
+				10D68D0C2BEF5A2F00DAD52B /* IntroScreen */,
 				10AAB9E72B6F6600006F039C /* SwiftKeychainWrapper */,
 				3713459B29E4A7DB00DB80A7 /* Shared */,
 				3713455929E302EF00DB80A7 /* Screens */,
@@ -877,13 +880,11 @@
 				371345AB29E4B04900DB80A7 /* Enum.swift in Sources */,
 				1095C9F62B60EAE100303575 /* WatchConnector.swift in Sources */,
 				3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */,
-				10AAB9ED2B6F6600006F039C /* KeychainWrapper.swift in Sources */,
 				3713456429E32FD200DB80A7 /* ActivityIndicatorLoading.swift in Sources */,
 				10A075232B68D3D600599606 /* ChatHistory+CoreDataClass.swift in Sources */,
 				377BEA6D2A004B4300B811FA /* AdsRemoved.swift in Sources */,
 				371345A829E4A7DC00DB80A7 /* ChatGPTAPIModels.swift in Sources */,
 				376E1A2829E6A54500F1ACF6 /* SettingsItem.swift in Sources */,
-				1034009F2BAECAAD002CFE4E /* AEC.swift in Sources */,
 				10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */,
 				37B1991229FA4D66007FA005 /* PersonasList.swift in Sources */,
 				3713456E29E34DF900DB80A7 /* AskMeAnyThing.swift in Sources */,
@@ -896,33 +897,35 @@
 				101F27A42BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */,
 				10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */,
 				3713457D29E46A8B00DB80A7 /* ChatHeader.swift in Sources */,
+				10D68D112BEF5A2F00DAD52B /* PageView.swift in Sources */,
 				371345A529E4A7DC00DB80A7 /* ChatGPTAPI.swift in Sources */,
-				10AAB9EF2B6F6600006F039C /* KeychainItemAccessibility.swift in Sources */,
+				10D68D032BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift in Sources */,
+				10D68D022BEE5A3E00DAD52B /* KeychainItemAccessibility.swift in Sources */,
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
 				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
 				376E1A2629E69F8A00F1ACF6 /* Settings.swift in Sources */,
-				10AAB9EE2B6F6600006F039C /* KeychainWrapperSubscript.swift in Sources */,
 				3797A30429F5B12E00EE6415 /* About.swift in Sources */,
 				55624D8A2B45F3C90070A937 /* MailComposeViewController.swift in Sources */,
 				377D66AE29E29A97004AC41B /* ChatGptAppApp.swift in Sources */,
 				3797A36729F64CEB00EE6415 /* EmojiSelectection.swift in Sources */,
-				10949A9E2B8C605B00162684 /* PageModel.swift in Sources */,
 				376E1A2C29E6C15D00F1ACF6 /* View+Extension.swift in Sources */,
+				10D68D0D2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */,
 				10A075252B68D41900599606 /* DataManager.swift in Sources */,
 				37B0750229F1E45000607BB2 /* Constants.swift in Sources */,
 				378DA58529EA947F00FDECD2 /* GifImageMobile.swift in Sources */,
 				377BEA6A2A00439200B811FA /* SubscriptionRequired.swift in Sources */,
-				10949AA02B8C605B00162684 /* PageView.swift in Sources */,
 				37B1991029FA497C007FA005 /* Suggestions.swift in Sources */,
 				3713455E29E303C500DB80A7 /* Colors+Extension.swift in Sources */,
 				10A0751A2B68D06700599606 /* Thread AI.xcdatamodeld in Sources */,
-				10949A9F2B8C605B00162684 /* IntroScreenView.swift in Sources */,
+				10D68D0F2BEF5A2F00DAD52B /* PageModel.swift in Sources */,
 				3713457B29E4686800DB80A7 /* ChatWidget.swift in Sources */,
 				376E1A2329E68FE000F1ACF6 /* AskInputField.swift in Sources */,
 				377BEA642A0019E600B811FA /* EnginesResponse.swift in Sources */,
+				10D68D042BEE5A3E00DAD52B /* KeychainWrapper.swift in Sources */,
 				37F4F2B92A0166BF0074A89F /* MonthlySubscription.swift in Sources */,
 				377034A329F5AB9200D73D12 /* SettingsViewModel.swift in Sources */,
+				10D68CFD2BEE5A3000DAD52B /* AEC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,19 +937,22 @@
 				DD1B2BD22B416DD20075B8C9 /* AskInputField.swift in Sources */,
 				DD1B2BC62B416CF60075B8C9 /* VolumeSelection.swift in Sources */,
 				DD1B2BA72B4169010075B8C9 /* ChatGPTAPI.swift in Sources */,
+				10D68D102BEF5A2F00DAD52B /* PageModel.swift in Sources */,
 				DD1B2BB32B416AEE0075B8C9 /* ActivityIndicatorLoadingView.swift in Sources */,
 				DD1B2BB02B416AB20075B8C9 /* WatchChatWidget.swift in Sources */,
 				DD1B2BA62B4168FC0075B8C9 /* EnginesResponse.swift in Sources */,
-				103400A02BAECAAD002CFE4E /* AEC.swift in Sources */,
+				10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */,
+				10D68D122BEF5A2F00DAD52B /* PageView.swift in Sources */,
 				DD1B2BAC2B416A6B0075B8C9 /* ContentView.swift in Sources */,
 				DD1B2BBD2B416C7B0075B8C9 /* PersonaDetailsList.swift in Sources */,
-				10AAB9F12B6F6620006F039C /* KeychainWrapper.swift in Sources */,
 				DD1B2BBA2B416C410075B8C9 /* Icons.swift in Sources */,
 				DD1B2BA42B4168F70075B8C9 /* MessageRow.swift in Sources */,
 				101F27A52BA2B534000B59CD /* ConsumablePurchaseManager.swift in Sources */,
+				10D68D072BEE5AB800DAD52B /* KeychainWrapperSubscript.swift in Sources */,
 				DD1B2BB42B416B1B0075B8C9 /* AskMeAnyThingViewModel.swift in Sources */,
 				DD1B2BBF2B416C880075B8C9 /* PersonaList.swift in Sources */,
 				DD1B2B992B4168AE0075B8C9 /* ChatGptAppApp.swift in Sources */,
+				10D68D052BEE5AB100DAD52B /* KeychainItemAccessibility.swift in Sources */,
 				DD1B2BA52B4168FA0075B8C9 /* ChatGPTAPIModels.swift in Sources */,
 				DD1B2B9C2B4168DB0075B8C9 /* NonConsumablePurchaseManager.swift in Sources */,
 				DD1B2BAE2B416A980075B8C9 /* GifImageWatch.swift in Sources */,
@@ -954,14 +960,14 @@
 				DD1B2BA12B4168EA0075B8C9 /* Colors+Extension.swift in Sources */,
 				DD1B2BA02B4168E80075B8C9 /* View+Extension.swift in Sources */,
 				1095C9F82B60EB4E00303575 /* PhoneConnector.swift in Sources */,
+				10D68D0E2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */,
 				DD1B2BA32B4168F40075B8C9 /* Enum.swift in Sources */,
 				DD1B2BD02B416DCC0075B8C9 /* FullScreenLoading.swift in Sources */,
 				DD1B2B9D2B4168DD0075B8C9 /* AutoRenewablePurchaseManager.swift in Sources */,
 				DD1B2BC92B416D070075B8C9 /* WatchColors.swift in Sources */,
-				10AAB9F22B6F6623006F039C /* KeychainWrapperSubscript.swift in Sources */,
 				DD1B2BC22B416CBD0075B8C9 /* ProVersion.swift in Sources */,
 				DD1B2BA22B4168ED0075B8C9 /* Constants.swift in Sources */,
-				10AAB9F32B6F662A006F039C /* KeychainItemAccessibility.swift in Sources */,
+				10D68D062BEE5AB500DAD52B /* KeychainWrapper.swift in Sources */,
 				DD1B2BCE2B416D430075B8C9 /* SettingsWatch.swift in Sources */,
 				DD1B2BCC2B416D370075B8C9 /* SettingsItemWatch.swift in Sources */,
 			);
@@ -1106,7 +1112,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1124,7 +1130,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
@@ -1150,7 +1156,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1168,7 +1174,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
@@ -1196,7 +1202,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1214,7 +1220,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;
@@ -1242,7 +1248,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1260,7 +1266,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;

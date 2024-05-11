@@ -29,7 +29,6 @@ struct AskMeAnyThing: View {
 
     
     var body: some View {
-        
         ZStack{
             Color.BGCOLOR
                 .ignoresSafeArea()
@@ -138,9 +137,6 @@ struct AskMeAnyThing: View {
                 isMessageEmpty: $vm.messages.isEmpty) {
                     self.showAd()
                     if queryCounter == 0 && purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 {isPresentingAdRemoveScreen = true;  return }
-                    if queryCounter !=  0 {
-                        queryCounter -= 1
-                    }
                     let key =  KeychainWrapper.standard.string(forKey:"apiKey") ?? ""
                     WatchConnector.shared.sendDataToWatch(key, queryCounter: queryCounter)
                     Task { @MainActor in
