@@ -31,12 +31,9 @@
 		10D68D062BEE5AB500DAD52B /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */; };
 		10D68D072BEE5AB800DAD52B /* KeychainWrapperSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */; };
 		10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFC2BEE5A3000DAD52B /* AEC.swift */; };
-		10D68D0D2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */; };
-		10D68D0E2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */; };
 		10D68D0F2BEF5A2F00DAD52B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */; };
-		10D68D102BEF5A2F00DAD52B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */; };
 		10D68D112BEF5A2F00DAD52B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0B2BEF5A2F00DAD52B /* PageView.swift */; };
-		10D68D122BEF5A2F00DAD52B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0B2BEF5A2F00DAD52B /* PageView.swift */; };
+		10D68D142BEF5BF300DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */; };
 		10DDF6B72BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DDF6B82BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */; };
@@ -159,9 +156,9 @@
 		10D68CFF2BEE5A3E00DAD52B /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftKeychainWrapper.h; sourceTree = "<group>"; };
 		10D68D002BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapperSubscript.swift; sourceTree = "<group>"; };
 		10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
 		10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		10D68D0B2BEF5A2F00DAD52B /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
 		10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyCert.cer; sourceTree = "<group>"; };
 		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
 		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
@@ -297,7 +294,7 @@
 		10D68D0C2BEF5A2F00DAD52B /* IntroScreen */ = {
 			isa = PBXGroup;
 			children = (
-				10D68D092BEF5A2F00DAD52B /* IntroScreenView.swift */,
+				10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */,
 				10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */,
 				10D68D0B2BEF5A2F00DAD52B /* PageView.swift */,
 			);
@@ -902,6 +899,7 @@
 				10D68D032BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift in Sources */,
 				10D68D022BEE5A3E00DAD52B /* KeychainItemAccessibility.swift in Sources */,
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
+				10D68D142BEF5BF300DAD52B /* IntroScreenView.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
 				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
 				376E1A2629E69F8A00F1ACF6 /* Settings.swift in Sources */,
@@ -910,7 +908,6 @@
 				377D66AE29E29A97004AC41B /* ChatGptAppApp.swift in Sources */,
 				3797A36729F64CEB00EE6415 /* EmojiSelectection.swift in Sources */,
 				376E1A2C29E6C15D00F1ACF6 /* View+Extension.swift in Sources */,
-				10D68D0D2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */,
 				10A075252B68D41900599606 /* DataManager.swift in Sources */,
 				37B0750229F1E45000607BB2 /* Constants.swift in Sources */,
 				378DA58529EA947F00FDECD2 /* GifImageMobile.swift in Sources */,
@@ -937,12 +934,10 @@
 				DD1B2BD22B416DD20075B8C9 /* AskInputField.swift in Sources */,
 				DD1B2BC62B416CF60075B8C9 /* VolumeSelection.swift in Sources */,
 				DD1B2BA72B4169010075B8C9 /* ChatGPTAPI.swift in Sources */,
-				10D68D102BEF5A2F00DAD52B /* PageModel.swift in Sources */,
 				DD1B2BB32B416AEE0075B8C9 /* ActivityIndicatorLoadingView.swift in Sources */,
 				DD1B2BB02B416AB20075B8C9 /* WatchChatWidget.swift in Sources */,
 				DD1B2BA62B4168FC0075B8C9 /* EnginesResponse.swift in Sources */,
 				10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */,
-				10D68D122BEF5A2F00DAD52B /* PageView.swift in Sources */,
 				DD1B2BAC2B416A6B0075B8C9 /* ContentView.swift in Sources */,
 				DD1B2BBD2B416C7B0075B8C9 /* PersonaDetailsList.swift in Sources */,
 				DD1B2BBA2B416C410075B8C9 /* Icons.swift in Sources */,
@@ -960,7 +955,6 @@
 				DD1B2BA12B4168EA0075B8C9 /* Colors+Extension.swift in Sources */,
 				DD1B2BA02B4168E80075B8C9 /* View+Extension.swift in Sources */,
 				1095C9F82B60EB4E00303575 /* PhoneConnector.swift in Sources */,
-				10D68D0E2BEF5A2F00DAD52B /* IntroScreenView.swift in Sources */,
 				DD1B2BA32B4168F40075B8C9 /* Enum.swift in Sources */,
 				DD1B2BD02B416DCC0075B8C9 /* FullScreenLoading.swift in Sources */,
 				DD1B2B9D2B4168DD0075B8C9 /* AutoRenewablePurchaseManager.swift in Sources */,
@@ -1112,7 +1106,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1156,7 +1150,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1202,7 +1196,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;
@@ -1248,7 +1242,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = XJ4Z3BM42J;

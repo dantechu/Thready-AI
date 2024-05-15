@@ -172,7 +172,7 @@ struct AdsRemoved: View {
                             .font(.system(size: 12))
                     }
                     Button {
-                        termsAndConditionTapped()
+                        privacyPolicyTapped()
                     } label: {
                         Text("Privacy Policy")
                             .foregroundColor(Color.gray)
@@ -313,12 +313,28 @@ extension AdsRemoved{
     }
     
     func termsAndConditionTapped(){
-        
+        guard let url = URL(string: "https://www.amazingonlinecourse.com/terms.htm") else {
+          return //be safe
+        }
+
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     
     
     func privacyPolicyTapped(){
-        
+        guard let url = URL(string: "https://www.amazingonlinecourse.com/privacy.htm") else {
+          return //be safe
+        }
+
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     
     func purchaseHundredPointsTapped(){

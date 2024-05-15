@@ -215,12 +215,12 @@ extension ContentView{
 
 
 
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        NavigationStack {
-            ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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")))
-        }
-    }
-}
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        
+//        NavigationStack {
+//            ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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")))
+//        }
+//    }
+//}

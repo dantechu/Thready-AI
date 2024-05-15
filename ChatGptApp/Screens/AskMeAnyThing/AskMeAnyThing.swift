@@ -182,7 +182,7 @@ struct AskMeAnyThing: View {
             Spacer()
             
             
-            if purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 && vm.messages.isEmpty{
+//            if purchasedStatusMonthly == 0 && purchaseStatusLifeTime == 0 && vm.messages.isEmpty{
                 ZStack {
                     Circle()
                         .foregroundColor(Color.APPERANCEUNSELECTEDBGCOLOR)
@@ -195,7 +195,7 @@ struct AskMeAnyThing: View {
                     moveToPremiumScreen()
                 }
                 
-            }
+            //}
             
         }
         .padding(.horizontal,20)
