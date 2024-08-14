@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SwiftOpenAI
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         IntroScreenView()
@@ -22,10 +22,12 @@ struct IntroScreenView: View {
     @EnvironmentObject var manager: DataManager
     @Environment(\.managedObjectContext) var viewContext
     @State private var showImageGPT = false
+    @State private var showSpeechGPT = false
     @State private var showChatView = false
     @State private var chatAI = true
     var apikey:String = ""
     var isSpeechEnabled:Bool = false
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -49,6 +51,31 @@ struct IntroScreenView: View {
                                                 .frame(width: 25, height: 25)
                                         }
                                         .frame(width: 260, height: 35)
+                                        .padding(12)
+                                        .foregroundColor(.white)
+                                    }
+                                    .background(.yellow,
+                                                in: RoundedRectangle(cornerRadius: 12))
+                                }
+                                
+                                
+                            }
+                        
+                        NavigationLink(destination: CreateAudioView(service: OpenAIServiceFactory.service(aiproxyPartialKey: "v2|3818e635|S4ipxjdvEsscAnSY", aiproxyServiceURL: "https://api.aiproxy.pro/058d45fb/757e6601"))
+                            .navigationBarBackButtonHidden(true)
+                            .environmentObject(manager)
+                            .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showSpeechGPT) {
+                                Button(action: goToSpeechGPT) {
+                                    HStack {
+                                        Label {
+                                            Text("Text to speech")
+                                                .font(.system(size: 20))
+                                        } icon: {
+                                            Image(systemName:"play.circle")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                        }
+                                        .frame(width: 260, height: 30)
                                         .padding(12)
                                         .foregroundColor(.white)
                                     }
@@ -99,6 +126,31 @@ struct IntroScreenView: View {
                                                     HStack {
                                                         Label {
                                                             Text("Image generator")
+                                                                .font(.system(size: 20))
+                                                        } icon: {
+                                                            Image(systemName:"play.circle")
+                                                                .resizable()
+                                                                .frame(width: 25, height: 25)
+                                                        }
+                                                        .frame(width: 260, height: 30)
+                                                        .padding(12)
+                                                        .foregroundColor(.white)
+                                                    }
+                                                    .background(.yellow,
+                                                                in: RoundedRectangle(cornerRadius: 12))
+                                                }
+                                                
+                                                
+                                            }
+                                        
+                                        NavigationLink(destination: CreateAudioView(service: OpenAIServiceFactory.service(aiproxyPartialKey: "v2|3818e635|S4ipxjdvEsscAnSY", aiproxyServiceURL: "https://api.aiproxy.pro/058d45fb/757e6601"))
+                                            .navigationBarBackButtonHidden(true)
+                                            .environmentObject(manager)
+                                            .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showSpeechGPT) {
+                                                Button(action: goToSpeechGPT) {
+                                                    HStack {
+                                                        Label {
+                                                            Text("Text to speech")
                                                                 .font(.system(size: 20))
                                                         } icon: {
                                                             Image(systemName:"play.circle")
@@ -173,6 +225,12 @@ struct IntroScreenView: View {
         //pageIndex = 0
         isIntroPass = true
         showImageGPT = true
+    }
+    
+    func goToSpeechGPT() {
+        //pageIndex = 0
+        isIntroPass = true
+        showSpeechGPT = true
     }
     func goToChatGPT() {
         //pageIndex = 0

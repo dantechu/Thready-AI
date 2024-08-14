@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,11 +33,14 @@
 		10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68CFC2BEE5A3000DAD52B /* AEC.swift */; };
 		10D68D0F2BEF5A2F00DAD52B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */; };
 		10D68D112BEF5A2F00DAD52B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D0B2BEF5A2F00DAD52B /* PageView.swift */; };
-		10D68D142BEF5BF300DAD52B /* IntroScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */; };
 		10DDF6B72BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DDF6B82BD06C3500F6BBF1 /* MyCert.cer in Resources */ = {isa = PBXBuildFile; fileRef = 10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */; };
 		10DE30182B6961F700002C14 /* ChatHistoryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */; };
 		10DE301B2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */; };
+		182643D32C56BB7200A25569 /* IntroScreenView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D22C56BB7200A25569 /* IntroScreenView .swift */; };
+		182643E02C6741A600A25569 /* CreateAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D62C6741A600A25569 /* CreateAudioView.swift */; };
+		182643E12C6741A600A25569 /* CreateAudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D72C6741A600A25569 /* CreateAudioViewModel.swift */; };
+		1875A12C2C69031D00BA3DB4 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1875A12B2C69031D00BA3DB4 /* SwiftOpenAI */; };
 		3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455A29E3030500DB80A7 /* GetApiKey.swift */; };
 		3713455E29E303C500DB80A7 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455D29E303C500DB80A7 /* Colors+Extension.swift */; };
 		3713456129E3285700DB80A7 /* GetApiKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713456029E3285700DB80A7 /* GetApiKeyViewModel.swift */; };
@@ -158,11 +161,13 @@
 		10D68D012BEE5A3E00DAD52B /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		10D68D0B2BEF5A2F00DAD52B /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreenView.swift; sourceTree = "<group>"; };
 		10DDF6B62BD06C3500F6BBF1 /* MyCert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyCert.cer; sourceTree = "<group>"; };
 		10DE30172B6961F700002C14 /* ChatHistoryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryWidget.swift; sourceTree = "<group>"; };
 		10DE301A2B6A21FC00002C14 /* ChatHistoryDateVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDateVIewModel.swift; sourceTree = "<group>"; };
 		16A4359B2A284569B86D98B6 /* libPods-Thready AI Watch Watch App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thready AI Watch Watch App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		182643D22C56BB7200A25569 /* IntroScreenView .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IntroScreenView .swift"; sourceTree = "<group>"; };
+		182643D62C6741A600A25569 /* CreateAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioView.swift; sourceTree = "<group>"; };
+		182643D72C6741A600A25569 /* CreateAudioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioViewModel.swift; sourceTree = "<group>"; };
 		22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
 		3713455D29E303C500DB80A7 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
@@ -239,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1875A12C2C69031D00BA3DB4 /* SwiftOpenAI in Frameworks */,
 				ABC657B6FA7DDF57FD3C0A6E /* Pods_Thready_AI.framework in Frameworks */,
 				103A02D42B75F21C0030EF94 /* StoreKit.framework in Frameworks */,
 				10BC35CA2BC7BCC700C1213D /* OpenAIKit in Frameworks */,
@@ -294,11 +300,28 @@
 		10D68D0C2BEF5A2F00DAD52B /* IntroScreen */ = {
 			isa = PBXGroup;
 			children = (
-				10D68D132BEF5BF300DAD52B /* IntroScreenView.swift */,
+				182643D22C56BB7200A25569 /* IntroScreenView .swift */,
 				10D68D0A2BEF5A2F00DAD52B /* PageModel.swift */,
 				10D68D0B2BEF5A2F00DAD52B /* PageView.swift */,
 			);
 			path = IntroScreen;
+			sourceTree = "<group>";
+		};
+		182643D82C6741A600A25569 /* CreateAudio */ = {
+			isa = PBXGroup;
+			children = (
+				182643D62C6741A600A25569 /* CreateAudioView.swift */,
+				182643D72C6741A600A25569 /* CreateAudioViewModel.swift */,
+			);
+			path = CreateAudio;
+			sourceTree = "<group>";
+		};
+		182643DF2C6741A600A25569 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				182643D82C6741A600A25569 /* CreateAudio */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		3713455929E302EF00DB80A7 /* Screens */ = {
@@ -457,6 +480,7 @@
 				A31125BA2B15155A0096A69E /* ChatGptApp.entitlements */,
 				1096B85F2B5DF594007B1EEE /* GoogleService-Info.plist */,
 				377BEA6229FFAFBF00B811FA /* Info.plist */,
+				182643DF2C6741A600A25569 /* Audio */,
 				10D68D0C2BEF5A2F00DAD52B /* IntroScreen */,
 				10AAB9E72B6F6600006F039C /* SwiftKeychainWrapper */,
 				3713459B29E4A7DB00DB80A7 /* Shared */,
@@ -670,6 +694,7 @@
 			name = "Thready AI";
 			packageProductDependencies = (
 				10BC35C92BC7BCC700C1213D /* OpenAIKit */,
+				1875A12B2C69031D00BA3DB4 /* SwiftOpenAI */,
 			);
 			productName = ChatGptApp;
 			productReference = 377D66AA29E29A97004AC41B /* Thready AI.app */;
@@ -726,6 +751,7 @@
 			mainGroup = 377D66A129E29A96004AC41B;
 			packageReferences = (
 				10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */,
+				1875A12A2C69022A00BA3DB4 /* XCLocalSwiftPackageReference "Proxy" */,
 			);
 			productRefGroup = 377D66AB29E29A97004AC41B /* Products */;
 			projectDirPath = "";
@@ -874,6 +900,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182643E12C6741A600A25569 /* CreateAudioViewModel.swift in Sources */,
 				371345AB29E4B04900DB80A7 /* Enum.swift in Sources */,
 				1095C9F62B60EAE100303575 /* WatchConnector.swift in Sources */,
 				3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */,
@@ -882,6 +909,7 @@
 				377BEA6D2A004B4300B811FA /* AdsRemoved.swift in Sources */,
 				371345A829E4A7DC00DB80A7 /* ChatGPTAPIModels.swift in Sources */,
 				376E1A2829E6A54500F1ACF6 /* SettingsItem.swift in Sources */,
+				182643D32C56BB7200A25569 /* IntroScreenView .swift in Sources */,
 				10A0752C2B69269B00599606 /* ChatHistoryDetailView.swift in Sources */,
 				37B1991229FA4D66007FA005 /* PersonasList.swift in Sources */,
 				3713456E29E34DF900DB80A7 /* AskMeAnyThing.swift in Sources */,
@@ -899,7 +927,6 @@
 				10D68D032BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift in Sources */,
 				10D68D022BEE5A3E00DAD52B /* KeychainItemAccessibility.swift in Sources */,
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
-				10D68D142BEF5BF300DAD52B /* IntroScreenView.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
 				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
 				376E1A2629E69F8A00F1ACF6 /* Settings.swift in Sources */,
@@ -919,6 +946,7 @@
 				3713457B29E4686800DB80A7 /* ChatWidget.swift in Sources */,
 				376E1A2329E68FE000F1ACF6 /* AskInputField.swift in Sources */,
 				377BEA642A0019E600B811FA /* EnginesResponse.swift in Sources */,
+				182643E02C6741A600A25569 /* CreateAudioView.swift in Sources */,
 				10D68D042BEE5A3E00DAD52B /* KeychainWrapper.swift in Sources */,
 				37F4F2B92A0166BF0074A89F /* MonthlySubscription.swift in Sources */,
 				377034A329F5AB9200D73D12 /* SettingsViewModel.swift in Sources */,
@@ -1103,10 +1131,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChatGptApp/ChatGptApp.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1119,16 +1147,16 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4;
+				MARKETING_VERSION = 2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Thready_Production_AI;
+				PROVISIONING_PROFILE_SPECIFIER = productionThreadAi_Build;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = productionThreadAi_Build;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1147,10 +1175,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChatGptApp/ChatGptApp.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1163,16 +1191,16 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4;
+				MARKETING_VERSION = 2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Thready_Production_AI;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Thready_Production_AI;
+				PROVISIONING_PROFILE_SPECIFIER = productionThreadAi_Build;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = productionThreadAi_Build;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1194,7 +1222,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
+				CODE_SIGN_IDENTITY = "Apple Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
@@ -1218,7 +1246,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = Thready_WatchKit_Production_Prov;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = productionThreadAi_WatchBuild;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -1240,7 +1268,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Thready AI Watch Watch App/Thready AI Watch Watch App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: dante chu (XJ4Z3BM42J)";
+				CODE_SIGN_IDENTITY = "Apple Distribution: dante chu (XJ4Z3BM42J)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Thready AI Watch Watch App/Preview Content\"";
@@ -1264,7 +1292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amazingelearning.thready.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Thready_WatchKit_Production_Prov;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = Thready_WatchKit_Production_Prov;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = productionThreadAi_WatchBuild;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1307,6 +1335,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		1875A12A2C69022A00BA3DB4 /* XCLocalSwiftPackageReference "Proxy" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Proxy;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1328,6 +1363,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10BC35C82BC7BCC700C1213D /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAIKit;
+		};
+		1875A12B2C69031D00BA3DB4 /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1875A12A2C69022A00BA3DB4 /* XCLocalSwiftPackageReference "Proxy" */;
+			productName = SwiftOpenAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 
