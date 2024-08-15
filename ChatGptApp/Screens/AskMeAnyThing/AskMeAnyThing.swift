@@ -7,6 +7,7 @@
 
 import SwiftUI
 import GoogleMobileAds
+import SwiftOpenAI
 
 struct AskMeAnyThing: View {
     @ObservedObject var vm: AskMeAnyThingViewModel

@@ -18,6 +18,64 @@
             endingLineNumber = "35"
             landmarkName = "createSpeech(input:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A784371-B55B-4853-9571-3F23082EFD0B - 51e159537363c70d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35">
+               </Location>
+               <Location
+                  uuid = "6A784371-B55B-4853-9571-3F23082EFD0B - c1f5957468320c2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35">
+               </Location>
+               <Location
+                  uuid = "6A784371-B55B-4853-9571-3F23082EFD0B - 243d9856290a0303"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35">
+               </Location>
+               <Location
+                  uuid = "6A784371-B55B-4853-9571-3F23082EFD0B - ced3b8d4bcddad00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -98,6 +156,232 @@
             endingLineNumber = "32"
             landmarkName = "createSpeech(input:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57F5DE98-B608-48EF-B534-F0058293D49C - d7f278262a45fa91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "57F5DE98-B608-48EF-B534-F0058293D49C - 51e159537363c4ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Thready_AI.CreateAudioViewModel.createSpeech(input: Swift.String) async -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/CreateAudioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C59809DB-24AC-469F-83BB-C4B92579CEBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "stopRecording()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD201410-175F-4D04-AEC8-CD2B7BA3A38D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchRecording()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD201410-175F-4D04-AEC8-CD2B7BA3A38D - 8e7b510350a5f016"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Thready_AI.VoiceViewModel.fetchRecording() async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+               <Location
+                  uuid = "FD201410-175F-4D04-AEC8-CD2B7BA3A38D - 63519e07bfca5ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Thready_AI.VoiceViewModel.fetchRecording() async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+               <Location
+                  uuid = "FD201410-175F-4D04-AEC8-CD2B7BA3A38D - 5dd0d194f1a7b448"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Thready_AI.VoiceViewModel.fetchRecording() async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+               <Location
+                  uuid = "FD201410-175F-4D04-AEC8-CD2B7BA3A38D - b49c106d42185669"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Thready_AI.VoiceViewModel.fetchRecording() async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7555805A-F440-4B18-97AC-2348C314FA71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "VoiceViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7555805A-F440-4B18-97AC-2348C314FA71 - 54e6c5eddec174aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Thready_AI.VoiceViewModel.translate(parameters: SwiftOpenAI.AudioTranslationParameters) async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73">
+               </Location>
+               <Location
+                  uuid = "7555805A-F440-4B18-97AC-2348C314FA71 - 893da7bda8ffe1a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Thready_AI.VoiceViewModel.translate(parameters: SwiftOpenAI.AudioTranslationParameters) async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73">
+               </Location>
+               <Location
+                  uuid = "7555805A-F440-4B18-97AC-2348C314FA71 - 4bd0602fa4f2a8ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Thready_AI.VoiceViewModel.translate(parameters: SwiftOpenAI.AudioTranslationParameters) async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73">
+               </Location>
+               <Location
+                  uuid = "7555805A-F440-4B18-97AC-2348C314FA71 - 3e2752f04f0b0aad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Thready_AI.VoiceViewModel.translate(parameters: SwiftOpenAI.AudioTranslationParameters) async throws -&gt; ()"
+                  moduleName = "Thready AI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Projects/ThreadAi/ChatGptApp/Audio/CreateAudio/VoiceViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3675775B-24D0-4E3B-B819-A117A8A767A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatGptApp/Shared/Ask Me AnyThing Widgets/AskInputField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "421"
+            endingLineNumber = "421"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "881593E8-7EB8-4FEC-AC9E-E06E836995D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatGptApp/Shared/Ask Me AnyThing Widgets/AskInputField.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

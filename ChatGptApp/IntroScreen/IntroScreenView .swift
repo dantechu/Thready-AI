@@ -26,7 +26,7 @@ struct IntroScreenView: View {
     @State private var showChatView = false
     @State private var chatAI = true
     var apikey:String = ""
-    var isSpeechEnabled:Bool = false
+    var isSpeechEnabled:Bool = true
 
     var body: some View {
         NavigationView {
