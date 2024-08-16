@@ -40,6 +40,8 @@
 		182643D32C56BB7200A25569 /* IntroScreenView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D22C56BB7200A25569 /* IntroScreenView .swift */; };
 		182643E02C6741A600A25569 /* CreateAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D62C6741A600A25569 /* CreateAudioView.swift */; };
 		182643E12C6741A600A25569 /* CreateAudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182643D72C6741A600A25569 /* CreateAudioViewModel.swift */; };
+		187159D92C6FD0590058B830 /* LongPressToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187159D82C6FD0590058B830 /* LongPressToActionButton.swift */; };
+		187159DA2C6FD05D0058B830 /* LongPressToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187159D82C6FD0590058B830 /* LongPressToActionButton.swift */; };
 		1875A12C2C69031D00BA3DB4 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1875A12B2C69031D00BA3DB4 /* SwiftOpenAI */; };
 		1875A1302C6D43CA00BA3DB4 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */; };
 		1875A1312C6D493A00BA3DB4 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */; };
@@ -171,6 +173,7 @@
 		182643D22C56BB7200A25569 /* IntroScreenView .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IntroScreenView .swift"; sourceTree = "<group>"; };
 		182643D62C6741A600A25569 /* CreateAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioView.swift; sourceTree = "<group>"; };
 		182643D72C6741A600A25569 /* CreateAudioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioViewModel.swift; sourceTree = "<group>"; };
+		187159D82C6FD0590058B830 /* LongPressToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressToActionButton.swift; sourceTree = "<group>"; };
 		1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
 		22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
@@ -384,6 +387,7 @@
 				37B1990F29FA497C007FA005 /* Suggestions.swift */,
 				37B1991129FA4D66007FA005 /* PersonasList.swift */,
 				3713456D29E34DF900DB80A7 /* AskMeAnyThing.swift */,
+				187159D82C6FD0590058B830 /* LongPressToActionButton.swift */,
 			);
 			path = AskMeAnyThing;
 			sourceTree = "<group>";
@@ -934,6 +938,7 @@
 				10D68D032BEE5A3E00DAD52B /* KeychainWrapperSubscript.swift in Sources */,
 				10D68D022BEE5A3E00DAD52B /* KeychainItemAccessibility.swift in Sources */,
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
+				187159D92C6FD0590058B830 /* LongPressToActionButton.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
 				1875A1302C6D43CA00BA3DB4 /* VoiceViewModel.swift in Sources */,
 				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
@@ -996,6 +1001,7 @@
 				DD1B2BD02B416DCC0075B8C9 /* FullScreenLoading.swift in Sources */,
 				DD1B2B9D2B4168DD0075B8C9 /* AutoRenewablePurchaseManager.swift in Sources */,
 				DD1B2BC92B416D070075B8C9 /* WatchColors.swift in Sources */,
+				187159DA2C6FD05D0058B830 /* LongPressToActionButton.swift in Sources */,
 				DD1B2BC22B416CBD0075B8C9 /* ProVersion.swift in Sources */,
 				DD1B2BA22B4168ED0075B8C9 /* Constants.swift in Sources */,
 				10D68D062BEE5AB500DAD52B /* KeychainWrapper.swift in Sources */,

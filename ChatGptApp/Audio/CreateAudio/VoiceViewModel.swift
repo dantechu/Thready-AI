@@ -82,6 +82,7 @@ class VoiceViewModel : NSObject , ObservableObject , AVAudioPlayerDelegate {
         audioRecorder.stop()
         isRecording = false
         try await fetchRecording()
+        
     }
     
 }
