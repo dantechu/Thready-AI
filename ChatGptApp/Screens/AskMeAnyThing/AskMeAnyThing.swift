@@ -132,7 +132,7 @@ struct AskMeAnyThing: View {
     var inputField: some View{
         VStack {
             AskInputField(
-                askMeInput: $vm.inputMessage,
+                vm: vm, askMeInput: $vm.inputMessage,
                 isInteractingWithChatGPT: $vm.isInteractingWithChatGPT,
                 isTextFieldFocused: _isTextFieldFocused, isListening: $isListening,isChatAi: $isChatAi,
                 isMessageEmpty: $vm.messages.isEmpty) {
@@ -348,7 +348,7 @@ extension AskMeAnyThing{
 struct AskMeAnyThing_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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")), isChatAi:.constant(true))
+            AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: "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"), service: OpenAiKeys.getObject()), isChatAi:.constant(true))
 
         }
     }

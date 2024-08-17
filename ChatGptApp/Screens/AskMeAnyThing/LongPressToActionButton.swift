@@ -11,7 +11,7 @@ import SwiftUI
 
 struct LongPressToActionButton: View {
     @State private var state: ActionState = .preStart
-    @State var voiceViewModel: VoiceViewModel
+    @ObservedObject var vm: AskMeAnyThingViewModel
     let activeTime = 5.0
     @State var timeRemaining: CGFloat = .infinity
     @Binding var askMeInput: String
@@ -36,7 +36,7 @@ struct LongPressToActionButton: View {
                                 switch value {
                                 case .second(true, nil):
                                     states = true
-                                    voiceViewModel.startRecording()
+                                    vm.startRecording()
 
 
                                 default:
@@ -105,8 +105,8 @@ struct LongPressToActionButton: View {
     func performAction()  {
         Task {
             state = .loading
-            try? await voiceViewModel.stopRecording()
-            askMeInput = voiceViewModel.speechText
+            try? await vm.stopRecording()
+            askMeInput = vm.speechText
             state = .finish
         }
     }

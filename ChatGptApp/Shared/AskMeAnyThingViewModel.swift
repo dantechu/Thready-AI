@@ -9,7 +9,16 @@ import Foundation
 import SwiftUI
 import AVKit
 import AVFoundation
+import SwiftOpenAI
 
+struct OpenAiKeys {
+   static var aiproxyPartialKey = "v2|3818e635|S4ipxjdvEsscAnSY"
+   static var aiproxyServiceURL = "https://api.aiproxy.pro/058d45fb/757e6601"
+   
+   static func getObject() -> OpenAIService{
+       return OpenAIServiceFactory.service(aiproxyPartialKey: OpenAiKeys.aiproxyPartialKey, aiproxyServiceURL: OpenAiKeys.aiproxyServiceURL)
+    }
+}
 
 class AskMeAnyThingViewModel: ObservableObject {
     
@@ -22,8 +31,16 @@ class AskMeAnyThingViewModel: ObservableObject {
     
     private let api: ChatGPTAPI
     
-    init(api: ChatGPTAPI, enableSpeech: Bool = false) {
+    var audioRecorder : AVAudioRecorder!
+    var audioPlayer : AVAudioPlayer!
+    var translation: String = ""
+    @Published var speechText = ""
+    @Published var isRecording : Bool = false
+    
+    private let service: OpenAIService
+    init(api: ChatGPTAPI, enableSpeech: Bool = false, service: OpenAIService) {
         self.api = api
+        self.service  = service
         if enableSpeech {
             synthesizer = .init()
         }
@@ -176,6 +193,66 @@ class AskMeAnyThingViewModel: ObservableObject {
         messages.isEmpty
     }
 
+    func startRecording(){
+        
+        let recordingSession = AVAudioSession.sharedInstance()
+        do {
+            try recordingSession.setCategory(.playAndRecord, mode: .default)
+            try recordingSession.setActive(true)
+        } catch {
+            print("Can not setup the Recording")
+        }
+        
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileName = path.appendingPathComponent("CO-Voice.m4a")
+        
+        
+        let settings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        
+        do {
+            audioRecorder = try AVAudioRecorder(url: fileName, settings: settings)
+            audioRecorder.prepareToRecord()
+            audioRecorder.record()
+            isRecording = true
+            
+        } catch {
+            print("Failed to Setup the Recording")
+        }
+    }
+    
+    func fetchRecording() async throws{
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let fileName = path.appendingPathComponent("CO-Voice.m4a")
+        /// ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm'] (supported formats)
+        guard let data = try? Data(contentsOf:fileName) else { return }
+        try await translate(parameters: .init(fileName: "myapp.m4a", file: data))
+    }
+    
+    func translate(
+       parameters: AudioTranslationParameters)
+       async throws
+    {
+       do {
+          translation = try await service.createTranslation(parameters: parameters).text
+           print("translation text:",translation)
+           speechText = translation
+       } catch {
+          translation = "\(error)"
+       }
+    }
+    
+    func stopRecording() async throws{
+        audioRecorder.stop()
+        isRecording = false
+        try await fetchRecording()
+        
+    }
     
     
 }

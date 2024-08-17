@@ -85,7 +85,7 @@ struct ContentView: View {
     var inputField:some View{
         VStack {
             AskInputField(
-                askMeInput: $vm.inputMessage,
+                vm: vm, askMeInput: $vm.inputMessage,
                 isInteractingWithChatGPT: $vm.isInteractingWithChatGPT,
                 isListening: $isListening, isChatAi: .constant(true), isMessageEmpty: $vm.messages.isEmpty) {
                     

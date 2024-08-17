@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CryptoSwift
-
+import SwiftOpenAI
 
 @main
 struct ChatGptApp_Watch_AppApp: App {
@@ -25,7 +25,7 @@ struct ChatGptApp_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             if apiCallModel.isApiCall {
-                ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey),enableSpeech: true) )
+                ContentView(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey),enableSpeech: true, service: OpenAiKeys.getObject()) )
             }else {
                 FullScreenLoading()
             }

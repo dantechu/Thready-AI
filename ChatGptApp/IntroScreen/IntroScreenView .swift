@@ -36,7 +36,7 @@ struct IntroScreenView: View {
                 if isIntroPass {
                     VStack(spacing: 20) {
                         PageView(page: pages[pages.count - 1])
-                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled),isChatAi: .constant(false))
+                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled, service: OpenAiKeys.getObject()),isChatAi: .constant(false))
                             .navigationBarBackButtonHidden(true)
                             .environmentObject(manager)
                             .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showImageGPT) {
@@ -61,7 +61,7 @@ struct IntroScreenView: View {
                                 
                             }
                         
-                        NavigationLink(destination: CreateAudioView(service: OpenAIServiceFactory.service(aiproxyPartialKey: "v2|3818e635|S4ipxjdvEsscAnSY", aiproxyServiceURL: "https://api.aiproxy.pro/058d45fb/757e6601"))
+                        NavigationLink(destination: CreateAudioView(service: OpenAiKeys.getObject())
                             .navigationBarBackButtonHidden(true)
                             .environmentObject(manager)
                             .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showSpeechGPT) {
@@ -79,14 +79,14 @@ struct IntroScreenView: View {
                                         .padding(12)
                                         .foregroundColor(.white)
                                     }
-                                    .background(.yellow,
+                                    .background(.blue,
                                                 in: RoundedRectangle(cornerRadius: 12))
                                 }
                                 
                                 
                             }
                         
-                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled),isChatAi: .constant(true))
+                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled, service: OpenAiKeys.getObject()),isChatAi: .constant(true))
                             .navigationBarBackButtonHidden(true)
                             .environmentObject(manager)
                             .environment(\.managedObjectContext, manager.container.viewContext),isActive: $showChatView) {
@@ -118,7 +118,7 @@ struct IntroScreenView: View {
                                 PageView(page: page).padding(.bottom, 20)
                                 if page == pages.last {
                                     VStack(spacing: 15) {
-                                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled),isChatAi: .constant(false))
+                                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled, service: OpenAiKeys.getObject()),isChatAi: .constant(false))
                                             .navigationBarBackButtonHidden(true)
                                             .environmentObject(manager)
                                             .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showImageGPT) {
@@ -143,7 +143,7 @@ struct IntroScreenView: View {
                                                 
                                             }
                                         
-                                        NavigationLink(destination: CreateAudioView(service: OpenAIServiceFactory.service(aiproxyPartialKey: "v2|3818e635|S4ipxjdvEsscAnSY", aiproxyServiceURL: "https://api.aiproxy.pro/058d45fb/757e6601"))
+                                        NavigationLink(destination: CreateAudioView(service: OpenAiKeys.getObject())
                                             .navigationBarBackButtonHidden(true)
                                             .environmentObject(manager)
                                             .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showSpeechGPT) {
@@ -161,14 +161,14 @@ struct IntroScreenView: View {
                                                         .padding(12)
                                                         .foregroundColor(.white)
                                                     }
-                                                    .background(.yellow,
+                                                    .background(.blue,
                                                                 in: RoundedRectangle(cornerRadius: 12))
                                                 }
                                                 
                                                 
                                             }
                                         
-                                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled),isChatAi: .constant(true))
+                                        NavigationLink(destination:  AskMeAnyThing(vm: AskMeAnyThingViewModel(api: ChatGPTAPI(apiKey: internalApiKey), enableSpeech: isSpeechEnabled, service: OpenAiKeys.getObject()),isChatAi: .constant(true))
                                             .navigationBarBackButtonHidden(true)
                                             .environmentObject(manager)
                                             .environment(\.managedObjectContext, manager.container.viewContext),isActive: $showChatView) {

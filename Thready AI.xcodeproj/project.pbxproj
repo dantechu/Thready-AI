@@ -43,8 +43,6 @@
 		187159D92C6FD0590058B830 /* LongPressToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187159D82C6FD0590058B830 /* LongPressToActionButton.swift */; };
 		187159DA2C6FD05D0058B830 /* LongPressToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187159D82C6FD0590058B830 /* LongPressToActionButton.swift */; };
 		1875A12C2C69031D00BA3DB4 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1875A12B2C69031D00BA3DB4 /* SwiftOpenAI */; };
-		1875A1302C6D43CA00BA3DB4 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */; };
-		1875A1312C6D493A00BA3DB4 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */; };
 		1875A1332C6D4B4800BA3DB4 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1875A1322C6D4B4800BA3DB4 /* SwiftOpenAI */; };
 		3713455B29E3030500DB80A7 /* GetApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455A29E3030500DB80A7 /* GetApiKey.swift */; };
 		3713455E29E303C500DB80A7 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713455D29E303C500DB80A7 /* Colors+Extension.swift */; };
@@ -174,7 +172,6 @@
 		182643D62C6741A600A25569 /* CreateAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioView.swift; sourceTree = "<group>"; };
 		182643D72C6741A600A25569 /* CreateAudioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAudioViewModel.swift; sourceTree = "<group>"; };
 		187159D82C6FD0590058B830 /* LongPressToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressToActionButton.swift; sourceTree = "<group>"; };
-		1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
 		22A8EC315099414DD20092BE /* Pods-Thready AI Watch Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thready AI Watch Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Thready AI Watch Watch App/Pods-Thready AI Watch Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		3713455A29E3030500DB80A7 /* GetApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiKey.swift; sourceTree = "<group>"; };
 		3713455D29E303C500DB80A7 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
@@ -320,7 +317,6 @@
 			children = (
 				182643D62C6741A600A25569 /* CreateAudioView.swift */,
 				182643D72C6741A600A25569 /* CreateAudioViewModel.swift */,
-				1875A12F2C6D43CA00BA3DB4 /* VoiceViewModel.swift */,
 			);
 			path = CreateAudio;
 			sourceTree = "<group>";
@@ -940,7 +936,6 @@
 				37B7ED3029F059EA0071621D /* FullScreenLoading.swift in Sources */,
 				187159D92C6FD0590058B830 /* LongPressToActionButton.swift in Sources */,
 				371345A329E4A7DC00DB80A7 /* MessageRow.swift in Sources */,
-				1875A1302C6D43CA00BA3DB4 /* VoiceViewModel.swift in Sources */,
 				10A075282B69250900599606 /* ChatHistoryDateView.swift in Sources */,
 				376E1A2629E69F8A00F1ACF6 /* Settings.swift in Sources */,
 				3797A30429F5B12E00EE6415 /* About.swift in Sources */,
@@ -980,7 +975,6 @@
 				DD1B2BA62B4168FC0075B8C9 /* EnginesResponse.swift in Sources */,
 				10D68D082BEE5AC000DAD52B /* AEC.swift in Sources */,
 				DD1B2BAC2B416A6B0075B8C9 /* ContentView.swift in Sources */,
-				1875A1312C6D493A00BA3DB4 /* VoiceViewModel.swift in Sources */,
 				DD1B2BBD2B416C7B0075B8C9 /* PersonaDetailsList.swift in Sources */,
 				DD1B2BBA2B416C410075B8C9 /* Icons.swift in Sources */,
 				DD1B2BA42B4168F70075B8C9 /* MessageRow.swift in Sources */,
@@ -1149,7 +1143,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;
@@ -1193,7 +1187,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGptApp/Preview Content\"";
 				DEVELOPMENT_TEAM = XJ4Z3BM42J;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = XJ4Z3BM42J;

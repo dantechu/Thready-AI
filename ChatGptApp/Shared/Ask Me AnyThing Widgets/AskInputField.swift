@@ -14,7 +14,8 @@ import SwiftUI
 import SwiftOpenAI
 @available(watchOS 8.0, *)
 struct AskInputField: View {
-    @State private var voiceViewModel: VoiceViewModel = VoiceViewModel(service: OpenAIServiceFactory.service(aiproxyPartialKey: "v2|3818e635|S4ipxjdvEsscAnSY", aiproxyServiceURL: "https://api.aiproxy.pro/058d45fb/757e6601"))
+    @ObservedObject var vm: AskMeAnyThingViewModel
+
     @Binding var askMeInput: String
     @Binding var isInteractingWithChatGPT:Bool
     @FocusState var isTextFieldFocused: Bool
@@ -91,7 +92,7 @@ struct AskInputField: View {
                     }
                     
                     if askMeInput.isEmpty || isListening {
-                        LongPressToActionButton(voiceViewModel: voiceViewModel, askMeInput: $askMeInput)
+                        LongPressToActionButton(vm: vm, askMeInput: $askMeInput)
 
                     }
                 }
