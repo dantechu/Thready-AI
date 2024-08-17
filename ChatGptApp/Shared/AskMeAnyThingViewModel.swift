@@ -134,6 +134,17 @@ class AskMeAnyThingViewModel: ObservableObject {
             responseError: nil)
         
         self.messages.append(messageRow)
+//        do {
+//            let urls = try await service.createImages(
+//                parameters: .init(prompt: text, model: .dalle3(.largeSquare))).data.map(\.url)
+//            let responseStr = urls.compactMap { $0 }.first
+//            messageRow.responseImageUrl = responseStr?.path() ?? ""
+//            self.messages[self.messages.count - 1] = messageRow
+//            queryCounter = queryCounter - 1
+//        }catch {
+//            messageRow.responseError = error.localizedDescription
+//        }
+        //self.images = urls.compactMap { $0 }
         
         do {
             Task {
