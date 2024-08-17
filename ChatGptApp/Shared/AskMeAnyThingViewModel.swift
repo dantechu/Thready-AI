@@ -230,8 +230,9 @@ class AskMeAnyThingViewModel: ObservableObject {
             audioRecorder = try AVAudioRecorder(url: fileName, settings: settings)
             audioRecorder.prepareToRecord()
             audioRecorder.record()
-            isRecording = true
-            
+            DispatchQueue.main.async {[weak self] in
+                self?.isRecording = true
+            }
         } catch {
             print("Failed to Setup the Recording")
         }
@@ -252,7 +253,9 @@ class AskMeAnyThingViewModel: ObservableObject {
        do {
           translation = try await service.createTranslation(parameters: parameters).text
            print("translation text:",translation)
-           speechText = translation
+           DispatchQueue.main.async {[weak self] in
+               self?.speechText = self?.translation ?? ""
+           }
        } catch {
           translation = "\(error)"
        }
@@ -260,7 +263,9 @@ class AskMeAnyThingViewModel: ObservableObject {
     
     func stopRecording() async throws{
         audioRecorder.stop()
-        isRecording = false
+        DispatchQueue.main.async {[weak self] in
+            self?.isRecording = false
+        }
         try await fetchRecording()
         
     }

@@ -12,20 +12,22 @@ import SwiftUI
 struct LongPressToActionButton: View {
     @State private var state: ActionState = .preStart
     @ObservedObject var vm: AskMeAnyThingViewModel
-    let activeTime = 5.0
+    let activeTime = 15.0
     @State var timeRemaining: CGFloat = .infinity
     @Binding var askMeInput: String
 
     var timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
     
-    private let ringSize: CGFloat = 40
-    private let lineWidth: CGFloat = 4
+    private let ringSize: CGFloat = 60
+    private let lineWidth: CGFloat = 6
     @GestureState var isPressing = false
 
 
     var body: some View {
         ZStack {
             Image(systemName: state == .finish ? "checkmark" : "mic.circle")
+                .resizable()
+                .frame(width: 45, height: 45)
                 .padding()
                 .foregroundStyle(Color.white)
                 .font(.system(size: 20, weight: .bold))

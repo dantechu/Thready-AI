@@ -7,6 +7,8 @@
 
 import SwiftUI
 import SwiftOpenAI
+import AVFoundation
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         IntroScreenView()
@@ -213,13 +215,27 @@ struct IntroScreenView: View {
                         dotAppearance.pageIndicatorTintColor = .gray
                     }
                 }
-            }
+            }.onAppear(perform: {
+                checkMicPermission()
+            })
         }
     }
     
     func incrementPage() {
         pageIndex += 1
     }
+    
+    func checkMicPermission()  {
+        AVAudioApplication.requestRecordPermission { granted in
+            if granted {
+                // The user granted access. Present recording interface.
+            } else {
+                // Present message to user indicating that recording
+                // can't be performed until they change their preference
+                // under Settings -> Privacy -> Microphone
+            }
+        }
+        }
     
     func goToImageGPT() {
         //pageIndex = 0
