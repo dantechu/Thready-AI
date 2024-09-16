@@ -63,7 +63,7 @@ struct IntroScreenView: View {
                                 
                             }
                         
-                        NavigationLink(destination: CreateAudioView(service: OpenAiKeys.getObject())
+                        NavigationLink(destination: SelectLanguageView()
                             .navigationBarBackButtonHidden(true)
                             .environmentObject(manager)
                             .environment(\.managedObjectContext, manager.container.viewContext), isActive: $showSpeechGPT) {
