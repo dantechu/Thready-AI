@@ -15,11 +15,17 @@ struct RecordViewScreen: View {
     @State var fileurl :URL = URL(fileURLWithPath: "")
     @State var isPresenting :Bool = false
     @Binding var language:String
-
+    @State var showAlert = false
+    init(audioRecorder: AudioRecorder, language: Binding<String>) {
+        _audioRecorder = StateObject(wrappedValue: audioRecorder)
+        _language = language
+        audioRecorder.stop()
+        audioRecorder.startRecording()
+    }
     var body: some View {
         VStack {
             RecordingsList(fileurl: $fileurl, isPresenting: $isPresenting, audioRecorder: audioRecorder)
-            NavigationLink(destination: AudioToTextView(audioViewModel: AudioToTextViewModel(service: OpenAiKeys.getObject(), filename: fileurl, langaugae: language)), isActive: $isPresenting) { EmptyView() }
+            NavigationLink(destination: AudioToTextView(audioViewModel: AudioToTextViewModel(filename: fileurl, langaugae: language)), isActive: $isPresenting) { EmptyView() }
             VStack {
                 
                 Text("Recording")
@@ -31,6 +37,7 @@ struct RecordViewScreen: View {
                 
                 HStack {
                     Button(action: {
+                        
                         audioRecorder.timerRemaining = 0
                         self.audioRecorder.cancelrecording()
                         dismiss()
@@ -47,9 +54,13 @@ struct RecordViewScreen: View {
                     }
                     
                     Button(action: {
-                        self.audioRecorder.stopRecording()
-                        fileurl = self.audioRecorder.fileName
-                        isPresenting = true
+                        if audioRecorder.recording == true {
+                            self.audioRecorder.stopRecording()
+                            fileurl = self.audioRecorder.fileName
+                            isPresenting = true
+                        }else {
+                            showAlert = true
+                        }
                     }) {
                         Image(systemName: "circle.fill")
                             .resizable()
@@ -96,9 +107,13 @@ struct RecordViewScreen: View {
                
 
             }.onAppear(perform: {
-                audioRecorder.stop()
-                audioRecorder.startRecording()
+               
             })
+        }
+        .alert("please first record the audio", isPresented: $showAlert) {
+                   Button("OK", role: .cancel) {
+                       showAlert = false
+                   }
         }
         .navigationBarTitle("Voice Recorder")
         .navigationBarItems(trailing: EditButton())

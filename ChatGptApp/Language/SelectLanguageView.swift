@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SelectLanguageView: View {
-    @State var language:String = ""
+    @State var language:LanguageModelElement = LanguageModelElement(name: "", shortCode: "")
     @State var showingSheet:Bool = false
     @State var isPresenting = false /// 1.
 
@@ -21,7 +21,7 @@ struct SelectLanguageView: View {
                     .font(.system(size: 20, weight: .bold, design: .default))
                 
                 HStack{
-                    TextField("Enter text . . .", text: $language)
+                    TextField("Enter text . . .", text: $language.name)
                         .padding(5)
                         .frame(height: 50)
                         .onTapGesture {
@@ -55,7 +55,7 @@ struct SelectLanguageView: View {
                 .cornerRadius(25)
                 .padding([.leading, .trailing], 40)
                 
-                NavigationLink(destination: RecordViewScreen(audioRecorder: AudioRecorder(), language: $language), isActive: $isPresenting) { EmptyView() }
+                NavigationLink(destination: RecordViewScreen(audioRecorder: AudioRecorder(), language: $language.shortCode), isActive: $isPresenting) { EmptyView() }
 
                 
             }
@@ -66,3 +66,8 @@ struct SelectLanguageView: View {
     }
 }
     
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        SelectLanguageView()
+    }
+}
